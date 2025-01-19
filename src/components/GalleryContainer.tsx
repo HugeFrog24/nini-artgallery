@@ -1,33 +1,44 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState } from 'react';
 import { CategorySection } from '@/types/artwork';
 import SearchHeader from './SearchHeader';
 import SectionContainer from './SectionContainer';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 interface GalleryContainerProps {
   initialSections: CategorySection[];
 }
 
 export default function GalleryContainer({ initialSections }: GalleryContainerProps) {
-  const [sections, setSections] = useState<CategorySection[]>(initialSections);
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const handleSearch = useCallback((newSections: CategorySection[]) => {
-    console.log('handleSearch called with:', newSections);
-    setSections(newSections);
-  }, []);
-
-  // Update sections when initialSections change (e.g., on page load)
-  useEffect(() => {
-    console.log('initialSections changed:', initialSections);
-    setSections(initialSections);
-  }, [initialSections]);
-
-  console.log('Current sections state:', sections);
+  const updateSearchParams = async (updates: Record<string, string | undefined>) => {
+    setIsLoading(true);
+    try {
+      const params = new URLSearchParams(searchParams.toString());
+      Object.entries(updates).forEach(([key, value]) => {
+        if (value) {
+          params.set(key, value);
+        } else {
+          params.delete(key);
+        }
+      });
+      await router.push(`/?${params.toString()}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <SearchHeader onSearch={handleSearch} />
+      <SearchHeader 
+        currentSearch={searchParams.get('search') || ''}
+        onSearch={(term) => updateSearchParams({ search: term })}
+        isLoading={isLoading}
+      />
       
       <div className="max-w-7xl mx-auto px-4 mb-8">
         <section className="prose prose-sm max-w-none">
@@ -59,11 +70,16 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
       </div>
       
       <div className="max-w-7xl mx-auto px-2 space-y-8">
-        {sections.length > 0 ? (
-          sections.map((section) => (
+        {initialSections.length > 0 ? (
+          initialSections.map((section) => (
             <SectionContainer 
               key={section.id}
               section={section}
+              onSort={(sortBy, order) => updateSearchParams({ 
+                category: section.id, 
+                sortBy, 
+                order 
+              })}
             />
           ))
         ) : (

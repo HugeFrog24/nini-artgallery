@@ -1,59 +1,24 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 import { MagnifyingGlassIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
-import { CategorySection } from '@/types/artwork';
 
 interface SearchHeaderProps {
-  onSearch: (sections: CategorySection[]) => void;
+  currentSearch: string;
+  onSearch: (searchTerm: string) => void;
+  isLoading: boolean;
 }
 
-export default function SearchHeader({ onSearch }: SearchHeaderProps) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
-  const [isLoading, setIsLoading] = useState(false);
+export default function SearchHeader({ currentSearch, onSearch, isLoading }: SearchHeaderProps) {
+  const [searchTerm, setSearchTerm] = useState(currentSearch);
 
-  // Initial load - always perform search to show all items or filtered results
   useEffect(() => {
-    const query = searchParams.get('search') || '';
-    setSearchTerm(query);
-    performSearch(query);
-  }, []); // Only run on mount
-
-  const performSearch = async (value: string) => {
-    setIsLoading(true);
-    try {
-      const trimmedValue = value.trim();
-      
-      // Create params for API request
-      const params = new URLSearchParams();
-      if (trimmedValue) {
-        params.set('search', trimmedValue);
-      }
-
-      // Always fetch results (empty search = show all)
-      const response = await fetch(`/api/artworks?${params.toString()}`);
-      if (!response.ok) throw new Error('Failed to fetch artworks');
-      const filteredSections = await response.json();
-      
-      // Update sections
-      onSearch(filteredSections);
-      
-      // Update URL - only include search in URL if we have a value
-      const newPath = trimmedValue ? `/?${params.toString()}` : '/';
-      router.replace(newPath, { scroll: false });
-    } catch (error) {
-      console.error('Error searching artworks:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    setSearchTerm(currentSearch);
+  }, [currentSearch]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    performSearch(searchTerm);
+    onSearch(searchTerm.trim());
   };
 
   return (
