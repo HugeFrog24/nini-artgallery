@@ -44,6 +44,16 @@
           "medium": "Specialty origami paper",
           "dimensions": "5\" x 5\" x 5\"",
           "year": 2024
+        },
+        {
+          "id": "o5",
+          "title": "Love Heart",
+          "description": "Elegant heart-shaped origami design with delicate folds and curves",
+          "imageUrl": "#FFB6C1",
+          "category": "origami",
+          "medium": "Origami paper",
+          "dimensions": "6\" x 6\"",
+          "year": 2024
         }
       ]
     },
@@ -90,6 +100,16 @@
           "category": "crochet",
           "medium": "Soft acrylic yarn",
           "dimensions": "8\" height",
+          "year": 2024
+        },
+        {
+          "id": "c5",
+          "title": "Sky Kid",
+          "description": "Adorable crochet Sky Kid from Sky: Children of the Light, complete with cape and glowing heart",
+          "imageUrl": "#E6E6FA",
+          "category": "crochet",
+          "medium": "Soft acrylic yarn",
+          "dimensions": "7\" height",
           "year": 2024
         }
       ]
@@ -153,6 +173,16 @@
           "imageUrl": "#FFA69E",
           "category": "fingernails",
           "medium": "Regular polish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        },
+        {
+          "id": "n3",
+          "title": "Hearts & Love",
+          "description": "Romantic heart patterns with glitter and delicate details",
+          "imageUrl": "#FF69B4",
+          "category": "fingernails",
+          "medium": "Gel polish",
           "dimensions": "Standard nail size",
           "year": 2024
         }
