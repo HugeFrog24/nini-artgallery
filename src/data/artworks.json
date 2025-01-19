@@ -1,0 +1,162 @@
+{
+  "categorySections": [
+    {
+      "id": "origami",
+      "title": "Origami Creations",
+      "description": "Intricate paper folding art pieces showcasing precision and creativity",
+      "artworks": [
+        {
+          "id": "o1",
+          "title": "Paper Crane Series",
+          "description": "Traditional Japanese crane designs in vibrant colors",
+          "imageUrl": "#FF9F9F",
+          "category": "origami",
+          "medium": "Washi paper",
+          "dimensions": "6\" x 6\"",
+          "year": 2024
+        },
+        {
+          "id": "o2",
+          "title": "Geometric Animals",
+          "description": "Modern interpretation of wildlife through geometric folds",
+          "imageUrl": "#FFB5B5",
+          "category": "origami",
+          "medium": "Origami paper",
+          "dimensions": "8\" x 8\"",
+          "year": 2024
+        },
+        {
+          "id": "o3",
+          "title": "Jumping Frog",
+          "description": "Traditional origami frog that can actually hop! A playful piece combining form and function",
+          "imageUrl": "#98FB98",
+          "category": "origami",
+          "medium": "Origami paper",
+          "dimensions": "4\" x 4\"",
+          "year": 2024
+        },
+        {
+          "id": "o4",
+          "title": "Modular Cube Box",
+          "description": "Complex modular origami forming a decorative cube that can open and close",
+          "imageUrl": "#87CEEB",
+          "category": "origami",
+          "medium": "Specialty origami paper",
+          "dimensions": "5\" x 5\" x 5\"",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "crochet",
+      "title": "Crochet Items",
+      "description": "Handcrafted crochet pieces combining traditional techniques with modern design",
+      "artworks": [
+        {
+          "id": "c1",
+          "title": "Tiny Animal Family",
+          "description": "Collection of small, cute stuffed animals made with soft wool",
+          "imageUrl": "#95E1D3",
+          "category": "crochet",
+          "medium": "Merino wool",
+          "dimensions": "4\" height",
+          "year": 2024
+        },
+        {
+          "id": "c2",
+          "title": "Modern Blanket",
+          "description": "Contemporary geometric pattern blanket in pastel tones",
+          "imageUrl": "#A8E6CF",
+          "category": "crochet",
+          "medium": "Cotton yarn",
+          "dimensions": "50\" x 60\"",
+          "year": 2023
+        },
+        {
+          "id": "c3",
+          "title": "Friendly Frog",
+          "description": "Adorable crochet frog with big eyes and a cheerful smile",
+          "imageUrl": "#90EE90",
+          "category": "crochet",
+          "medium": "Cotton yarn",
+          "dimensions": "6\" height",
+          "year": 2024
+        },
+        {
+          "id": "c4",
+          "title": "Fluffy Bunny",
+          "description": "Sweet crochet rabbit with floppy ears and a tiny cotton tail",
+          "imageUrl": "#FFF0F5",
+          "category": "crochet",
+          "medium": "Soft acrylic yarn",
+          "dimensions": "8\" height",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "paintings",
+      "title": "Paintings",
+      "description": "Original paintings exploring various styles and techniques",
+      "artworks": [
+        {
+          "id": "p1",
+          "title": "Abstract Sunset",
+          "description": "Vibrant interpretation of a coastal sunset",
+          "imageUrl": "#FFD93D",
+          "category": "paintings",
+          "medium": "Acrylic on canvas",
+          "dimensions": "24\" x 36\"",
+          "year": 2024
+        },
+        {
+          "id": "p2",
+          "title": "Urban Life",
+          "description": "City scenes captured in impressionistic style",
+          "imageUrl": "#F6CD61",
+          "category": "paintings",
+          "medium": "Oil on canvas",
+          "dimensions": "30\" x 40\"",
+          "year": 2023
+        },
+        {
+          "id": "p3",
+          "title": "Alice in Wonderland",
+          "description": "Whimsical scene from Alice in Wonderland featuring the Mad Hatter's tea party",
+          "imageUrl": "#DDA0DD",
+          "category": "paintings",
+          "medium": "Mixed media on canvas",
+          "dimensions": "36\" x 48\"",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "fingernails",
+      "title": "Fingernail Art",
+      "description": "Creative and detailed nail art designs",
+      "artworks": [
+        {
+          "id": "n1",
+          "title": "Spring Collection",
+          "description": "Floral patterns with metallic accents",
+          "imageUrl": "#FF8B94",
+          "category": "fingernails",
+          "medium": "Gel polish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        },
+        {
+          "id": "n2",
+          "title": "Abstract Patterns",
+          "description": "Geometric and abstract designs in bold colors",
+          "imageUrl": "#FFA69E",
+          "category": "fingernails",
+          "medium": "Regular polish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        }
+      ]
+    }
+  ]
+}
