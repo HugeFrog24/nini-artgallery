@@ -6,7 +6,7 @@ import { SITE_DESCRIPTION, SITE_FULL_TITLE, SITE_KEYWORDS, SITE_LONG_DESCRIPTION
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ninis-art-gallery.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   title: {
     template: `%s | ${SITE_NAME}`,
     default: SITE_FULL_TITLE,
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
       url: '/api/og',
       width: 1200,
       height: 630,
-      alt: `${SITE_NAME} Preview`
+      alt: `${SITE_NAME} Preview`,
+      type: 'image/png'
     }]
   },
   twitter: {
@@ -38,7 +39,8 @@ export const metadata: Metadata = {
       url: '/api/og',
       width: 1200,
       height: 630,
-      alt: `${SITE_NAME} Preview`
+      alt: `${SITE_NAME} Preview`,
+      type: 'image/png'
     }]
   },
   alternates: {
