@@ -31,15 +31,12 @@ export default function SearchHeader({ currentSearch, onSearch, isLoading }: Sea
         
         <form onSubmit={handleSubmit} className="relative">
           <div className="relative flex items-center">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-            </div>
             <input
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search artworks..."
-              className="block w-full pl-10 pr-24 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+              className="block w-full pr-24 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
             />
             <div className="absolute inset-y-0 right-0 flex items-center">
               {isLoading ? (
@@ -47,9 +44,10 @@ export default function SearchHeader({ currentSearch, onSearch, isLoading }: Sea
               ) : (
                 <button
                   type="submit"
-                  className="h-full px-4 py-2 text-sm font-medium text-pink-600 hover:text-pink-700 focus:outline-none"
+                  className="h-full px-4 py-2 text-sm font-medium text-gray-600 hover:text-pink-600 focus:outline-none"
+                  aria-label="Search"
                 >
-                  Search
+                  <MagnifyingGlassIcon className="h-5 w-5" aria-hidden="true" />
                 </button>
               )}
             </div>
