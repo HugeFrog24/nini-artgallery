@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { MagnifyingGlassIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 interface SearchHeaderProps {
   currentSearch: string;
@@ -25,7 +26,11 @@ export default function SearchHeader({ currentSearch, onSearch, isLoading }: Sea
     <header className="bg-white shadow-sm py-4 px-4 mb-4">
       <div className="max-w-7xl mx-auto space-y-4">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900 mb-1">Nini&apos;s Art Gallery</h1>
+          <Link href="/" className="inline-block">
+            <h1 className="text-2xl font-bold text-gray-900 mb-1 hover:text-pink-600 transition-colors">
+              Nini&apos;s Art Gallery
+            </h1>
+          </Link>
           <p className="text-sm text-gray-600">A multi-disciplinary collection of artworks</p>
         </div>
         

@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import { CategorySection } from "@/types/artwork";
 import GalleryContainer from "@/components/GalleryContainer";
+import { SITE_FULL_TITLE, SITE_KEYWORDS, SITE_LONG_DESCRIPTION } from "@/constants/metadata";
 
 export const metadata: Metadata = {
-  title: "Nini's Art Gallery | Multi-disciplinary Art Collection",
-  description: "Explore Nini's diverse collection featuring origami, crochet items, paintings, and nail art designs. Each piece showcases unique creativity and craftsmanship.",
-  keywords: ["art gallery", "origami", "crochet", "paintings", "nail art", "handmade", "crafts"],
+  title: SITE_FULL_TITLE,
+  description: SITE_LONG_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
 };
 
 // Mark the page as dynamic to ensure it's not statically optimized
