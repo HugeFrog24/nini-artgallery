@@ -3,7 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: nini-artgallery:latest
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    image: bogerserge/nini-artgallery:latest
     container_name: nini-artgallery
     restart: unless-stopped
     ports:

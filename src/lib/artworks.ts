@@ -1,4 +1,4 @@
-import rawArtworksData from './artworks.json';
+import rawArtworksData from '../../data/artworks.json';
 import { CategorySection } from '@/types/artwork';
 
 // Type assertion for the imported JSON data
