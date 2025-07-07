@@ -42,7 +42,7 @@ export default function SectionContainer({ section }: SectionContainerProps) {
   return (
     <section
       aria-labelledby={`heading-${section.id}`}
-      className="bg-white rounded-lg p-4 shadow-sm"
+      className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm transition-colors"
     >
       <SectionHeader
         id={section.id}

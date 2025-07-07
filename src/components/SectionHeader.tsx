@@ -37,16 +37,16 @@ export default function SectionHeader({ id, title, description, onSort }: Sectio
   return (
     <div className="mb-4">
       <div className="flex items-center justify-between">
-        <h2 
+        <h2
           id={`heading-${id}`}
-          className="text-xl font-semibold text-gray-900"
+          className="text-xl font-semibold text-gray-900 dark:text-white"
         >
           {title}
         </h2>
         <div className="flex gap-2">
           <button
             onClick={() => handleSort('title')}
-            className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
             title="Sort by title"
           >
             Title
@@ -54,7 +54,7 @@ export default function SectionHeader({ id, title, description, onSort }: Sectio
           </button>
           <button
             onClick={() => handleSort('year')}
-            className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
             title="Sort by year"
           >
             Year
@@ -62,7 +62,7 @@ export default function SectionHeader({ id, title, description, onSort }: Sectio
           </button>
         </div>
       </div>
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-gray-600 dark:text-gray-300">
         {description}
       </p>
     </div>

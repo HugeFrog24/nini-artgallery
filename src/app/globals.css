@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Accent color system - dynamically updated by ThemeProvider */
   --color-accent-50: var(--accent-50, oklch(0.971 0.014 343.198));

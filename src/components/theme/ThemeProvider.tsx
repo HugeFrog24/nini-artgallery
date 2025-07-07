@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { AccentColor, ThemeConfig, ThemeContextType } from '@/types/theme';
+import { AccentColor, ColorScheme, ThemeConfig, ThemeContextType } from '@/types/theme';
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
@@ -18,28 +18,61 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<ThemeConfig>({ accent: 'pink' });
+  const [theme, setTheme] = useState<ThemeConfig>({ accent: 'pink', colorScheme: 'system' });
   const [isClient, setIsClient] = useState(false);
+  const [systemPrefersDark, setSystemPrefersDark] = useState(false);
 
-  // Load theme from localStorage on client side
+  // Load theme from localStorage and detect system preference
   useEffect(() => {
     setIsClient(true);
+    
+    // Detect system preference
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setSystemPrefersDark(mediaQuery.matches);
+    
+    // Listen for system preference changes
+    const handleChange = (e: MediaQueryListEvent) => {
+      setSystemPrefersDark(e.matches);
+    };
+    
+    mediaQuery.addEventListener('change', handleChange);
+    
+    // Load saved theme
     const savedTheme = localStorage.getItem('nini-gallery-theme');
     if (savedTheme) {
       try {
         const parsedTheme = JSON.parse(savedTheme);
+        // Ensure colorScheme exists for backward compatibility
+        if (!parsedTheme.colorScheme) {
+          parsedTheme.colorScheme = 'system';
+        }
         setTheme(parsedTheme);
       } catch {
         console.warn('Failed to parse saved theme, using default');
       }
     }
+    
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
   }, []);
 
-  // Update CSS variables when theme changes
+  // Calculate resolved color scheme
+  const resolvedColorScheme: 'light' | 'dark' =
+    theme.colorScheme === 'system' ? (systemPrefersDark ? 'dark' : 'light') : theme.colorScheme;
+
+  // Update CSS variables and dark mode class when theme changes
   useEffect(() => {
     if (!isClient) return;
 
     const root = document.documentElement;
+    
+    // Apply dark mode class
+    if (resolvedColorScheme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
     
     // Define color mappings for each accent color
     const colorMappings = {
@@ -73,14 +106,18 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     // Save to localStorage
     localStorage.setItem('nini-gallery-theme', JSON.stringify(theme));
-  }, [theme, isClient]);
+  }, [theme, resolvedColorScheme, isClient]);
 
   const setAccentColor = (color: AccentColor) => {
     setTheme(prev => ({ ...prev, accent: color }));
   };
 
+  const setColorScheme = (colorScheme: ColorScheme) => {
+    setTheme(prev => ({ ...prev, colorScheme }));
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, setAccentColor }}>
+    <ThemeContext.Provider value={{ theme, setAccentColor, setColorScheme, resolvedColorScheme, systemPrefersDark }}>
       {children}
     </ThemeContext.Provider>
   );
