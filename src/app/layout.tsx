@@ -4,6 +4,7 @@ import "./globals.css";
 import { getSiteConfig } from "@/lib/config";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import ThemeSelector from "@/components/theme/ThemeSelector";
+import GlobalHeader from "@/components/GlobalHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteConfig = getSiteConfig();
@@ -60,6 +61,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full`}>
         <ThemeProvider>
+          <GlobalHeader />
           <div
             className="min-h-full"
             role="region"
