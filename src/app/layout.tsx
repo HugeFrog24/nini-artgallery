@@ -5,6 +5,7 @@ import { getSiteConfig } from "@/lib/config";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import ThemeSelector from "@/components/theme/ThemeSelector";
 import GlobalHeader from "@/components/GlobalHeader";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteConfig = getSiteConfig();
@@ -61,7 +62,9 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full`}>
         <ThemeProvider>
-          <GlobalHeader />
+          <Suspense fallback={<div className="h-32 bg-white dark:bg-gray-900" />}>
+            <GlobalHeader />
+          </Suspense>
           <div
             className="min-h-full"
             role="region"
