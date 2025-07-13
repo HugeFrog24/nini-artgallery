@@ -4,6 +4,8 @@ import "./globals.css";
 import { getSiteConfig } from "@/lib/config";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import ThemeSelector from "@/components/theme/ThemeSelector";
+import GlobalHeader from "@/components/GlobalHeader";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteConfig = getSiteConfig();
@@ -60,8 +62,11 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full`}>
         <ThemeProvider>
+          <Suspense fallback={<div className="h-32 bg-white dark:bg-gray-900" />}>
+            <GlobalHeader />
+          </Suspense>
           <div
-            className="min-h-full"
+            className="min-h-full pt-40 bg-gray-50 dark:bg-gray-900"
             role="region"
             aria-label="Art gallery content"
           >

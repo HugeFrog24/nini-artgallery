@@ -3,23 +3,25 @@
 import { useState, useEffect } from 'react';
 import { MagnifyingGlassIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { getSiteConfig } from '@/lib/config';
 
-interface SearchHeaderProps {
-  currentSearch: string;
-  onSearch: (searchTerm: string) => void;
-  isLoading: boolean;
-}
-
-export default function SearchHeader({ currentSearch, onSearch, isLoading }: SearchHeaderProps) {
-  const [searchTerm, setSearchTerm] = useState(currentSearch);
+export default function GlobalHeader() {
+  const [searchTerm, setSearchTerm] = useState('');
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const siteConfig = getSiteConfig();
 
+  // Initialize search term from URL params
   useEffect(() => {
+    const currentSearch = searchParams.get('search') || '';
     setSearchTerm(currentSearch);
-  }, [currentSearch]);
+  }, [searchParams]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,9 +43,32 @@ export default function SearchHeader({ currentSearch, onSearch, isLoading }: Sea
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onSearch(searchTerm.trim());
+    const trimmedSearch = searchTerm.trim();
+    
+    setIsLoading(true);
+    try {
+      // If we're not on the home page, navigate to home with search
+      if (pathname !== '/') {
+        if (trimmedSearch) {
+          await router.push(`/?search=${encodeURIComponent(trimmedSearch)}`);
+        } else {
+          await router.push('/');
+        }
+      } else {
+        // If we're on the home page, update search params
+        const params = new URLSearchParams(searchParams.toString());
+        if (trimmedSearch) {
+          params.set('search', trimmedSearch);
+        } else {
+          params.delete('search');
+        }
+        await router.push(`/?${params.toString()}`);
+      }
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

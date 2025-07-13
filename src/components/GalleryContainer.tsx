@@ -2,9 +2,7 @@
 
 import { useState } from 'react';
 import { CategorySection } from '@/types/artwork';
-import SearchHeader from './SearchHeader';
 import SectionContainer from './SectionContainer';
-import { useRouter, useSearchParams } from 'next/navigation';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { getSiteConfig, getArtistProfile, getPersonalMessage } from '@/lib/config';
 
@@ -13,40 +11,14 @@ interface GalleryContainerProps {
 }
 
 export default function GalleryContainer({ initialSections }: GalleryContainerProps) {
-  const [isLoading, setIsLoading] = useState(false);
   const [isNoteVisible, setIsNoteVisible] = useState(true);
-  const router = useRouter();
-  const searchParams = useSearchParams();
   
   const siteConfig = getSiteConfig();
   const artistProfile = getArtistProfile();
   const personalMessage = getPersonalMessage();
 
-  const updateSearchParams = async (updates: Record<string, string | undefined>) => {
-    setIsLoading(true);
-    try {
-      const params = new URLSearchParams(searchParams.toString());
-      Object.entries(updates).forEach(([key, value]) => {
-        if (value) {
-          params.set(key, value);
-        } else {
-          params.delete(key);
-        }
-      });
-      await router.push(`/?${params.toString()}`);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-      <SearchHeader
-        currentSearch={searchParams.get('search') || ''}
-        onSearch={(term) => updateSearchParams({ search: term })}
-        isLoading={isLoading}
-      />
-      
       <div className="max-w-7xl mx-auto px-4 mb-8">
         <section className="prose prose-sm max-w-none">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm mb-4 transition-colors">
