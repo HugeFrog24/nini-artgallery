@@ -1,0 +1,9 @@
+{
+  "siteName": "Nini's Art Gallery",
+  "siteDescription": "Multi-disciplinary Art Collection",
+  "siteSubheading": "A multi-disciplinary collection of artworks",
+  "siteLongDescription": "Explore Nini's diverse art collection featuring origami, crochet items, paintings, and nail art designs. Each piece showcases unique creativity and craftsmanship.",
+  "siteKeywords": ["art gallery", "origami", "crochet", "paintings", "nail art", "handmade", "crafts"],
+  "searchPlaceholder": "Search artworks...",
+  "noResultsMessage": "No artworks found matching your search."
+}

@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SITE_DESCRIPTION, SITE_FULL_TITLE, SITE_KEYWORDS, SITE_LONG_DESCRIPTION, SITE_NAME } from "@/constants/metadata";
+import { getSiteConfig } from "@/lib/config";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import ThemeSelector from "@/components/theme/ThemeSelector";
+import GlobalHeader from "@/components/GlobalHeader";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteConfig = getSiteConfig();
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ninis-art-gallery.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   title: {
-    template: `%s | ${SITE_NAME}`,
-    default: SITE_FULL_TITLE,
+    template: `%s | ${siteConfig.siteName}`,
+    default: `${siteConfig.siteName} | ${siteConfig.siteDescription}`,
   },
-  description: SITE_LONG_DESCRIPTION,
-  keywords: SITE_KEYWORDS,
+  description: siteConfig.siteLongDescription,
+  keywords: siteConfig.siteKeywords,
   robots: {
     index: true,
     follow: true,
@@ -20,25 +25,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    siteName: SITE_NAME,
+    title: siteConfig.siteName,
+    description: siteConfig.siteDescription,
+    siteName: siteConfig.siteName,
     images: [{
       url: '/api/og',
       width: 1200,
       height: 630,
-      alt: `${SITE_NAME} Preview`
+      alt: `${siteConfig.siteName} Preview`,
+      type: 'image/png'
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
+    title: siteConfig.siteName,
+    description: siteConfig.siteDescription,
     images: [{
       url: '/api/og',
       width: 1200,
       height: 630,
-      alt: `${SITE_NAME} Preview`
+      alt: `${siteConfig.siteName} Preview`,
+      type: 'image/png'
     }]
   },
   alternates: {
@@ -54,13 +61,19 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full`}>
-        <div 
-          className="min-h-full"
-          role="region"
-          aria-label="Art gallery content"
-        >
-          {children}
-        </div>
+        <ThemeProvider>
+          <Suspense fallback={<div className="h-32 bg-white dark:bg-gray-900" />}>
+            <GlobalHeader />
+          </Suspense>
+          <div
+            className="min-h-full pt-40 bg-gray-50 dark:bg-gray-900"
+            role="region"
+            aria-label="Art gallery content"
+          >
+            {children}
+            <ThemeSelector />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

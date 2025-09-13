@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 import { CategorySection } from "@/types/artwork";
 import GalleryContainer from "@/components/GalleryContainer";
-import { SITE_FULL_TITLE, SITE_KEYWORDS, SITE_LONG_DESCRIPTION } from "@/constants/metadata";
+import { getSiteConfig } from "@/lib/config";
+
+const siteConfig = getSiteConfig();
 
 export const metadata: Metadata = {
-  title: SITE_FULL_TITLE,
-  description: SITE_LONG_DESCRIPTION,
-  keywords: SITE_KEYWORDS,
+  title: `${siteConfig.siteName} | ${siteConfig.siteDescription}`,
+  description: siteConfig.siteLongDescription,
+  keywords: siteConfig.siteKeywords,
 };
 
 // Mark the page as dynamic to ensure it's not statically optimized

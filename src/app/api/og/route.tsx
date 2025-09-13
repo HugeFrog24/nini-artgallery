@@ -1,9 +1,11 @@
 import { ImageResponse } from 'next/og';
-import { SITE_DESCRIPTION, SITE_NAME } from '@/constants/metadata';
+import { getSiteConfig } from '@/lib/config';
 
 export const runtime = 'edge';
 
 export async function GET() {
+  const siteConfig = getSiteConfig();
+  
   try {
     return new ImageResponse(
       (
@@ -64,7 +66,7 @@ export async function GET() {
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)',
               }}
             >
-              {SITE_NAME}
+              {siteConfig.siteName}
             </h1>
             <p
               style={{
@@ -77,7 +79,7 @@ export async function GET() {
                 letterSpacing: '-0.02em',
               }}
             >
-              {SITE_DESCRIPTION}
+              {siteConfig.siteDescription}
             </p>
           </div>
         </div>

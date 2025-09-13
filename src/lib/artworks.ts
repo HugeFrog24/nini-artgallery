@@ -1,4 +1,4 @@
-import rawArtworksData from './artworks.json';
+import rawArtworksData from '../../data/artworks.json';
 import { CategorySection } from '@/types/artwork';
 
 // Type assertion for the imported JSON data
@@ -107,4 +107,24 @@ export async function getArtworks(options: GetArtworksOptions = {}) {
   }
 
   return sections;
+}
+
+// Function to get a single artwork by ID
+export async function getArtworkById(id: string) {
+  const sections = artworksData.categorySections;
+  
+  for (const section of sections) {
+    const artwork = section.artworks.find(art => art.id === id);
+    if (artwork) {
+      return artwork;
+    }
+  }
+  
+  return null;
+}
+
+// Function to get all artworks (flattened)
+export async function getAllArtworks() {
+  const sections = artworksData.categorySections;
+  return sections.flatMap(section => section.artworks);
 }
