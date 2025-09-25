@@ -1,0 +1,73 @@
+{
+  "Site": {
+    "name": "{artistName}'s Art Gallery",
+    "description": "Multi-disciplinary Art Collection",
+    "subheading": "A multi-disciplinary collection of artworks",
+    "longDescription": "Explore {artistName}'s diverse art collection featuring origami, crochet items, paintings, and nail art designs. Each piece showcases unique creativity and craftsmanship."
+  },
+  "Search": {
+    "placeholder": "Search artworks...",
+    "noResults": "No artworks found matching your search.",
+    "searchLabel": "Search"
+  },
+  "Artwork": {
+    "medium": "Medium",
+    "dimensions": "Dimensions", 
+    "year": "Year",
+    "description": "Description"
+  },
+  "Navigation": {
+    "home": "Home",
+    "gallery": "Gallery"
+  },
+  "greeting": {
+    "morning": "Good morning!",
+    "afternoon": "Good afternoon!",
+    "evening": "Good evening!",
+    "default": "Hello!"
+  },
+  "introduction": "I'm {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Back to Gallery",
+    "backToGalleryAriaLabel": "Go back to gallery",
+    "artworkDetails": "Artwork Details",
+    "category": "Category",
+    "viewMoreArtworks": "View More Artworks",
+    "shareArtwork": "Share Artwork",
+    "categoryArtwork": "{category} Artwork"
+  },
+  "Sort": {
+    "title": "Title",
+    "year": "Year",
+    "sortByTitle": "Sort by title",
+    "sortByYear": "Sort by year"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} gallery"
+  },
+  "Theme": {
+    "changeThemeColors": "Change theme colors",
+    "themeOptions": "Theme options",
+    "appearance": "Appearance",
+    "accentColor": "Accent color",
+    "dark": "dark",
+    "light": "light",
+    "colors": {
+      "pink": "Pink",
+      "orange": "Orange",
+      "green": "Light Green"
+    },
+    "schemes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "closeBroadcastMessage": "Close broadcast message",
+    "login": "Login"
+  }
+}
