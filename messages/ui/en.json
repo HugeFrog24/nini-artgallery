@@ -6,7 +6,7 @@
     "longDescription": "Explore {artistName}'s diverse art collection featuring origami, crochet items, paintings, and nail art designs. Each piece showcases unique creativity and craftsmanship."
   },
   "Search": {
-    "placeholder": "Search artworks...",
+    "placeholder": "Search artworks…",
     "noResults": "No artworks found matching your search.",
     "searchLabel": "Search"
   },
@@ -64,7 +64,7 @@
     }
   },
   "Common": {
-    "loading": "Loading...",
+    "loading": "Loading…",
     "error": "An error occurred",
     "retry": "Retry",
     "closeBroadcastMessage": "Close broadcast message",

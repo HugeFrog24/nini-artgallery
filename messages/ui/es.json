@@ -64,7 +64,7 @@
     }
   },
   "Common": {
-    "loading": "Cargando...",
+    "loading": "Cargando…",
     "error": "Ocurrió un error",
     "retry": "Reintentar",
     "closeBroadcastMessage": "Cerrar mensaje",

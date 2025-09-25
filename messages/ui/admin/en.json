@@ -3,8 +3,8 @@
     "title": "Admin Dashboard",
     "subtitle": "Manage your art gallery settings",
     "logout": "Logout",
-    "loading": "Loading...",
-    "checkingConfiguration": "Checking configuration..."
+    "loading": "Loading…",
+    "checkingConfiguration": "Checking configuration…"
   },
   "Login": {
     "title": "Admin Login",
@@ -16,13 +16,13 @@
     "emailAddress": "Email address",
     "verificationCode": "Verification Code",
     "sendVerificationCode": "Send Verification Code",
-    "sending": "Sending...",
+    "sending": "Sending…",
     "verifyAndLogin": "Verify & Login",
-    "verifying": "Verifying...",
+    "verifying": "Verifying…",
     "back": "Back",
     "sentTo": "Sent to:",
     "useDifferentEmail": "Use different email",
-    "loginSuccessful": "Login successful! Redirecting...",
+    "loginSuccessful": "Login successful! Redirecting…",
     "networkError": "Network error. Please try again."
   },
   "Settings": {
@@ -33,7 +33,7 @@
     "messageContent": "Message Content",
     "allowDismiss": "Allow visitors to dismiss the message",
     "saveChanges": "Save Changes",
-    "saving": "Saving...",
+    "saving": "Saving…",
     "settingsSaved": "Settings saved successfully!",
     "enterMessageTitle": "Enter message title",
     "enterMessageContent": "Enter your message content",

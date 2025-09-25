@@ -3,8 +3,8 @@
     "title": "Admin-Dashboard",
     "subtitle": "Verwalten Sie Ihre Kunstgalerie-Einstellungen",
     "logout": "Abmelden",
-    "loading": "Lädt...",
-    "checkingConfiguration": "Konfiguration wird überprüft..."
+    "loading": "Lädt…",
+    "checkingConfiguration": "Konfiguration wird überprüft…"
   },
   "Login": {
     "title": "Admin-Anmeldung",
@@ -16,13 +16,13 @@
     "emailAddress": "E-Mail-Adresse",
     "verificationCode": "Bestätigungscode",
     "sendVerificationCode": "Bestätigungscode senden",
-    "sending": "Wird gesendet...",
+    "sending": "Wird gesendet…",
     "verifyAndLogin": "Bestätigen & Anmelden",
-    "verifying": "Wird bestätigt...",
+    "verifying": "Wird bestätigt…",
     "back": "Zurück",
     "sentTo": "Gesendet an:",
     "useDifferentEmail": "Andere E-Mail verwenden",
-    "loginSuccessful": "Anmeldung erfolgreich! Weiterleitung...",
+    "loginSuccessful": "Anmeldung erfolgreich! Weiterleitung…",
     "networkError": "Netzwerkfehler. Bitte versuchen Sie es erneut."
   },
   "Settings": {
@@ -33,7 +33,7 @@
     "messageContent": "Nachrichteninhalt",
     "allowDismiss": "Besuchern erlauben, die Nachricht zu schließen",
     "saveChanges": "Änderungen speichern",
-    "saving": "Wird gespeichert...",
+    "saving": "Wird gespeichert…",
     "settingsSaved": "Einstellungen erfolgreich gespeichert!",
     "enterMessageTitle": "Nachrichtentitel eingeben",
     "enterMessageContent": "Ihren Nachrichteninhalt eingeben",

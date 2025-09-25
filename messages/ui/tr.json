@@ -6,7 +6,7 @@
     "longDescription": "{artistName}'nin origami, örgü ürünleri, resimler ve tırnak sanatı tasarımlarını içeren çeşitli sanat koleksiyonunu keşfedin. Her eser benzersiz yaratıcılık ve ustalık sergiler."
   },
   "Search": {
-    "placeholder": "Sanat eserlerinde ara...",
+    "placeholder": "Sanat eserlerinde ara…",
     "noResults": "Aramanızla eşleşen sanat eseri bulunamadı.",
     "searchLabel": "Ara"
   },
@@ -64,7 +64,7 @@
     }
   },
   "Common": {
-    "loading": "Yükleniyor...",
+    "loading": "Yükleniyor…",
     "error": "Bir hata oluştu",
     "retry": "Tekrar Dene",
     "closeBroadcastMessage": "Mesajı kapat",

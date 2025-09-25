@@ -64,7 +64,7 @@
     }
   },
   "Common": {
-    "loading": "იტვირთება...",
+    "loading": "იტვირთება…",
     "error": "მოხდა შეცდომა",
     "retry": "ხელახლა ცდა",
     "closeBroadcastMessage": "შეტყობინების დახურვა",
