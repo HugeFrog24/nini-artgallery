@@ -67,6 +67,11 @@
     "loading": "Loading…",
     "error": "An error occurred",
     "retry": "Retry",
+    "back": "Back",
+    "saving": "Saving…",
+    "sending": "Sending…",
+    "verifying": "Verifying…",
+    "logout": "Logout",
     "closeBroadcastMessage": "Close broadcast message",
     "login": "Login"
   }

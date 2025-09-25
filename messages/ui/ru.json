@@ -67,6 +67,11 @@
     "loading": "Загрузка…",
     "error": "Произошла ошибка",
     "retry": "Повторить",
+    "back": "Назад",
+    "saving": "Сохранение…",
+    "sending": "Отправка…",
+    "verifying": "Проверка…",
+    "logout": "Выйти",
     "closeBroadcastMessage": "Закрыть сообщение",
     "login": "Войти"
   }

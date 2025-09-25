@@ -2,8 +2,6 @@
   "Dashboard": {
     "title": "Panel de Administración",
     "subtitle": "Gestiona la configuración de tu galería de arte",
-    "logout": "Cerrar sesión",
-    "loading": "Cargando…",
     "checkingConfiguration": "Verificando configuración…"
   },
   "Login": {
@@ -16,10 +14,7 @@
     "emailAddress": "Dirección de email",
     "verificationCode": "Código de Verificación",
     "sendVerificationCode": "Enviar Código de Verificación",
-    "sending": "Enviando…",
     "verifyAndLogin": "Verificar e Iniciar Sesión",
-    "verifying": "Verificando…",
-    "back": "Atrás",
     "sentTo": "Enviado a:",
     "useDifferentEmail": "Usar email diferente",
     "loginSuccessful": "¡Inicio de sesión exitoso! Redirigiendo…",
@@ -33,7 +28,6 @@
     "messageContent": "Contenido del Mensaje",
     "allowDismiss": "Permitir a los visitantes cerrar el mensaje",
     "saveChanges": "Guardar Cambios",
-    "saving": "Guardando…",
     "settingsSaved": "¡Configuración guardada exitosamente!",
     "enterMessageTitle": "Ingresa el título del mensaje",
     "enterMessageContent": "Ingresa el contenido de tu mensaje",

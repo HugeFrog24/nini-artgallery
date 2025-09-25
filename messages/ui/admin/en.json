@@ -2,8 +2,6 @@
   "Dashboard": {
     "title": "Admin Dashboard",
     "subtitle": "Manage your art gallery settings",
-    "logout": "Logout",
-    "loading": "Loading…",
     "checkingConfiguration": "Checking configuration…"
   },
   "Login": {
@@ -16,10 +14,7 @@
     "emailAddress": "Email address",
     "verificationCode": "Verification Code",
     "sendVerificationCode": "Send Verification Code",
-    "sending": "Sending…",
     "verifyAndLogin": "Verify & Login",
-    "verifying": "Verifying…",
-    "back": "Back",
     "sentTo": "Sent to:",
     "useDifferentEmail": "Use different email",
     "loginSuccessful": "Login successful! Redirecting…",
@@ -33,7 +28,6 @@
     "messageContent": "Message Content",
     "allowDismiss": "Allow visitors to dismiss the message",
     "saveChanges": "Save Changes",
-    "saving": "Saving…",
     "settingsSaved": "Settings saved successfully!",
     "enterMessageTitle": "Enter message title",
     "enterMessageContent": "Enter your message content",

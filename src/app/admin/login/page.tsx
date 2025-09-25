@@ -18,6 +18,7 @@ interface LoginState {
 export default function AdminLogin() {
   const router = useRouter();
   const t = useTranslations('admin');
+  const tCommon = useTranslations('Common');
   const [state, setState] = useState<LoginState>({
     step: 'email',
     email: '',
@@ -214,7 +215,7 @@ export default function AdminLogin() {
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 tabIndex={!state.configured ? -1 : 0}
               >
-                {state.loading ? t('Login.sending') : t('Login.sendVerificationCode')}
+                {state.loading ? tCommon('sending') : t('Login.sendVerificationCode')}
               </button>
             </div>
           </form>
@@ -249,7 +250,7 @@ export default function AdminLogin() {
                 disabled={!state.configured}
                 tabIndex={!state.configured ? -1 : 0}
               >
-                {t('Login.back')}
+                {tCommon('back')}
               </button>
               <button
                 type="submit"
@@ -257,7 +258,7 @@ export default function AdminLogin() {
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 tabIndex={!state.configured ? -1 : 0}
               >
-                {state.loading ? t('Login.verifying') : t('Login.verifyAndLogin')}
+                {state.loading ? tCommon('verifying') : t('Login.verifyAndLogin')}
               </button>
             </div>
           </form>

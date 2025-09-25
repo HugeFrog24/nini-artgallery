@@ -2,8 +2,6 @@
   "Dashboard": {
     "title": "Панель администратора",
     "subtitle": "Управляйте настройками вашей художественной галереи",
-    "logout": "Выйти",
-    "loading": "Загрузка…",
     "checkingConfiguration": "Проверка конфигурации…"
   },
   "Login": {
@@ -16,10 +14,7 @@
     "emailAddress": "Адрес электронной почты",
     "verificationCode": "Код подтверждения",
     "sendVerificationCode": "Отправить код подтверждения",
-    "sending": "Отправка…",
     "verifyAndLogin": "Подтвердить и войти",
-    "verifying": "Проверка…",
-    "back": "Назад",
     "sentTo": "Отправлено на:",
     "useDifferentEmail": "Использовать другой email",
     "loginSuccessful": "Вход выполнен успешно! Перенаправление…",
@@ -33,7 +28,6 @@
     "messageContent": "Содержание сообщения",
     "allowDismiss": "Разрешить посетителям закрывать сообщение",
     "saveChanges": "Сохранить изменения",
-    "saving": "Сохранение…",
     "settingsSaved": "Настройки успешно сохранены!",
     "enterMessageTitle": "Введите заголовок сообщения",
     "enterMessageContent": "Введите содержание вашего сообщения",

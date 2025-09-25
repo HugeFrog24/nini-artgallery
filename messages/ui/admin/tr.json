@@ -2,8 +2,6 @@
   "Dashboard": {
     "title": "Yönetici Paneli",
     "subtitle": "Sanat galerinizin ayarlarını yönetin",
-    "logout": "Çıkış Yap",
-    "loading": "Yükleniyor…",
     "checkingConfiguration": "Yapılandırma kontrol ediliyor…"
   },
   "Login": {
@@ -16,10 +14,7 @@
     "emailAddress": "E-posta adresi",
     "verificationCode": "Doğrulama Kodu",
     "sendVerificationCode": "Doğrulama Kodu Gönder",
-    "sending": "Gönderiliyor…",
     "verifyAndLogin": "Doğrula ve Giriş Yap",
-    "verifying": "Doğrulanıyor…",
-    "back": "Geri",
     "sentTo": "Gönderildi:",
     "useDifferentEmail": "Farklı e-posta kullan",
     "loginSuccessful": "Giriş başarılı! Yönlendiriliyor…",
@@ -33,7 +28,6 @@
     "messageContent": "Mesaj İçeriği",
     "allowDismiss": "Ziyaretçilerin mesajı kapatmasına izin ver",
     "saveChanges": "Değişiklikleri Kaydet",
-    "saving": "Kaydediliyor…",
     "settingsSaved": "Ayarlar başarıyla kaydedildi!",
     "enterMessageTitle": "Mesaj başlığını girin",
     "enterMessageContent": "Mesaj içeriğinizi girin",

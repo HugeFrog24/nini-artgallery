@@ -2,8 +2,6 @@
   "Dashboard": {
     "title": "ადმინისტრაციული პანელი",
     "subtitle": "მართეთ თქვენი ხელოვნების გალერეის პარამეტრები",
-    "logout": "გასვლა",
-    "loading": "იტვირთება…",
     "checkingConfiguration": "კონფიგურაციის შემოწმება…"
   },
   "Login": {
@@ -16,10 +14,7 @@
     "emailAddress": "ელ-ფოსტის მისამართი",
     "verificationCode": "დადასტურების კოდი",
     "sendVerificationCode": "დადასტურების კოდის გაგზავნა",
-    "sending": "იგზავნება…",
     "verifyAndLogin": "დადასტურება და შესვლა",
-    "verifying": "მოწმდება…",
-    "back": "უკან",
     "sentTo": "გაიგზავნა:",
     "useDifferentEmail": "სხვა ელ-ფოსტის გამოყენება",
     "loginSuccessful": "შესვლა წარმატებულია! გადამისამართება…",
@@ -33,7 +28,6 @@
     "messageContent": "შეტყობინების შინაარსი",
     "allowDismiss": "ვიზიტორებს შეუძლიათ შეტყობინების დახურვა",
     "saveChanges": "ცვლილებების შენახვა",
-    "saving": "ინახება…",
     "settingsSaved": "პარამეტრები წარმატებით შეინახა!",
     "enterMessageTitle": "შეიყვანეთ შეტყობინების სათაური",
     "enterMessageContent": "შეიყვანეთ თქვენი შეტყობინების შინაარსი",
