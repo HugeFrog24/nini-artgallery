@@ -149,20 +149,3 @@ export async function getArtworks(
 
   return filteredSections;
 }
-
-// Function to get a single artwork by ID (expects pre-translated sections)
-export async function getArtworkById(sections: CategorySection[], id: string) {
-  for (const section of sections) {
-    const artwork = section.artworks.find(art => art.id === id);
-    if (artwork) {
-      return artwork;
-    }
-  }
-  
-  return null;
-}
-
-// Function to get all artworks (flattened, expects pre-translated sections)
-export async function getAllArtworks(sections: CategorySection[]) {
-  return sections.flatMap(section => section.artworks);
-}
