@@ -8,12 +8,6 @@ export interface SiteConfig {
   noResultsMessage: string;
 }
 
-export interface ArtistProfile {
-  name: string;
-  greeting: string;
-  description: string;
-}
-
 export interface PersonalMessage {
   enabled: boolean;
   recipient: string;

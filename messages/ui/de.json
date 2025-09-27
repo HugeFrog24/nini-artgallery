@@ -73,6 +73,7 @@
     "verifying": "Wird bestätigt…",
     "logout": "Abmelden",
     "closeBroadcastMessage": "Nachricht schließen",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "preview": "Vorschau"
   }
 }

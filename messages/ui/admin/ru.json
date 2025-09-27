@@ -33,6 +33,14 @@
     "enterMessageContent": "Введите содержание вашего сообщения",
     "charactersCount": "{count}/{max} символов"
   },
+  "ArtistSettings": {
+    "title": "Настройки профиля художника",
+    "description": "Управляйте информацией вашего профиля художника",
+    "artistName": "Имя художника",
+    "artistDescription": "Описание художника",
+    "enterArtistName": "Введите имя художника",
+    "enterArtistDescription": "Введите описание художника"
+  },
   "Errors": {
     "failedToLoadSettings": "Не удалось загрузить настройки",
     "failedToSaveSettings": "Не удалось сохранить настройки",

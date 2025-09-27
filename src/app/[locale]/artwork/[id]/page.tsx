@@ -5,16 +5,17 @@ import ArtworkDetailView from "@/components/ArtworkDetailView";
 import { CategorySection, Artwork } from "@/types/artwork";
 import { getTranslations } from "next-intl/server";
 import { getSiteKeywords } from "@/lib/config";
+import { SUPPORTED_LOCALES } from "@/lib/locales";
 
 interface ArtworkPageProps {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
 }
 
 export async function generateMetadata({ params }: ArtworkPageProps): Promise<Metadata> {
-  const { id } = await params;
+  const { locale, id } = await params;
   
-  // For metadata generation, use getTranslations directly
-  const t = await getTranslations();
+  // For metadata generation, use getTranslations with locale
+  const t = await getTranslations({ locale });
   
   // Create translation function compatible with mergeArtworksWithTranslations
   const translateFn = (key: string) => {
@@ -78,21 +79,29 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
 }
 
 export async function generateStaticParams() {
-  // For static generation, we only need the artwork IDs, not translations
-  // Get base data directly to avoid request context issues
+  // Generate params for all locale/artwork combinations
   const { getBaseArtworks } = await import('@/lib/artworks');
   const baseSections = getBaseArtworks();
   const artworks = baseSections.flatMap(section => section.artworks);
-  return artworks.map((artwork) => ({
-    id: artwork.id,
-  }));
+  
+  const params = [];
+  for (const locale of SUPPORTED_LOCALES) {
+    for (const artwork of artworks) {
+      params.push({
+        locale: locale.code,
+        id: artwork.id,
+      });
+    }
+  }
+  
+  return params;
 }
 
 export default async function ArtworkPage({ params }: ArtworkPageProps) {
-  const { id } = await params;
+  const { locale, id } = await params;
   
-  // Use getTranslations directly in server component
-  const t = await getTranslations();
+  // Use getTranslations with locale parameter
+  const t = await getTranslations({ locale });
   
   // Create translation function compatible with mergeArtworksWithTranslations
   const translateFn = (key: string) => {

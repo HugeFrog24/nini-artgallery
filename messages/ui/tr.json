@@ -73,6 +73,7 @@
     "verifying": "Doğrulanıyor…",
     "logout": "Çıkış Yap",
     "closeBroadcastMessage": "Mesajı kapat",
-    "login": "Giriş Yap"
+    "login": "Giriş Yap",
+    "preview": "Önizleme"
   }
 }

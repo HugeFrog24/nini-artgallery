@@ -2,28 +2,28 @@
 
 import { useLocale } from 'next-intl';
 import { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-
-const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-  { code: 'ka', name: 'ქართული', flag: '🇬🇪' },
-  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
-];
+import { SUPPORTED_LOCALES, getLocaleConfig } from '@/lib/locales';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageChange = (newLocale: string) => {
-    // Set cookie and reload page
+    // Set cookie for preference
     document.cookie = `locale=${newLocale}; path=/; max-age=31536000`; // 1 year
-    window.location.reload();
+    
+    // Navigate to the new locale URL
+    // Remove current locale from pathname and add new locale
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/';
+    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    router.push(newPath);
   };
 
-  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
+  const currentLanguage = getLocaleConfig(locale) || SUPPORTED_LOCALES[0];
 
   return (
     <div className="relative">
@@ -40,7 +40,7 @@ export default function LanguageSwitcher() {
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
           <div className="py-1">
-            {languages.map((language) => (
+            {SUPPORTED_LOCALES.map((language) => (
               <button
                 key={language.code}
                 onClick={() => {

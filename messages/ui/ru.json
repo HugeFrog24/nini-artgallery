@@ -73,6 +73,7 @@
     "verifying": "Проверка…",
     "logout": "Выйти",
     "closeBroadcastMessage": "Закрыть сообщение",
-    "login": "Войти"
+    "login": "Войти",
+    "preview": "Предпросмотр"
   }
 }

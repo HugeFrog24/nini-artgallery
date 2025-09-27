@@ -33,6 +33,14 @@
     "enterMessageContent": "Enter your message content",
     "charactersCount": "{count}/{max} characters"
   },
+  "ArtistSettings": {
+    "title": "Artist Profile Settings",
+    "description": "Manage your artist profile information",
+    "artistName": "Artist Name",
+    "artistDescription": "Artist Description",
+    "enterArtistName": "Enter artist name",
+    "enterArtistDescription": "Enter artist description"
+  },
   "Errors": {
     "failedToLoadSettings": "Failed to load settings",
     "failedToSaveSettings": "Failed to save settings",

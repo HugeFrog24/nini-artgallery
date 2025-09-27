@@ -32,3 +32,29 @@ export interface PersonalMessageUpdate {
   message: string;
   dismissible: boolean;
 }
+
+export interface ArtistUpdate {
+  name: string;
+  description: string;
+  translations?: ArtistTranslations;
+}
+
+export interface ArtistData {
+  name: string;
+  description: string;
+  defaultLanguage: string;
+}
+
+export interface ArtistTranslations {
+  [locale: string]: {
+    name: string;
+    description: string;
+  };
+}
+
+export interface ArtistProfileWithTranslations {
+  name: string;
+  description: string;
+  defaultLanguage: string;
+  translations: ArtistTranslations;
+}

@@ -73,6 +73,7 @@
     "verifying": "Verifying…",
     "logout": "Logout",
     "closeBroadcastMessage": "Close broadcast message",
-    "login": "Login"
+    "login": "Login",
+    "preview": "Preview"
   }
 }

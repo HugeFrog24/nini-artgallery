@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 interface LoginState {
   step: 'email' | 'otp';
@@ -17,6 +17,7 @@ interface LoginState {
 
 export default function AdminLogin() {
   const router = useRouter();
+  const locale = useLocale();
   const t = useTranslations('admin');
   const tCommon = useTranslations('Common');
   const [state, setState] = useState<LoginState>({
@@ -34,12 +35,7 @@ export default function AdminLogin() {
     setState(prev => ({ ...prev, ...updates }));
   };
 
-  // Check admin configuration on component mount
-  useEffect(() => {
-    checkAdminConfig();
-  }, []);
-
-  const checkAdminConfig = async () => {
+  const checkAdminConfig = useCallback(async () => {
     try {
       const response = await fetch('/api/admin/config');
       const data = await response.json();
@@ -56,7 +52,12 @@ export default function AdminLogin() {
         error: t('Errors.checkAdminConfiguration')
       });
     }
-  };
+  }, [t]);
+
+  // Check admin configuration on component mount
+  useEffect(() => {
+    checkAdminConfig();
+  }, [checkAdminConfig]);
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -110,9 +111,9 @@ export default function AdminLogin() {
           success: t('Login.loginSuccessful')
         });
         
-        // Redirect to admin dashboard
+        // Redirect to localized admin dashboard
         setTimeout(() => {
-          router.push('/admin');
+          router.push(`/${locale}/admin`);
         }, 1000);
       } else {
         updateState({ 

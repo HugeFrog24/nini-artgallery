@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getTranslations } from 'next-intl/server';
 
-export const runtime = 'edge';
-
 export async function GET(request: Request) {
   try {
     // Get locale from query params, default to 'en'

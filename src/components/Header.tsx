@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MagnifyingGlassIcon, ArrowPathIcon, UserIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useHeaderHeightCSS } from '@/hooks/useHeaderHeight';
 
 interface HeaderProps {
   // Optional props for controlled mode (like SearchHeader)
@@ -20,9 +21,13 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
   const [lastScrollY, setLastScrollY] = useState(0);
   const [internalLoading, setInternalLoading] = useState(false);
   
+  const headerRef = useRef<HTMLElement>(null);
+  useHeaderHeightCSS(headerRef);
+  
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const locale = useLocale();
   const t = useTranslations();
 
   // Determine if we're in controlled mode (SearchHeader behavior) or autonomous mode (GlobalHeader behavior)
@@ -71,12 +76,15 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
       // Autonomous mode: handle navigation ourselves
       setInternalLoading(true);
       try {
-        // If we're not on the home page, navigate to home with search
-        if (pathname !== '/') {
+        // Check if we're on the localized home page
+        const isOnHomePage = pathname === `/${locale}`;
+        
+        if (!isOnHomePage) {
+          // Navigate to localized home with search
           if (trimmedSearch) {
-            await router.push(`/?search=${encodeURIComponent(trimmedSearch)}`);
+            router.push(`/${locale}?search=${encodeURIComponent(trimmedSearch)}`);
           } else {
-            await router.push('/');
+            router.push(`/${locale}`);
           }
         } else {
           // If we're on the home page, update search params
@@ -86,7 +94,7 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
           } else {
             params.delete('search');
           }
-          await router.push(`/?${params.toString()}`);
+          router.push(`/${locale}?${params.toString()}`);
         }
       } finally {
         setInternalLoading(false);
@@ -96,6 +104,7 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
 
   return (
     <header
+      ref={headerRef}
       className={`
         fixed top-0 left-0 right-0 z-50
         bg-white dark:bg-gray-900 shadow-sm py-4 px-4
@@ -106,7 +115,7 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
       <div className="max-w-7xl mx-auto space-y-4">
         <div className="flex justify-between items-start">
           <div>
-            <Link href="/" className="inline-block">
+            <Link href={`/${locale}`} className="inline-block">
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1 hover:text-accent-600 transition-colors">
                 {t('Site.name', { artistName: t('Artist.name') })}
               </h1>
@@ -115,7 +124,7 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
           </div>
           <div className="flex items-center gap-3">
             <Link
-              href="/admin/login"
+              href={`/${locale}/admin/login`}
               className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
             >
               <UserIcon className="h-4 w-4" />

@@ -33,6 +33,14 @@
     "enterMessageContent": "Ingresa el contenido de tu mensaje",
     "charactersCount": "{count}/{max} caracteres"
   },
+  "ArtistSettings": {
+    "title": "Configuración del Perfil del Artista",
+    "description": "Gestiona la información de tu perfil de artista",
+    "artistName": "Nombre del Artista",
+    "artistDescription": "Descripción del Artista",
+    "enterArtistName": "Ingresa el nombre del artista",
+    "enterArtistDescription": "Ingresa la descripción del artista"
+  },
   "Errors": {
     "failedToLoadSettings": "Error al cargar la configuración",
     "failedToSaveSettings": "Error al guardar la configuración",

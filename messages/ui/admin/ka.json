@@ -33,6 +33,14 @@
     "enterMessageContent": "შეიყვანეთ თქვენი შეტყობინების შინაარსი",
     "charactersCount": "{count}/{max} სიმბოლო"
   },
+  "ArtistSettings": {
+    "title": "მხატვრის პროფილის პარამეტრები",
+    "description": "მართეთ თქვენი მხატვრის პროფილის ინფორმაცია",
+    "artistName": "მხატვრის სახელი",
+    "artistDescription": "მხატვრის აღწერა",
+    "enterArtistName": "შეიყვანეთ მხატვრის სახელი",
+    "enterArtistDescription": "შეიყვანეთ მხატვრის აღწერა"
+  },
   "Errors": {
     "failedToLoadSettings": "პარამეტრების ჩატვირთვა ვერ მოხერხდა",
     "failedToSaveSettings": "პარამეტრების შენახვა ვერ მოხერხდა",

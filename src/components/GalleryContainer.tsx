@@ -84,7 +84,7 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
                     {personalMessage.recipient}
                   </h3>
                 )}
-                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8">
+                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8 text-justify">
                   {personalMessage.message}
                 </p>
               </div>

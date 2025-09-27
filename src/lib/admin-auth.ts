@@ -12,30 +12,23 @@ const rateLimits = new Map<string, { count: number; resetTime: number }>();
 
 // Check if admin is properly configured
 export function isAdminConfigured(): boolean {
-  const required = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS', 'ADMIN_EMAIL', 'JWT_SECRET'];
+  const required = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS', 'SMTP_SECURE', 'SMTP_REQUIRE_TLS', 'ADMIN_EMAIL', 'JWT_SECRET'];
   return required.every(key => process.env[key]);
 }
 
 // Get missing environment variables
 export function getMissingEnvVars(): string[] {
-  const required = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS', 'ADMIN_EMAIL', 'JWT_SECRET'];
+  const required = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS', 'SMTP_SECURE', 'SMTP_REQUIRE_TLS', 'ADMIN_EMAIL', 'JWT_SECRET'];
   return required.filter(key => !process.env[key]);
 }
 
-// Validate required environment variables (throws error)
-function validateEnvVars() {
-  const missing = getMissingEnvVars();
-  
-  if (missing.length > 0) {
-    throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
-  }
-}
 
 // Configuration from environment variables
 const SMTP_CONFIG = {
   host: process.env.SMTP_HOST!,
   port: parseInt(process.env.SMTP_PORT!),
-  secure: false, // true for 465, false for other ports
+  secure: process.env.SMTP_SECURE! === 'true', // SSL/TLS from start (port 465)
+  requireTLS: process.env.SMTP_REQUIRE_TLS! === 'true', // Force STARTTLS upgrade
   auth: {
     user: process.env.SMTP_USER!,
     pass: process.env.SMTP_PASS!,

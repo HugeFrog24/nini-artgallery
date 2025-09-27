@@ -33,6 +33,14 @@
     "enterMessageContent": "Ihren Nachrichteninhalt eingeben",
     "charactersCount": "{count}/{max} Zeichen"
   },
+  "ArtistSettings": {
+    "title": "Künstlerprofil-Einstellungen",
+    "description": "Verwalten Sie Ihre Künstlerprofil-Informationen",
+    "artistName": "Künstlername",
+    "artistDescription": "Künstlerbeschreibung",
+    "enterArtistName": "Künstlername eingeben",
+    "enterArtistDescription": "Künstlerbeschreibung eingeben"
+  },
   "Errors": {
     "failedToLoadSettings": "Einstellungen konnten nicht geladen werden",
     "failedToSaveSettings": "Einstellungen konnten nicht gespeichert werden",

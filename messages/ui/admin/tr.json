@@ -33,6 +33,14 @@
     "enterMessageContent": "Mesaj içeriğinizi girin",
     "charactersCount": "{count}/{max} karakter"
   },
+  "ArtistSettings": {
+    "title": "Sanatçı Profili Ayarları",
+    "description": "Sanatçı profil bilgilerinizi yönetin",
+    "artistName": "Sanatçı Adı",
+    "artistDescription": "Sanatçı Açıklaması",
+    "enterArtistName": "Sanatçı adını girin",
+    "enterArtistDescription": "Sanatçı açıklamasını girin"
+  },
   "Errors": {
     "failedToLoadSettings": "Ayarlar yüklenemedi",
     "failedToSaveSettings": "Ayarlar kaydedilemedi",
