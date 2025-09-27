@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
   const siteKeywords = getSiteKeywords();
   
   return {
-    title: `${artwork.title} | ${siteName}`,
+    title: artwork.title,
     description: artwork.description,
     keywords: [
       artwork.title,
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
       ...siteKeywords,
     ].filter(Boolean).join(", "),
     openGraph: {
-      title: `${artwork.title} | ${siteName}`,
+      title: artwork.title,
       description: artwork.description,
       type: "article",
       siteName: siteName,
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
     },
     twitter: {
       card: "summary",
-      title: `${artwork.title} | ${siteName}`,
+      title: artwork.title,
       description: artwork.description,
     },
     authors: [{ name: t('Artist.name') }],
