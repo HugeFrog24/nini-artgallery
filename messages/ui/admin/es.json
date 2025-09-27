@@ -1,11 +1,11 @@
 {
   "Dashboard": {
-    "title": "Panel de Administración",
+    "title": "Panel de Control",
     "subtitle": "Gestiona la configuración de tu galería de arte",
     "checkingConfiguration": "Verificando configuración…"
   },
   "Login": {
-    "title": "Inicio de Sesión de Administrador",
+    "title": "Inicio de Sesión",
     "emailStep": "Ingresa tu email para recibir un código de verificación",
     "otpStep": "Ingresa el código de verificación enviado a tu email",
     "notAvailable": "El inicio de sesión de administrador no está disponible",

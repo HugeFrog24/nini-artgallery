@@ -1,11 +1,11 @@
 {
   "Dashboard": {
-    "title": "Admin-Dashboard",
+    "title": "Dashboard",
     "subtitle": "Verwalten Sie Ihre Kunstgalerie-Einstellungen",
     "checkingConfiguration": "Konfiguration wird überprüft…"
   },
   "Login": {
-    "title": "Admin-Anmeldung",
+    "title": "Anmeldung",
     "emailStep": "Geben Sie Ihre E-Mail-Adresse ein, um einen Bestätigungscode zu erhalten",
     "otpStep": "Geben Sie den Bestätigungscode ein, der an Ihre E-Mail gesendet wurde",
     "notAvailable": "Admin-Anmeldung ist nicht verfügbar",

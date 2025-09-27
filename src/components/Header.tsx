@@ -113,15 +113,8 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
       `}
     >
       <div className="max-w-7xl mx-auto space-y-4">
-        <div className="flex justify-between items-start">
-          <div>
-            <Link href={`/${locale}`} className="inline-block">
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1 hover:text-accent-600 transition-colors">
-                {t('Site.name', { artistName: t('Artist.name') })}
-              </h1>
-            </Link>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{t('Site.subheading')}</p>
-          </div>
+        {/* Top row: Login and Language Switcher */}
+        <div className="flex justify-end items-center">
           <div className="flex items-center gap-3">
             <Link
               href={`/${locale}/admin/login`}
@@ -132,6 +125,16 @@ export default function Header({ currentSearch, onSearch, isLoading: externalLoa
             </Link>
             <LanguageSwitcher />
           </div>
+        </div>
+        
+        {/* Second row: Title and Description */}
+        <div className="text-center">
+          <Link href={`/${locale}`} className="inline-block">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1 hover:text-accent-600 transition-colors">
+              {t('Site.name', { artistName: t('Artist.name') })}
+            </h1>
+          </Link>
+          <p className="text-sm text-gray-600 dark:text-gray-300">{t('Site.subheading')}</p>
         </div>
         
         <form onSubmit={handleSubmit} className="relative">

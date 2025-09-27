@@ -1,11 +1,11 @@
 {
   "Dashboard": {
-    "title": "Yönetici Paneli",
+    "title": "Kontrol Paneli",
     "subtitle": "Sanat galerinizin ayarlarını yönetin",
     "checkingConfiguration": "Yapılandırma kontrol ediliyor…"
   },
   "Login": {
-    "title": "Yönetici Girişi",
+    "title": "Giriş",
     "emailStep": "Doğrulama kodu almak için e-posta adresinizi girin",
     "otpStep": "E-postanıza gönderilen doğrulama kodunu girin",
     "notAvailable": "Yönetici girişi mevcut değil",

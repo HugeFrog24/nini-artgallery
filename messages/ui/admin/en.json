@@ -1,11 +1,11 @@
 {
   "Dashboard": {
-    "title": "Admin Dashboard",
+    "title": "Dashboard",
     "subtitle": "Manage your art gallery settings",
     "checkingConfiguration": "Checking configuration…"
   },
   "Login": {
-    "title": "Admin Login",
+    "title": "Login",
     "emailStep": "Enter your email to receive a verification code",
     "otpStep": "Enter the verification code sent to your email",
     "notAvailable": "Admin login is not available",

@@ -60,21 +60,17 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
       title: `${artwork.title} | ${siteName}`,
       description: artwork.description,
       type: "article",
-      images: artwork.imageUrl ? [
-        {
-          url: artwork.imageUrl,
-          width: 800,
-          height: 600,
-          alt: artwork.title,
-        }
-      ] : undefined,
+      siteName: siteName,
+      locale: locale === 'en' ? 'en_US' : locale,
+      authors: [t('Artist.name')],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title: `${artwork.title} | ${siteName}`,
       description: artwork.description,
-      images: artwork.imageUrl ? [artwork.imageUrl] : undefined,
     },
+    authors: [{ name: t('Artist.name') }],
+    category: t(`Categories.${artwork.category}.title`),
   };
 }
 
