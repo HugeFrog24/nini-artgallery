@@ -36,14 +36,6 @@ export async function readUserArtistTranslations(): Promise<ArtistTranslations> 
   return artistTranslationsCache!;
 }
 
-/**
- * Get static artist translation from messages/artist/ (fallback for Weblate/Tolgee)
- */
-export async function getStaticArtistTranslation(locale: string): Promise<{ name: string; description: string }> {
-  const filePath = path.join(process.cwd(), 'messages', 'artist', `${locale}.json`);
-  const fileContent = await fs.readFile(filePath, 'utf-8');
-  return JSON.parse(fileContent);
-}
 
 /**
  * Write artist data to data/artist.json

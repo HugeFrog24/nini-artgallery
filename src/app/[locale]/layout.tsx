@@ -49,7 +49,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     creator: t('Artist.name'),
     category: 'art gallery',
     alternates: {
-      canonical: `/${locale}`,
       languages: Object.fromEntries(
         SUPPORTED_LOCALES.map(loc => [loc.code, `/${loc.code}`])
       ),

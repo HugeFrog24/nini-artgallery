@@ -20,23 +20,11 @@ export interface OTPVerification {
   otp: string;
 }
 
-export interface AdminAuthResponse {
-  success: boolean;
-  message: string;
-  token?: string;
-}
-
 export interface PersonalMessageUpdate {
   enabled: boolean;
   recipient: string;
   message: string;
   dismissible: boolean;
-}
-
-export interface ArtistUpdate {
-  name: string;
-  description: string;
-  translations?: ArtistTranslations;
 }
 
 export interface ArtistData {

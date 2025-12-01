@@ -7,7 +7,7 @@ import { useState, useEffect, RefObject } from 'react';
  * @param headerRef - React ref to the header element
  * @returns The current height of the header in pixels
  */
-export function useHeaderHeight(headerRef: RefObject<HTMLElement | null>) {
+function useHeaderHeight(headerRef: RefObject<HTMLElement | null>) {
   const [headerHeight, setHeaderHeight] = useState(0);
 
   useEffect(() => {

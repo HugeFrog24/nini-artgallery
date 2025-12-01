@@ -3,7 +3,7 @@ import { SUPPORTED_LOCALES } from '@/lib/locales';
 
 const supportedLocales = SUPPORTED_LOCALES.map(locale => locale.code);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Admin route authentication (now under locale structure)

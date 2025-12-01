@@ -3,7 +3,7 @@
  * This ensures consistency between LanguageSwitcher and admin translation management
  */
 
-export interface LocaleConfig {
+interface LocaleConfig {
   code: string;
   name: string;
   flag: string;
@@ -18,7 +18,6 @@ export const SUPPORTED_LOCALES: readonly LocaleConfig[] = [
   { code: 'tr', name: 'Türkçe', flag: '🇹🇷' }
 ] as const;
 
-export type SupportedLocaleCode = typeof SUPPORTED_LOCALES[number]['code'];
 
 /**
  * Get locale configuration by code
@@ -27,19 +26,6 @@ export function getLocaleConfig(code: string): LocaleConfig | undefined {
   return SUPPORTED_LOCALES.find(locale => locale.code === code);
 }
 
-/**
- * Get all locale codes
- */
-export function getLocaleCodes(): string[] {
-  return SUPPORTED_LOCALES.map(locale => locale.code);
-}
-
-/**
- * Check if a locale code is supported
- */
-export function isSupportedLocale(code: string): code is SupportedLocaleCode {
-  return SUPPORTED_LOCALES.some(locale => locale.code === code);
-}
 
 /**
  * Get locales for admin translation management (without flags)

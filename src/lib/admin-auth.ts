@@ -188,7 +188,7 @@ export function isAuthorizedEmail(email: string): boolean {
 }
 
 // Clean up expired sessions (call periodically)
-export function cleanupExpiredSessions(): void {
+function cleanupExpiredSessions(): void {
   const now = Date.now();
   
   // Clean up OTP sessions
