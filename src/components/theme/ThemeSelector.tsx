@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 export default function ThemeSelector() {
   const { theme, setAccentColor, setColorScheme, systemPrefersDark } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations();
@@ -48,6 +49,18 @@ export default function ThemeSelector() {
     }
   }, [isOpen]);
 
+  // Radial animation effect every 15 seconds when closed
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isOpen) { // Only animate when dropdown is closed
+        setIsAnimating(true);
+        setTimeout(() => setIsAnimating(false), 2000); // Animation duration
+      }
+    }, 15000); // Every 15 seconds
+
+    return () => clearInterval(interval);
+  }, [isOpen]); // Include isOpen dependency
+
   const handleColorSelect = (color: AccentColor) => {
     setAccentColor(color);
     setIsOpen(false);
@@ -58,19 +71,44 @@ export default function ThemeSelector() {
     setIsOpen(false);
   };
 
+  // Unified glow ring configuration
+  const glowRings = [
+    { opacity: '/50', blur: '', scale: isOpen ? 'scale-200' : '', delay: '0s' },
+    { opacity: '/35', blur: 'blur-[1px]', scale: isOpen ? 'scale-175' : '', delay: '0.3s' },
+    { opacity: '/20', blur: 'blur-[2px]', scale: isOpen ? 'scale-150' : '', delay: '0.6s' }
+  ];
+
+  const shouldShowGlow = isOpen || isAnimating;
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Theme selector button */}
-      <button
-        ref={buttonRef}
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-accent-500 shadow-lg rounded-full p-3 border border-accent-600 hover:bg-accent-600 hover:shadow-xl transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500"
-        aria-label={t('Theme.changeThemeColors')}
-        aria-expanded={isOpen}
-        aria-haspopup="true"
-      >
-        <SwatchIcon className="h-6 w-6 text-white" />
-      </button>
+      {/* Theme selector button with unified radial glow system */}
+      <div className="relative">
+        {/* Unified glow rings - permanent when open, animated when pulsing */}
+        {shouldShowGlow && glowRings.map((ring, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 rounded-full bg-accent-500${ring.opacity} ${ring.blur} ${ring.scale}`}
+            style={!isOpen ? {
+              animation: 'radialWave 2s ease-out forwards',
+              animationDelay: ring.delay
+            } : undefined}
+          />
+        ))}
+        
+        <button
+          ref={buttonRef}
+          onClick={() => setIsOpen(!isOpen)}
+          className={`relative z-10 w-12 h-12 bg-accent-500 shadow-lg rounded-full border border-accent-600 hover:bg-accent-600 hover:shadow-xl transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 flex items-center justify-center ${
+            shouldShowGlow ? 'scale-105' : ''
+          }`}
+          aria-label={t('Theme.changeThemeColors')}
+          aria-expanded={isOpen}
+          aria-haspopup="true"
+        >
+          <SwatchIcon className="h-6 w-6 text-white" />
+        </button>
+      </div>
 
       {/* Theme selection dropdown */}
       {isOpen && (

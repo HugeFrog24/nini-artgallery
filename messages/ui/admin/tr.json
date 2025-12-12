@@ -1,13 +1,11 @@
 {
   "Dashboard": {
-    "title": "Yönetici Paneli",
+    "title": "Kontrol Paneli",
     "subtitle": "Sanat galerinizin ayarlarını yönetin",
-    "logout": "Çıkış Yap",
-    "loading": "Yükleniyor…",
     "checkingConfiguration": "Yapılandırma kontrol ediliyor…"
   },
   "Login": {
-    "title": "Yönetici Girişi",
+    "title": "Giriş",
     "emailStep": "Doğrulama kodu almak için e-posta adresinizi girin",
     "otpStep": "E-postanıza gönderilen doğrulama kodunu girin",
     "notAvailable": "Yönetici girişi mevcut değil",
@@ -16,10 +14,7 @@
     "emailAddress": "E-posta adresi",
     "verificationCode": "Doğrulama Kodu",
     "sendVerificationCode": "Doğrulama Kodu Gönder",
-    "sending": "Gönderiliyor…",
     "verifyAndLogin": "Doğrula ve Giriş Yap",
-    "verifying": "Doğrulanıyor…",
-    "back": "Geri",
     "sentTo": "Gönderildi:",
     "useDifferentEmail": "Farklı e-posta kullan",
     "loginSuccessful": "Giriş başarılı! Yönlendiriliyor…",
@@ -33,11 +28,18 @@
     "messageContent": "Mesaj İçeriği",
     "allowDismiss": "Ziyaretçilerin mesajı kapatmasına izin ver",
     "saveChanges": "Değişiklikleri Kaydet",
-    "saving": "Kaydediliyor…",
     "settingsSaved": "Ayarlar başarıyla kaydedildi!",
     "enterMessageTitle": "Mesaj başlığını girin",
     "enterMessageContent": "Mesaj içeriğinizi girin",
     "charactersCount": "{count}/{max} karakter"
+  },
+  "ArtistSettings": {
+    "title": "Sanatçı Profili Ayarları",
+    "description": "Sanatçı profil bilgilerinizi yönetin",
+    "artistName": "Sanatçı Adı",
+    "artistDescription": "Sanatçı Açıklaması",
+    "enterArtistName": "Sanatçı adını girin",
+    "enterArtistDescription": "Sanatçı açıklamasını girin"
   },
   "Errors": {
     "failedToLoadSettings": "Ayarlar yüklenemedi",

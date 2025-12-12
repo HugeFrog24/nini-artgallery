@@ -67,8 +67,8 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
                 and personal content, not a UI element that should be translated */}
             {personalMessage.enabled && isNoteVisible && (
               <div className={`
-                bg-accent-50 dark:bg-accent-500/10 rounded-lg p-4 border border-accent-100 dark:border-accent-500/20 relative transition-all duration-300 ease-in-out overflow-hidden
-                ${isAnimatingOut ? 'max-h-0 opacity-0 scale-y-0 transform origin-top py-0 border-0' : 'max-h-96 opacity-100 scale-y-100'}
+                bg-accent-50 dark:bg-accent-500/10 rounded-lg p-4 border border-accent-100 dark:border-accent-500/20 relative transition-all duration-300 ease-in-out
+                ${isAnimatingOut ? 'max-h-0 opacity-0 scale-y-0 transform origin-top py-0 border-0 overflow-hidden' : 'opacity-100 scale-y-100'}
               `}>
                 {personalMessage.dismissible && (
                   <button
@@ -84,7 +84,7 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
                     {personalMessage.recipient}
                   </h3>
                 )}
-                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8">
+                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8 text-justify">
                   {personalMessage.message}
                 </p>
               </div>

@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 
 // Server-side translation helper for admin functions
-export async function getAdminTranslations(locale?: string) {
+async function getAdminTranslations(locale?: string) {
   // Get locale from cookie if not provided
   if (!locale) {
     const cookieStore = await cookies();
