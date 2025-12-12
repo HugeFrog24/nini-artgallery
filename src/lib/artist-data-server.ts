@@ -1,8 +1,8 @@
-import 'server-only';
+import "server-only";
 
-import { promises as fs } from 'fs';
-import path from 'path';
-import { ArtistData, ArtistTranslations } from '@/types/admin';
+import { promises as fs } from "fs";
+import path from "path";
+import { ArtistData, ArtistTranslations } from "@/types/admin";
 
 // Cache for artist data to avoid repeated file reads
 let artistDataCache: ArtistData | null = null;
@@ -16,8 +16,8 @@ export async function readUserArtistData(): Promise<ArtistData> {
     return artistDataCache;
   }
 
-  const filePath = path.join(process.cwd(), 'data', 'artist.json');
-  const fileContent = await fs.readFile(filePath, 'utf-8');
+  const filePath = path.join(process.cwd(), "data", "artist.json");
+  const fileContent = await fs.readFile(filePath, "utf-8");
   artistDataCache = JSON.parse(fileContent);
   return artistDataCache!;
 }
@@ -30,26 +30,27 @@ export async function readUserArtistTranslations(): Promise<ArtistTranslations> 
     return artistTranslationsCache;
   }
 
-  const filePath = path.join(process.cwd(), 'data', 'artist-translations.json');
-  const fileContent = await fs.readFile(filePath, 'utf-8');
+  const filePath = path.join(process.cwd(), "data", "artist-translations.json");
+  const fileContent = await fs.readFile(filePath, "utf-8");
   artistTranslationsCache = JSON.parse(fileContent);
   return artistTranslationsCache!;
 }
 
-
 /**
  * Write artist data to data/artist.json
  */
-export async function writeUserArtistData(data: Omit<ArtistData, 'defaultLanguage'>): Promise<void> {
+export async function writeUserArtistData(
+  data: Omit<ArtistData, "defaultLanguage">,
+): Promise<void> {
   const userData = await readUserArtistData();
   const updatedData: ArtistData = {
     ...data,
-    defaultLanguage: userData.defaultLanguage
+    defaultLanguage: userData.defaultLanguage,
   };
 
-  const filePath = path.join(process.cwd(), 'data', 'artist.json');
-  await fs.writeFile(filePath, JSON.stringify(updatedData, null, 2), 'utf-8');
-  
+  const filePath = path.join(process.cwd(), "data", "artist.json");
+  await fs.writeFile(filePath, JSON.stringify(updatedData, null, 2), "utf-8");
+
   // Clear cache to force reload
   artistDataCache = null;
 }
@@ -57,10 +58,12 @@ export async function writeUserArtistData(data: Omit<ArtistData, 'defaultLanguag
 /**
  * Write user translations to data/artist-translations.json
  */
-export async function writeUserArtistTranslations(translations: ArtistTranslations): Promise<void> {
-  const filePath = path.join(process.cwd(), 'data', 'artist-translations.json');
-  await fs.writeFile(filePath, JSON.stringify(translations, null, 2), 'utf-8');
-  
+export async function writeUserArtistTranslations(
+  translations: ArtistTranslations,
+): Promise<void> {
+  const filePath = path.join(process.cwd(), "data", "artist-translations.json");
+  await fs.writeFile(filePath, JSON.stringify(translations, null, 2), "utf-8");
+
   // Clear cache to force reload
   artistTranslationsCache = null;
 }

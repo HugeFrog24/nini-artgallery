@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface SettingsCardProps {
   title: string;
@@ -8,7 +8,13 @@ interface SettingsCardProps {
   children: ReactNode;
 }
 
-export default function SettingsCard({ title, description, error, success, children }: SettingsCardProps) {
+export default function SettingsCard({
+  title,
+  description,
+  error,
+  success,
+  children,
+}: SettingsCardProps) {
   return (
     <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
       <div className="px-4 py-5 sm:p-6">

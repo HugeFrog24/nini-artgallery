@@ -1,38 +1,40 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { verifyAdminToken } from '@/lib/admin-auth';
-import { PersonalMessageUpdate } from '@/types/admin';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { NextRequest, NextResponse } from "next/server";
+import { verifyAdminToken } from "@/lib/admin-auth";
+import { PersonalMessageUpdate } from "@/types/admin";
+import { promises as fs } from "fs";
+import path from "path";
 
-export const runtime = 'nodejs';
+export const runtime = "nodejs";
 
 // Helper function to verify admin authentication
 function getAdminSession(request: NextRequest) {
   // Try to get token from cookie first, then from Authorization header
-  const cookieToken = request.cookies.get('admin-token')?.value;
-  const authHeader = request.headers.get('authorization');
-  const headerToken = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null;
-  
+  const cookieToken = request.cookies.get("admin-token")?.value;
+  const authHeader = request.headers.get("authorization");
+  const headerToken = authHeader?.startsWith("Bearer ")
+    ? authHeader.slice(7)
+    : null;
+
   const token = cookieToken || headerToken;
-  
-  console.log('Auth debug:', {
+
+  console.log("Auth debug:", {
     hasCookie: !!cookieToken,
     hasHeader: !!headerToken,
     hasToken: !!token,
-    cookieValue: cookieToken ? 'present' : 'missing'
+    cookieValue: cookieToken ? "present" : "missing",
   });
-  
+
   if (!token) {
-    console.log('No token found');
+    console.log("No token found");
     return null;
   }
-  
+
   try {
     const result = verifyAdminToken(token);
-    console.log('Token verification result:', result ? 'valid' : 'invalid');
+    console.log("Token verification result:", result ? "valid" : "invalid");
     return result;
   } catch (error) {
-    console.error('Token verification error:', error);
+    console.error("Token verification error:", error);
     return null;
   }
 }
@@ -43,26 +45,25 @@ export async function GET(request: NextRequest) {
     const adminSession = getAdminSession(request);
     if (!adminSession) {
       return NextResponse.json(
-        { success: false, message: 'Unauthorized' },
-        { status: 401 }
+        { success: false, message: "Unauthorized" },
+        { status: 401 },
       );
     }
 
     // Read current personal message
-    const filePath = path.join(process.cwd(), 'data', 'personal-message.json');
-    const fileContent = await fs.readFile(filePath, 'utf-8');
+    const filePath = path.join(process.cwd(), "data", "personal-message.json");
+    const fileContent = await fs.readFile(filePath, "utf-8");
     const personalMessage = JSON.parse(fileContent);
 
     return NextResponse.json({
       success: true,
-      data: personalMessage
+      data: personalMessage,
     });
-
   } catch (error) {
-    console.error('Error reading personal message:', error);
+    console.error("Error reading personal message:", error);
     return NextResponse.json(
-      { success: false, message: 'Failed to read personal message' },
-      { status: 500 }
+      { success: false, message: "Failed to read personal message" },
+      { status: 500 },
     );
   }
 }
@@ -73,8 +74,8 @@ export async function PUT(request: NextRequest) {
     const adminSession = getAdminSession(request);
     if (!adminSession) {
       return NextResponse.json(
-        { success: false, message: 'Unauthorized' },
-        { status: 401 }
+        { success: false, message: "Unauthorized" },
+        { status: 401 },
       );
     }
 
@@ -82,28 +83,33 @@ export async function PUT(request: NextRequest) {
     const { enabled, recipient, message, dismissible } = body;
 
     // Validate input
-    if (typeof enabled !== 'boolean' || 
-        typeof recipient !== 'string' || 
-        typeof message !== 'string' || 
-        typeof dismissible !== 'boolean') {
+    if (
+      typeof enabled !== "boolean" ||
+      typeof recipient !== "string" ||
+      typeof message !== "string" ||
+      typeof dismissible !== "boolean"
+    ) {
       return NextResponse.json(
-        { success: false, message: 'Invalid input data' },
-        { status: 400 }
+        { success: false, message: "Invalid input data" },
+        { status: 400 },
       );
     }
 
     // Validate string lengths
     if (recipient.length > 100) {
       return NextResponse.json(
-        { success: false, message: 'Recipient name too long (max 100 characters)' },
-        { status: 400 }
+        {
+          success: false,
+          message: "Recipient name too long (max 100 characters)",
+        },
+        { status: 400 },
       );
     }
 
     if (message.length > 2000) {
       return NextResponse.json(
-        { success: false, message: 'Message too long (max 2000 characters)' },
-        { status: 400 }
+        { success: false, message: "Message too long (max 2000 characters)" },
+        { status: 400 },
       );
     }
 
@@ -113,24 +119,27 @@ export async function PUT(request: NextRequest) {
       recipient: recipient.trim(),
       message: message.trim(),
       dismissible,
-      ariaLabel: `Personal message for ${recipient.trim()}`
+      ariaLabel: `Personal message for ${recipient.trim()}`,
     };
 
     // Write to file
-    const filePath = path.join(process.cwd(), 'data', 'personal-message.json');
-    await fs.writeFile(filePath, JSON.stringify(updatedMessage, null, 2), 'utf-8');
+    const filePath = path.join(process.cwd(), "data", "personal-message.json");
+    await fs.writeFile(
+      filePath,
+      JSON.stringify(updatedMessage, null, 2),
+      "utf-8",
+    );
 
     return NextResponse.json({
       success: true,
-      message: 'Personal message updated successfully',
-      data: updatedMessage
+      message: "Personal message updated successfully",
+      data: updatedMessage,
     });
-
   } catch (error) {
-    console.error('Error updating personal message:', error);
+    console.error("Error updating personal message:", error);
     return NextResponse.json(
-      { success: false, message: 'Failed to update personal message' },
-      { status: 500 }
+      { success: false, message: "Failed to update personal message" },
+      { status: 500 },
     );
   }
 }

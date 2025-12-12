@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useLocale } from 'next-intl';
-import { useState } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { SUPPORTED_LOCALES, getLocaleConfig } from '@/lib/locales';
+import { useLocale } from "next-intl";
+import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
+import { SUPPORTED_LOCALES, getLocaleConfig } from "@/lib/locales";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -15,10 +15,10 @@ export default function LanguageSwitcher() {
   const handleLanguageChange = (newLocale: string) => {
     // Set cookie for preference
     document.cookie = `locale=${newLocale}; path=/; max-age=31536000`; // 1 year
-    
+
     // Navigate to the new locale URL
     // Remove current locale from pathname and add new locale
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/';
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, "") || "/";
     const newPath = `/${newLocale}${pathWithoutLocale}`;
     router.push(newPath);
   };
@@ -49,9 +49,10 @@ export default function LanguageSwitcher() {
                 }}
                 className={`
                   w-full text-left px-4 py-2 text-sm flex items-center space-x-3
-                  ${language.code === locale 
-                    ? 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white' 
-                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  ${
+                    language.code === locale
+                      ? "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white"
+                      : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                   }
                   transition-colors
                 `}

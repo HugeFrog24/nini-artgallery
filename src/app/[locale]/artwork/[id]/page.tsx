@@ -11,12 +11,14 @@ interface ArtworkPageProps {
   params: Promise<{ locale: string; id: string }>;
 }
 
-export async function generateMetadata({ params }: ArtworkPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ArtworkPageProps): Promise<Metadata> {
   const { locale, id } = await params;
-  
+
   // For metadata generation, use getTranslations with locale
   const t = await getTranslations({ locale });
-  
+
   // Create translation function compatible with mergeArtworksWithTranslations
   const translateFn = (key: string) => {
     try {
@@ -28,9 +30,10 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
       throw new Error(errorMessage);
     }
   };
-  
+
   // Get translated sections directly
-  const sections: CategorySection[] = mergeArtworksWithTranslations(translateFn);
+  const sections: CategorySection[] =
+    mergeArtworksWithTranslations(translateFn);
   let artwork: Artwork | null = null;
   for (const section of sections) {
     artwork = section.artworks.find((art: Artwork) => art.id === id) || null;
@@ -44,42 +47,39 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
     };
   }
 
-  const siteName = t('Site.name', { artistName: t('Artist.name') });
+  const siteName = t("Site.name", { artistName: t("Artist.name") });
   const siteKeywords = getSiteKeywords();
-  
+
   return {
     title: artwork.title,
     description: artwork.description,
-    keywords: [
-      artwork.title,
-      artwork.category,
-      artwork.medium,
-      ...siteKeywords,
-    ].filter(Boolean).join(", "),
+    keywords: [artwork.title, artwork.category, artwork.medium, ...siteKeywords]
+      .filter(Boolean)
+      .join(", "),
     openGraph: {
       title: artwork.title,
       description: artwork.description,
       type: "article",
       siteName: siteName,
-      locale: locale === 'en' ? 'en_US' : locale,
-      authors: [t('Artist.name')],
+      locale: locale === "en" ? "en_US" : locale,
+      authors: [t("Artist.name")],
     },
     twitter: {
       card: "summary",
       title: artwork.title,
       description: artwork.description,
     },
-    authors: [{ name: t('Artist.name') }],
+    authors: [{ name: t("Artist.name") }],
     category: t(`Categories.${artwork.category}.title`),
   };
 }
 
 export async function generateStaticParams() {
   // Generate params for all locale/artwork combinations
-  const { getBaseArtworks } = await import('@/lib/artworks');
+  const { getBaseArtworks } = await import("@/lib/artworks");
   const baseSections = getBaseArtworks();
-  const artworks = baseSections.flatMap(section => section.artworks);
-  
+  const artworks = baseSections.flatMap((section) => section.artworks);
+
   const params = [];
   for (const locale of SUPPORTED_LOCALES) {
     for (const artwork of artworks) {
@@ -89,16 +89,16 @@ export async function generateStaticParams() {
       });
     }
   }
-  
+
   return params;
 }
 
 export default async function ArtworkPage({ params }: ArtworkPageProps) {
   const { locale, id } = await params;
-  
+
   // Use getTranslations with locale parameter
   const t = await getTranslations({ locale });
-  
+
   // Create translation function compatible with mergeArtworksWithTranslations
   const translateFn = (key: string) => {
     try {
@@ -110,9 +110,10 @@ export default async function ArtworkPage({ params }: ArtworkPageProps) {
       throw new Error(errorMessage);
     }
   };
-  
+
   // Get translated sections directly
-  const sections: CategorySection[] = mergeArtworksWithTranslations(translateFn);
+  const sections: CategorySection[] =
+    mergeArtworksWithTranslations(translateFn);
   let artwork: Artwork | null = null;
   for (const section of sections) {
     artwork = section.artworks.find((art: Artwork) => art.id === id) || null;

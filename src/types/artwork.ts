@@ -1,4 +1,4 @@
-type ArtCategory = 'origami' | 'crochet' | 'paintings' | 'fingernails';
+type ArtCategory = "origami" | "crochet" | "paintings" | "fingernails";
 
 export interface Artwork {
   id: string;

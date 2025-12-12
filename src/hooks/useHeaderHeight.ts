@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect, RefObject } from 'react';
+import { useState, useEffect, RefObject } from "react";
 
 /**
  * Custom hook to dynamically measure header height
@@ -31,11 +31,11 @@ function useHeaderHeight(headerRef: RefObject<HTMLElement | null>) {
     }
 
     // Also listen for window resize events as fallback
-    window.addEventListener('resize', updateHeight);
+    window.addEventListener("resize", updateHeight);
 
     return () => {
       resizeObserver.disconnect();
-      window.removeEventListener('resize', updateHeight);
+      window.removeEventListener("resize", updateHeight);
     };
   }, [headerRef]);
 
@@ -52,7 +52,10 @@ export function useHeaderHeightCSS(headerRef: RefObject<HTMLElement | null>) {
 
   useEffect(() => {
     // Update CSS custom property for use in styles
-    document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+    document.documentElement.style.setProperty(
+      "--header-height",
+      `${headerHeight}px`,
+    );
   }, [headerHeight]);
 
   return headerHeight;

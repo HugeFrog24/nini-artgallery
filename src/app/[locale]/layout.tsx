@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { notFound } from 'next/navigation';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
-import { SUPPORTED_LOCALES } from '@/lib/locales';
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations } from "next-intl/server";
+import { SUPPORTED_LOCALES } from "@/lib/locales";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import ThemeSelector from "@/components/theme/ThemeSelector";
 import Header from "@/components/Header";
@@ -16,18 +16,22 @@ interface LocaleLayoutProps {
 }
 
 // Generate metadata using translations with locale
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale });
-  const siteName = t('Site.name', { artistName: t('Artist.name') });
-  const siteDescription = t('Site.description');
-  
+  const siteName = t("Site.name", { artistName: t("Artist.name") });
+  const siteDescription = t("Site.description");
+
   return {
     title: {
       template: `%s | ${siteName}`,
       default: `${siteName} | ${siteDescription}`,
     },
-    description: t('Site.longDescription', { artistName: t('Artist.name') }),
+    description: t("Site.longDescription", { artistName: t("Artist.name") }),
     keywords: getSiteKeywords(),
     robots: {
       index: true,
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     openGraph: {
       type: "website",
-      locale: locale === 'en' ? 'en_US' : locale,
+      locale: locale === "en" ? "en_US" : locale,
       title: siteName,
       description: siteDescription,
       siteName: siteName,
@@ -45,12 +49,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: siteName,
       description: siteDescription,
     },
-    authors: [{ name: t('Artist.name') }],
-    creator: t('Artist.name'),
-    category: 'art gallery',
+    authors: [{ name: t("Artist.name") }],
+    creator: t("Artist.name"),
+    category: "art gallery",
     alternates: {
       languages: Object.fromEntries(
-        SUPPORTED_LOCALES.map(loc => [loc.code, `/${loc.code}`])
+        SUPPORTED_LOCALES.map((loc) => [loc.code, `/${loc.code}`]),
       ),
     },
   };
@@ -61,12 +65,12 @@ export default async function LocaleLayout({
   params,
 }: LocaleLayoutProps) {
   const { locale } = await params;
-  
+
   // Validate that the incoming `locale` parameter is valid
   const isValidLocale = SUPPORTED_LOCALES.some(
-    (supportedLocale) => supportedLocale.code === locale
+    (supportedLocale) => supportedLocale.code === locale,
   );
-  
+
   if (!isValidLocale) {
     notFound();
   }
@@ -83,7 +87,7 @@ export default async function LocaleLayout({
         </Suspense>
         <div
           className="min-h-full bg-gray-50 dark:bg-gray-900"
-          style={{ paddingTop: 'var(--header-height, 160px)' }}
+          style={{ paddingTop: "var(--header-height, 160px)" }}
           role="region"
           aria-label="Art gallery content"
         >

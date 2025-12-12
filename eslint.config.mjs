@@ -5,7 +5,13 @@ import tsparser from "@typescript-eslint/parser";
 
 const eslintConfig = [
   {
-    ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts"]
+    ignores: [
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
+    ],
   },
   js.configs.recommended,
   {
@@ -16,23 +22,23 @@ const eslintConfig = [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.es2021
-      }
+        ...globals.es2021,
+      },
     },
     rules: {
       "no-unused-vars": [
         "error",
         {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_",
-          "caughtErrorsIgnorePattern": "^_",
-          "ignoreRestSiblings": true
-        }
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
       ],
       "no-console": "warn",
       "prefer-const": "error",
-      "no-var": "error"
-    }
+      "no-var": "error",
+    },
   },
   {
     files: ["**/*.{ts,tsx}"],
@@ -45,33 +51,33 @@ const eslintConfig = [
         ...globals.node,
         ...globals.es2021,
         React: "readonly",
-        JSX: "readonly"
+        JSX: "readonly",
       },
       parserOptions: {
         ecmaFeatures: {
-          jsx: true
-        }
-      }
+          jsx: true,
+        },
+      },
     },
     plugins: {
-      "@typescript-eslint": tseslint
+      "@typescript-eslint": tseslint,
     },
     rules: {
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_",
-          "caughtErrorsIgnorePattern": "^_",
-          "ignoreRestSiblings": true
-        }
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
       ],
       "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-explicit-any": "warn",
-      "no-console": "warn"
-    }
-  }
+      "no-console": "warn",
+    },
+  },
 ];
 
 export default eslintConfig;

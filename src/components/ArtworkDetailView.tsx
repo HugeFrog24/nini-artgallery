@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import { Artwork } from "@/types/artwork";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 interface ArtworkDetailViewProps {
   artwork: Artwork;
@@ -23,10 +23,12 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
         <button
           onClick={handleBack}
           className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-          aria-label={t('ArtworkDetail.backToGalleryAriaLabel')}
+          aria-label={t("ArtworkDetail.backToGalleryAriaLabel")}
         >
           <ArrowLeftIcon className="h-5 w-5" />
-          <span className="text-sm font-medium">{t('ArtworkDetail.backToGallery')}</span>
+          <span className="text-sm font-medium">
+            {t("ArtworkDetail.backToGallery")}
+          </span>
         </button>
       </div>
 
@@ -41,12 +43,12 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
               role="img"
               aria-label={`${artwork.title} - ${artwork.medium}`}
             />
-            
+
             {/* Image caption */}
             <div className="text-center">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {t('ArtworkDetail.categoryArtwork', {
-                  category: t(`Categories.${artwork.category}.title`)
+                {t("ArtworkDetail.categoryArtwork", {
+                  category: t(`Categories.${artwork.category}.title`),
                 })}
               </p>
             </div>
@@ -66,13 +68,13 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
             {/* Artwork metadata */}
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 transition-colors">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                {t('ArtworkDetail.artworkDetails')}
+                {t("ArtworkDetail.artworkDetails")}
               </h2>
-              
+
               <dl className="space-y-3">
                 <div className="flex flex-col sm:flex-row sm:justify-between">
                   <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                    {t('ArtworkDetail.category')}
+                    {t("ArtworkDetail.category")}
                   </dt>
                   <dd className="text-sm text-gray-900 dark:text-white">
                     {t(`Categories.${artwork.category}.title`)}
@@ -82,7 +84,7 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
                 {artwork.medium && (
                   <div className="flex flex-col sm:flex-row sm:justify-between">
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {t('Artwork.medium')}
+                      {t("Artwork.medium")}
                     </dt>
                     <dd className="text-sm text-gray-900 dark:text-white">
                       {artwork.medium}
@@ -93,7 +95,7 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
                 {artwork.dimensions && (
                   <div className="flex flex-col sm:flex-row sm:justify-between">
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {t('Artwork.dimensions')}
+                      {t("Artwork.dimensions")}
                     </dt>
                     <dd className="text-sm text-gray-900 dark:text-white">
                       {artwork.dimensions}
@@ -104,7 +106,7 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
                 {artwork.year && (
                   <div className="flex flex-col sm:flex-row sm:justify-between">
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {t('Artwork.year')}
+                      {t("Artwork.year")}
                     </dt>
                     <dd className="text-sm text-gray-900 dark:text-white">
                       {artwork.year}
@@ -120,9 +122,9 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
                 onClick={handleBack}
                 className="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               >
-                {t('ArtworkDetail.viewMoreArtworks')}
+                {t("ArtworkDetail.viewMoreArtworks")}
               </button>
-              
+
               <button
                 onClick={() => {
                   if (navigator.share) {
@@ -137,7 +139,7 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
                 }}
                 className="flex-1 bg-accent-600 dark:bg-accent-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-accent-700 dark:hover:bg-accent-600 transition-colors"
               >
-                {t('ArtworkDetail.shareArtwork')}
+                {t("ArtworkDetail.shareArtwork")}
               </button>
             </div>
           </div>

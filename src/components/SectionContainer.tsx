@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState, useMemo } from 'react';
-import { CategorySection, Artwork } from '@/types/artwork';
-import SectionHeader from './SectionHeader';
-import ArtworkGrid from './ArtworkGrid';
+import { useState, useMemo } from "react";
+import { CategorySection, Artwork } from "@/types/artwork";
+import SectionHeader from "./SectionHeader";
+import ArtworkGrid from "./ArtworkGrid";
 
 interface SectionContainerProps {
   section: CategorySection;
@@ -12,7 +12,7 @@ interface SectionContainerProps {
 export default function SectionContainer({ section }: SectionContainerProps) {
   const [sortConfig, setSortConfig] = useState<{
     key: string;
-    order: 'asc' | 'desc';
+    order: "asc" | "desc";
   } | null>(null);
 
   const sortedArtworks = useMemo(() => {
@@ -25,17 +25,17 @@ export default function SectionContainer({ section }: SectionContainerProps) {
       if (aValue === undefined || bValue === undefined) return 0;
 
       let comparison = 0;
-      if (typeof aValue === 'string' && typeof bValue === 'string') {
+      if (typeof aValue === "string" && typeof bValue === "string") {
         comparison = aValue.localeCompare(bValue);
       } else {
         comparison = aValue < bValue ? -1 : aValue > bValue ? 1 : 0;
       }
 
-      return sortConfig.order === 'asc' ? comparison : -comparison;
+      return sortConfig.order === "asc" ? comparison : -comparison;
     });
   }, [section.artworks, sortConfig]);
 
-  const handleSort = (sortBy: string, order: 'asc' | 'desc') => {
+  const handleSort = (sortBy: string, order: "asc" | "desc") => {
     setSortConfig({ key: sortBy, order });
   };
 
@@ -50,10 +50,7 @@ export default function SectionContainer({ section }: SectionContainerProps) {
         description={section.description}
         onSort={handleSort}
       />
-      <ArtworkGrid
-        artworks={sortedArtworks}
-        category={section.title}
-      />
+      <ArtworkGrid artworks={sortedArtworks} category={section.title} />
     </section>
   );
 }

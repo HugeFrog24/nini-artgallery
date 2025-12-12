@@ -1,15 +1,17 @@
-import { cookies } from 'next/headers';
+import { cookies } from "next/headers";
 
 // Server-side translation helper for admin functions
 async function getAdminTranslations(locale?: string) {
   // Get locale from cookie if not provided
   if (!locale) {
     const cookieStore = await cookies();
-    locale = cookieStore.get('locale')?.value || 'en';
+    locale = cookieStore.get("locale")?.value || "en";
   }
 
   try {
-    const adminMessages = await import(`../../messages/ui/admin/${locale}.json`);
+    const adminMessages = await import(
+      `../../messages/ui/admin/${locale}.json`
+    );
     return adminMessages.default;
   } catch {
     // Fallback to English if locale not found

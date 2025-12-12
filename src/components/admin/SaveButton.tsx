@@ -5,7 +5,12 @@ interface SaveButtonProps {
   disabled?: boolean;
 }
 
-export default function SaveButton({ isLoading, loadingText, saveText, disabled }: SaveButtonProps) {
+export default function SaveButton({
+  isLoading,
+  loadingText,
+  saveText,
+  disabled,
+}: SaveButtonProps) {
   return (
     <div className="flex justify-end pt-4 border-t border-gray-200 dark:border-gray-700">
       <button
