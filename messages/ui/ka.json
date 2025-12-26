@@ -12,7 +12,7 @@
   },
   "Artwork": {
     "medium": "მასალა",
-    "dimensions": "ზომები", 
+    "dimensions": "ზომები",
     "year": "წელი",
     "description": "აღწერა"
   },
@@ -67,7 +67,13 @@
     "loading": "იტვირთება…",
     "error": "მოხდა შეცდომა",
     "retry": "ხელახლა ცდა",
+    "back": "უკან",
+    "saving": "ინახება…",
+    "sending": "იგზავნება…",
+    "verifying": "მოწმდება…",
+    "logout": "გასვლა",
     "closeBroadcastMessage": "შეტყობინების დახურვა",
-    "login": "შესვლა"
+    "login": "შესვლა",
+    "preview": "წინასწარი ხედვა"
   }
 }

@@ -1,13 +1,11 @@
 {
   "Dashboard": {
-    "title": "Panel de Administración",
+    "title": "Panel de Control",
     "subtitle": "Gestiona la configuración de tu galería de arte",
-    "logout": "Cerrar sesión",
-    "loading": "Cargando…",
     "checkingConfiguration": "Verificando configuración…"
   },
   "Login": {
-    "title": "Inicio de Sesión de Administrador",
+    "title": "Inicio de Sesión",
     "emailStep": "Ingresa tu email para recibir un código de verificación",
     "otpStep": "Ingresa el código de verificación enviado a tu email",
     "notAvailable": "El inicio de sesión de administrador no está disponible",
@@ -16,10 +14,7 @@
     "emailAddress": "Dirección de email",
     "verificationCode": "Código de Verificación",
     "sendVerificationCode": "Enviar Código de Verificación",
-    "sending": "Enviando…",
     "verifyAndLogin": "Verificar e Iniciar Sesión",
-    "verifying": "Verificando…",
-    "back": "Atrás",
     "sentTo": "Enviado a:",
     "useDifferentEmail": "Usar email diferente",
     "loginSuccessful": "¡Inicio de sesión exitoso! Redirigiendo…",
@@ -33,11 +28,18 @@
     "messageContent": "Contenido del Mensaje",
     "allowDismiss": "Permitir a los visitantes cerrar el mensaje",
     "saveChanges": "Guardar Cambios",
-    "saving": "Guardando…",
     "settingsSaved": "¡Configuración guardada exitosamente!",
     "enterMessageTitle": "Ingresa el título del mensaje",
     "enterMessageContent": "Ingresa el contenido de tu mensaje",
     "charactersCount": "{count}/{max} caracteres"
+  },
+  "ArtistSettings": {
+    "title": "Configuración del Perfil del Artista",
+    "description": "Gestiona la información de tu perfil de artista",
+    "artistName": "Nombre del Artista",
+    "artistDescription": "Descripción del Artista",
+    "enterArtistName": "Ingresa el nombre del artista",
+    "enterArtistDescription": "Ingresa la descripción del artista"
   },
   "Errors": {
     "failedToLoadSettings": "Error al cargar la configuración",

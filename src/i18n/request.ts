@@ -1,31 +1,32 @@
-import {getRequestConfig} from 'next-intl/server';
-import {cookies} from 'next/headers';
+import { getRequestConfig } from "next-intl/server";
+import { getArtistData } from "@/lib/artist-data";
 
-export default getRequestConfig(async () => {
-  // Language detection strategy: Use cookie-based locale storage
-  // Reasoning: Simple, persistent across sessions, works without routing changes
-  // Alternative approaches considered:
-  // - URL-based routing (/en/, /de/, /es/) - rejected for simplicity
-  // - Browser language detection - rejected as it doesn't persist user choice
-  const cookieStore = await cookies();
-  const locale = cookieStore.get('locale')?.value || 'en';
+export default getRequestConfig(async ({ locale }) => {
+  // Language detection strategy: URL-based routing (/en/, /de/, /es/)
+  // The locale is now provided by Next.js routing system through the [locale] parameter
+  // This provides better SEO, shareable URLs, and automatic Open Graph localization
 
-  // Load UI, artwork, artist, and admin messages separately for better organization
+  // Ensure we have a valid locale, fallback to 'en' if undefined
+  const validLocale = locale || "en";
+
+  // Load UI, artwork, and admin messages separately for better organization
   // This structure is Weblate-friendly and separates content types
-  const [uiMessages, artworkMessages, artistMessages, adminMessages] = await Promise.all([
-    import(`../../messages/ui/${locale}.json`),
-    import(`../../messages/artworks/${locale}.json`),
-    import(`../../messages/artist/${locale}.json`),
-    import(`../../messages/ui/admin/${locale}.json`)
+  const [uiMessages, artworkMessages, adminMessages] = await Promise.all([
+    import(`../../messages/ui/${validLocale}.json`),
+    import(`../../messages/artworks/${validLocale}.json`),
+    import(`../../messages/ui/admin/${validLocale}.json`),
   ]);
 
+  // Get artist data using hybrid approach (user data + translations + static fallback)
+  const artistData = await getArtistData(validLocale);
+
   return {
-    locale,
+    locale: validLocale,
     messages: {
       ...uiMessages.default,
       ...artworkMessages.default,
-      Artist: artistMessages.default,
-      admin: adminMessages.default
-    }
+      Artist: artistData,
+      admin: adminMessages.default,
+    },
   };
 });

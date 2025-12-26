@@ -1,13 +1,11 @@
 {
   "Dashboard": {
-    "title": "Admin Dashboard",
+    "title": "Dashboard",
     "subtitle": "Manage your art gallery settings",
-    "logout": "Logout",
-    "loading": "Loading…",
     "checkingConfiguration": "Checking configuration…"
   },
   "Login": {
-    "title": "Admin Login",
+    "title": "Login",
     "emailStep": "Enter your email to receive a verification code",
     "otpStep": "Enter the verification code sent to your email",
     "notAvailable": "Admin login is not available",
@@ -16,10 +14,7 @@
     "emailAddress": "Email address",
     "verificationCode": "Verification Code",
     "sendVerificationCode": "Send Verification Code",
-    "sending": "Sending…",
     "verifyAndLogin": "Verify & Login",
-    "verifying": "Verifying…",
-    "back": "Back",
     "sentTo": "Sent to:",
     "useDifferentEmail": "Use different email",
     "loginSuccessful": "Login successful! Redirecting…",
@@ -33,11 +28,18 @@
     "messageContent": "Message Content",
     "allowDismiss": "Allow visitors to dismiss the message",
     "saveChanges": "Save Changes",
-    "saving": "Saving…",
     "settingsSaved": "Settings saved successfully!",
     "enterMessageTitle": "Enter message title",
     "enterMessageContent": "Enter your message content",
     "charactersCount": "{count}/{max} characters"
+  },
+  "ArtistSettings": {
+    "title": "Artist Profile Settings",
+    "description": "Manage your artist profile information",
+    "artistName": "Artist Name",
+    "artistDescription": "Artist Description",
+    "enterArtistName": "Enter artist name",
+    "enterArtistDescription": "Enter artist description"
   },
   "Errors": {
     "failedToLoadSettings": "Failed to load settings",

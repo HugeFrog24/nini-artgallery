@@ -67,7 +67,13 @@
     "loading": "Wird geladen…",
     "error": "Ein Fehler ist aufgetreten",
     "retry": "Wiederholen",
+    "back": "Zurück",
+    "saving": "Wird gespeichert…",
+    "sending": "Wird gesendet…",
+    "verifying": "Wird bestätigt…",
+    "logout": "Abmelden",
     "closeBroadcastMessage": "Nachricht schließen",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "preview": "Vorschau"
   }
 }

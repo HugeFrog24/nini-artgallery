@@ -67,7 +67,13 @@
     "loading": "Cargando…",
     "error": "Ocurrió un error",
     "retry": "Reintentar",
+    "back": "Atrás",
+    "saving": "Guardando…",
+    "sending": "Enviando…",
+    "verifying": "Verificando…",
+    "logout": "Cerrar sesión",
     "closeBroadcastMessage": "Cerrar mensaje",
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "preview": "Vista previa"
   }
 }

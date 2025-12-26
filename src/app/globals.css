@@ -14,7 +14,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Default accent colors (pink) - will be overridden by ThemeProvider */
   --accent-50: oklch(0.971 0.014 343.198);
   --accent-100: oklch(0.948 0.028 342.258);
@@ -58,4 +58,19 @@ body {
 
 .duration-200 {
   animation-duration: 200ms;
+}
+
+/* Smooth radial wave animation for theme button */
+@keyframes radialWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }

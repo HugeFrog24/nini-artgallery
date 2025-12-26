@@ -1,26 +1,26 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { CategorySection } from '@/types/artwork';
-import SectionContainer from './SectionContainer';
-import { XMarkIcon } from '@heroicons/react/24/outline';
-import { useTranslations } from 'next-intl';
+import { useState } from "react";
+import { CategorySection } from "@/types/artwork";
+import SectionContainer from "./SectionContainer";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { useTranslations } from "next-intl";
 // Import original config for personal message - this content is NOT translatable
 // as it's Nini's personal message to Tibik, not a UI element
-import { getPersonalMessage } from '@/lib/config';
+import { getPersonalMessage } from "@/lib/config";
 
 // Function to determine time-based greeting
 function getTimeBasedGreeting(): string {
   const hour = new Date().getHours();
-  
+
   if (hour >= 5 && hour < 12) {
-    return 'morning';
+    return "morning";
   } else if (hour >= 12 && hour < 18) {
-    return 'afternoon';
+    return "afternoon";
   } else if (hour >= 18 && hour < 22) {
-    return 'evening';
+    return "evening";
   } else {
-    return 'default';
+    return "default";
   }
 }
 
@@ -28,7 +28,9 @@ interface GalleryContainerProps {
   initialSections: CategorySection[];
 }
 
-export default function GalleryContainer({ initialSections }: GalleryContainerProps) {
+export default function GalleryContainer({
+  initialSections,
+}: GalleryContainerProps) {
   const [isNoteVisible, setIsNoteVisible] = useState(true);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   // Use translations for UI elements (artist greeting/description)
@@ -55,26 +57,27 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
               <div className="text-gray-800 dark:text-gray-200 leading-relaxed">
                 {/* Artist greeting and description are translatable UI content */}
                 <span className="text-2xl font-medium block mb-2">
-                  {t(`greeting.${getTimeBasedGreeting()}`)} {t('introduction', { name: t('Artist.name') })}
+                  {t(`greeting.${getTimeBasedGreeting()}`)}{" "}
+                  {t("introduction", { name: t("Artist.name") })}
                 </span>
-                <p>
-                  {t('Artist.description')}
-                </p>
+                <p>{t("Artist.description")}</p>
               </div>
             </div>
             {/* Personal message uses original data, NOT translations
                 Reasoning: This is Nini's personal message to Tibik - it's her authentic voice
                 and personal content, not a UI element that should be translated */}
             {personalMessage.enabled && isNoteVisible && (
-              <div className={`
-                bg-accent-50 dark:bg-accent-500/10 rounded-lg p-4 border border-accent-100 dark:border-accent-500/20 relative transition-all duration-300 ease-in-out overflow-hidden
-                ${isAnimatingOut ? 'max-h-0 opacity-0 scale-y-0 transform origin-top py-0 border-0' : 'max-h-96 opacity-100 scale-y-100'}
-              `}>
+              <div
+                className={`
+                bg-accent-50 dark:bg-accent-500/10 rounded-lg p-4 border border-accent-100 dark:border-accent-500/20 relative transition-all duration-300 ease-in-out
+                ${isAnimatingOut ? "max-h-0 opacity-0 scale-y-0 transform origin-top py-0 border-0 overflow-hidden" : "opacity-100 scale-y-100"}
+              `}
+              >
                 {personalMessage.dismissible && (
                   <button
                     onClick={handleCloseNote}
                     className="absolute top-2 right-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-                    aria-label={t('Common.closeBroadcastMessage')}
+                    aria-label={t("Common.closeBroadcastMessage")}
                   >
                     <XMarkIcon className="h-5 w-5" />
                   </button>
@@ -84,7 +87,7 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
                     {personalMessage.recipient}
                   </h3>
                 )}
-                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8">
+                <p className="text-gray-800 dark:text-gray-200 italic leading-relaxed pr-8 text-justify">
                   {personalMessage.message}
                 </p>
               </div>
@@ -92,18 +95,17 @@ export default function GalleryContainer({ initialSections }: GalleryContainerPr
           </div>
         </section>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-2 space-y-8">
         {initialSections.length > 0 ? (
           initialSections.map((section) => (
-            <SectionContainer
-              key={section.id}
-              section={section}
-            />
+            <SectionContainer key={section.id} section={section} />
           ))
         ) : (
           <div className="text-center py-12">
-            <p className="text-gray-500 dark:text-gray-400">{t('Search.noResults')}</p>
+            <p className="text-gray-500 dark:text-gray-400">
+              {t("Search.noResults")}
+            </p>
           </div>
         )}
       </div>

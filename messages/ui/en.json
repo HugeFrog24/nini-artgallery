@@ -12,7 +12,7 @@
   },
   "Artwork": {
     "medium": "Medium",
-    "dimensions": "Dimensions", 
+    "dimensions": "Dimensions",
     "year": "Year",
     "description": "Description"
   },
@@ -67,7 +67,13 @@
     "loading": "Loading…",
     "error": "An error occurred",
     "retry": "Retry",
+    "back": "Back",
+    "saving": "Saving…",
+    "sending": "Sending…",
+    "verifying": "Verifying…",
+    "logout": "Logout",
     "closeBroadcastMessage": "Close broadcast message",
-    "login": "Login"
+    "login": "Login",
+    "preview": "Preview"
   }
 }

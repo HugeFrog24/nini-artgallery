@@ -12,7 +12,7 @@
   },
   "Artwork": {
     "medium": "Malzeme",
-    "dimensions": "Boyutlar", 
+    "dimensions": "Boyutlar",
     "year": "Yıl",
     "description": "Açıklama"
   },
@@ -67,7 +67,13 @@
     "loading": "Yükleniyor…",
     "error": "Bir hata oluştu",
     "retry": "Tekrar Dene",
+    "back": "Geri",
+    "saving": "Kaydediliyor…",
+    "sending": "Gönderiliyor…",
+    "verifying": "Doğrulanıyor…",
+    "logout": "Çıkış Yap",
     "closeBroadcastMessage": "Mesajı kapat",
-    "login": "Giriş Yap"
+    "login": "Giriş Yap",
+    "preview": "Önizleme"
   }
 }
