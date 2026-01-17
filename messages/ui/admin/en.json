@@ -1,0 +1,58 @@
+{
+  "Dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage your art gallery settings",
+    "checkingConfiguration": "Checking configuration…"
+  },
+  "Login": {
+    "title": "Login",
+    "emailStep": "Enter your email to receive a verification code",
+    "otpStep": "Enter the verification code sent to your email",
+    "notAvailable": "Admin login is not available",
+    "configurationRequired": "Configuration Required",
+    "configurationMessage": "Admin login requires SMTP and authentication configuration. Please check the server logs for missing environment variables.",
+    "emailAddress": "Email address",
+    "verificationCode": "Verification Code",
+    "sendVerificationCode": "Send Verification Code",
+    "verifyAndLogin": "Verify & Login",
+    "sentTo": "Sent to:",
+    "useDifferentEmail": "Use different email",
+    "loginSuccessful": "Login successful! Redirecting…",
+    "networkError": "Network error. Please try again."
+  },
+  "Settings": {
+    "broadcastMessageSettings": "Broadcast Message Settings",
+    "broadcastMessageDescription": "Configure the message displayed on your gallery",
+    "displayBroadcastMessage": "Display broadcast message on gallery",
+    "title": "Title",
+    "messageContent": "Message Content",
+    "allowDismiss": "Allow visitors to dismiss the message",
+    "saveChanges": "Save Changes",
+    "settingsSaved": "Settings saved successfully!",
+    "enterMessageTitle": "Enter message title",
+    "enterMessageContent": "Enter your message content",
+    "charactersCount": "{count}/{max} characters"
+  },
+  "ArtistSettings": {
+    "title": "Artist Profile Settings",
+    "description": "Manage your artist profile information",
+    "artistName": "Artist Name",
+    "artistDescription": "Artist Description",
+    "enterArtistName": "Enter artist name",
+    "enterArtistDescription": "Enter artist description"
+  },
+  "Errors": {
+    "failedToLoadSettings": "Failed to load settings",
+    "failedToSaveSettings": "Failed to save settings",
+    "checkAdminConfiguration": "Unable to check admin configuration"
+  },
+  "Email": {
+    "subject": "Admin Login - Your Verification Code",
+    "title": "Admin Login Verification",
+    "codeMessage": "Your verification code for admin access is:",
+    "expiryMessage": "This code will expire in 10 minutes.",
+    "ignoreMessage": "If you didn't request this code, please ignore this email.",
+    "automatedMessage": "This is an automated message from {siteName}",
+    "textVersion": "Your admin verification code is: {otp}. This code will expire in 10 minutes."
+  }
+}

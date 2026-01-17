@@ -11,6 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: {
+          50: "var(--accent-50)",
+          100: "var(--accent-100)",
+          200: "var(--accent-200)",
+          500: "var(--accent-500)",
+          600: "var(--accent-600)",
+        },
       },
     },
   },

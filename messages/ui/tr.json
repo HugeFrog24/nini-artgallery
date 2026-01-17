@@ -1,0 +1,79 @@
+{
+  "Site": {
+    "name": "{artistName}'nin Sanat Galerisi",
+    "description": "Multidisipliner Sanat Koleksiyonu",
+    "subheading": "Multidisipliner sanat eserleri koleksiyonu",
+    "longDescription": "{artistName}'nin origami, örgü ürünleri, resimler ve tırnak sanatı tasarımlarını içeren çeşitli sanat koleksiyonunu keşfedin. Her eser benzersiz yaratıcılık ve ustalık sergiler."
+  },
+  "Search": {
+    "placeholder": "Sanat eserlerinde ara…",
+    "noResults": "Aramanızla eşleşen sanat eseri bulunamadı.",
+    "searchLabel": "Ara"
+  },
+  "Artwork": {
+    "medium": "Malzeme",
+    "dimensions": "Boyutlar",
+    "year": "Yıl",
+    "description": "Açıklama"
+  },
+  "Navigation": {
+    "home": "Ana Sayfa",
+    "gallery": "Galeri"
+  },
+  "greeting": {
+    "morning": "Günaydın!",
+    "afternoon": "İyi günler!",
+    "evening": "İyi akşamlar!",
+    "default": "Merhaba!"
+  },
+  "introduction": "Ben {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Galeriye Dön",
+    "backToGalleryAriaLabel": "Galeriye geri dön",
+    "artworkDetails": "Eser Detayları",
+    "category": "Kategori",
+    "viewMoreArtworks": "Daha Fazla Eser Görüntüle",
+    "shareArtwork": "Eseri Paylaş",
+    "categoryArtwork": "{category} Eseri"
+  },
+  "Sort": {
+    "title": "Başlık",
+    "year": "Yıl",
+    "sortByTitle": "Başlığa göre sırala",
+    "sortByYear": "Yıla göre sırala"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} galerisi"
+  },
+  "Theme": {
+    "changeThemeColors": "Tema renklerini değiştir",
+    "themeOptions": "Tema seçenekleri",
+    "appearance": "Görünüm",
+    "accentColor": "Vurgu rengi",
+    "dark": "koyu",
+    "light": "açık",
+    "colors": {
+      "pink": "Pembe",
+      "orange": "Turuncu",
+      "green": "Açık Yeşil"
+    },
+    "schemes": {
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    }
+  },
+  "Common": {
+    "loading": "Yükleniyor…",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "back": "Geri",
+    "saving": "Kaydediliyor…",
+    "sending": "Gönderiliyor…",
+    "verifying": "Doğrulanıyor…",
+    "logout": "Çıkış Yap",
+    "closeBroadcastMessage": "Mesajı kapat",
+    "login": "Giriş Yap",
+    "preview": "Önizleme"
+  }
+}
