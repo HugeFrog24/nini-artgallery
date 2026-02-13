@@ -1,0 +1,58 @@
+{
+  "Dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Verwalten Sie Ihre Kunstgalerie-Einstellungen",
+    "checkingConfiguration": "Konfiguration wird überprüft…"
+  },
+  "Login": {
+    "title": "Anmeldung",
+    "emailStep": "Geben Sie Ihre E-Mail-Adresse ein, um einen Bestätigungscode zu erhalten",
+    "otpStep": "Geben Sie den Bestätigungscode ein, der an Ihre E-Mail gesendet wurde",
+    "notAvailable": "Admin-Anmeldung ist nicht verfügbar",
+    "configurationRequired": "Konfiguration erforderlich",
+    "configurationMessage": "Die Admin-Anmeldung erfordert SMTP- und Authentifizierungskonfiguration. Bitte überprüfen Sie die Server-Logs auf fehlende Umgebungsvariablen.",
+    "emailAddress": "E-Mail-Adresse",
+    "verificationCode": "Bestätigungscode",
+    "sendVerificationCode": "Bestätigungscode senden",
+    "verifyAndLogin": "Bestätigen & Anmelden",
+    "sentTo": "Gesendet an:",
+    "useDifferentEmail": "Andere E-Mail verwenden",
+    "loginSuccessful": "Anmeldung erfolgreich! Weiterleitung…",
+    "networkError": "Netzwerkfehler. Bitte versuchen Sie es erneut."
+  },
+  "Settings": {
+    "broadcastMessageSettings": "Broadcast-Nachrichten-Einstellungen",
+    "broadcastMessageDescription": "Konfigurieren Sie die Nachricht, die in Ihrer Galerie angezeigt wird",
+    "displayBroadcastMessage": "Broadcast-Nachricht in der Galerie anzeigen",
+    "title": "Titel",
+    "messageContent": "Nachrichteninhalt",
+    "allowDismiss": "Besuchern erlauben, die Nachricht zu schließen",
+    "saveChanges": "Änderungen speichern",
+    "settingsSaved": "Einstellungen erfolgreich gespeichert!",
+    "enterMessageTitle": "Nachrichtentitel eingeben",
+    "enterMessageContent": "Ihren Nachrichteninhalt eingeben",
+    "charactersCount": "{count}/{max} Zeichen"
+  },
+  "ArtistSettings": {
+    "title": "Künstlerprofil-Einstellungen",
+    "description": "Verwalten Sie Ihre Künstlerprofil-Informationen",
+    "artistName": "Künstlername",
+    "artistDescription": "Künstlerbeschreibung",
+    "enterArtistName": "Künstlername eingeben",
+    "enterArtistDescription": "Künstlerbeschreibung eingeben"
+  },
+  "Errors": {
+    "failedToLoadSettings": "Einstellungen konnten nicht geladen werden",
+    "failedToSaveSettings": "Einstellungen konnten nicht gespeichert werden",
+    "checkAdminConfiguration": "Admin-Konfiguration konnte nicht überprüft werden"
+  },
+  "Email": {
+    "subject": "Admin-Anmeldung - Ihr Bestätigungscode",
+    "title": "Admin-Anmeldung Bestätigung",
+    "codeMessage": "Ihr Bestätigungscode für den Admin-Zugang ist:",
+    "expiryMessage": "Dieser Code läuft in 10 Minuten ab.",
+    "ignoreMessage": "Falls Sie diesen Code nicht angefordert haben, ignorieren Sie diese E-Mail bitte.",
+    "automatedMessage": "Dies ist eine automatische Nachricht von {siteName}",
+    "textVersion": "Ihr Admin-Bestätigungscode ist: {otp}. Dieser Code läuft in 10 Minuten ab."
+  }
+}

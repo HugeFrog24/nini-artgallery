@@ -1,0 +1,39 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Tablolar ve Dijital Sanat",
+      "description": "Fantezi ve duyguyu harmanlayan rüya gibi tablolar"
+    },
+    "origami": {
+      "title": "İllüstrasyonlar",
+      "description": "Peri masallarından ilham alan el çizimi ve mürekkep illüstrasyonları"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "Cheshire Ormanı",
+      "description": "Ağaçların size gülümsediği parlayan bir orman — Harikalar Diyarı'ndan ilham"
+    },
+    "p2": {
+      "title": "Ay Işığında Gölet",
+      "description": "Durgun suda ay ışığının yansımasını ateş böcekleriyle anlatan suluboya çalışması"
+    },
+    "p3": {
+      "title": "Kızıl Kraliçe'nin Bahçesi",
+      "description": "Her gülün kendine has bir huyu olan sürreal bir bahçe"
+    },
+    "o1": {
+      "title": "Beyaz Tavşan",
+      "description": "Cep saatine sımsıkı sarılmış panik halindeki bir tavşanın suluboya portresi"
+    },
+    "o2": {
+      "title": "Mantar Eskizleri",
+      "description": "Fantastik mantarların mürekkep çalışmaları — bazıları evlerden daha uzun"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Dijital resim",
+    "watercolorOnPaper": "Kağıt üzerine suluboya",
+    "inkOnPaper": "Kağıt üzerine mürekkep"
+  }
+}

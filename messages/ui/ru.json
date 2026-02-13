@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "Художественная галерея {artistName}",
+    "description": "Мультидисциплинарная коллекция искусства",
+    "subheading": "Мультидисциплинарная коллекция произведений искусства",
+    "longDescription": "Исследуйте разнообразную коллекцию искусства {artistName}, включающую оригами, вязаные изделия, картины и дизайн ногтей. Каждое произведение демонстрирует уникальное творчество и мастерство."
+  },
+  "Search": {
+    "placeholder": "Поиск произведений искусства…",
+    "noResults": "Произведения искусства, соответствующие вашему запросу, не найдены.",
+    "searchLabel": "Поиск"
+  },
+  "Artwork": {
+    "medium": "Материал",
+    "dimensions": "Размеры",
+    "year": "Год",
+    "description": "Описание"
+  },
+  "Navigation": {
+    "home": "Главная",
+    "gallery": "Галерея"
+  },
+  "greeting": {
+    "morning": "Доброе утро!",
+    "afternoon": "Добрый день!",
+    "evening": "Добрый вечер!",
+    "default": "Привет!"
+  },
+  "introduction": "Я {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Назад в галерею",
+    "backToGalleryAriaLabel": "Вернуться в галерею",
+    "artworkDetails": "Детали произведения",
+    "category": "Категория",
+    "viewMoreArtworks": "Посмотреть больше произведений",
+    "shareArtwork": "Поделиться произведением",
+    "categoryArtwork": "Произведение {category}"
+  },
+  "Sort": {
+    "title": "Название",
+    "year": "Год",
+    "sortByTitle": "Сортировать по названию",
+    "sortByYear": "Сортировать по году"
+  },
+  "Gallery": {
+    "categoryGallery": "Галерея {category}"
+  },
+  "Theme": {
+    "changeThemeColors": "Изменить цвета темы",
+    "themeOptions": "Настройки темы",
+    "appearance": "Внешний вид",
+    "accentColor": "Акцентный цвет",
+    "dark": "темная",
+    "light": "светлая",
+    "colors": {
+      "pink": "Розовый",
+      "orange": "Оранжевый",
+      "green": "Светло-зеленый"
+    },
+    "schemes": {
+      "light": "Светлая",
+      "dark": "Темная",
+      "system": "Системная"
+    }
+  },
+  "Chat": {
+    "title": "Арт-ассистент",
+    "placeholder": "Спросите об искусстве...",
+    "emptyState": "Спросите меня о чём угодно об искусстве!",
+    "openChat": "Открыть чат",
+    "closeChat": "Закрыть чат",
+    "sendMessage": "Отправить сообщение",
+    "errorMessage": "Не удалось получить ответ.",
+    "retry": "Повторить",
+    "dismissError": "Скрыть ошибку",
+    "clearChat": "Очистить чат",
+    "listening": "Слушаю…",
+    "startListening": "Надиктовать сообщение",
+    "stopListening": "Остановить диктовку",
+    "recording": "Запись… {time}",
+    "startRecording": "Записать голосовое сообщение",
+    "stopRecording": "Остановить запись",
+    "transcribing": "Транскрибирую…",
+    "transcriptionFailed": "Ошибка транскрипции. Попробуйте ещё раз.",
+    "settings": "Настройки",
+    "dictationMode": "Диктовка",
+    "dictationBrowser": "Браузер",
+    "dictationServer": "Сервер (ИИ)",
+    "dictationBrowserUnavailable": "Не поддерживается в этом браузере"
+  },
+  "Common": {
+    "loading": "Загрузка…",
+    "error": "Произошла ошибка",
+    "retry": "Повторить",
+    "back": "Назад",
+    "saving": "Сохранение…",
+    "sending": "Отправка…",
+    "verifying": "Проверка…",
+    "logout": "Выйти",
+    "closeBroadcastMessage": "Закрыть сообщение",
+    "login": "Войти",
+    "dashboard": "Панель управления",
+    "preview": "Предпросмотр"
+  }
+}

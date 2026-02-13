@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "{artistName}'nin Sanat Galerisi",
+    "description": "Multidisipliner Sanat Koleksiyonu",
+    "subheading": "Multidisipliner sanat eserleri koleksiyonu",
+    "longDescription": "{artistName}'nin origami, örgü ürünleri, resimler ve tırnak sanatı tasarımlarını içeren çeşitli sanat koleksiyonunu keşfedin. Her eser benzersiz yaratıcılık ve ustalık sergiler."
+  },
+  "Search": {
+    "placeholder": "Sanat eserlerinde ara…",
+    "noResults": "Aramanızla eşleşen sanat eseri bulunamadı.",
+    "searchLabel": "Ara"
+  },
+  "Artwork": {
+    "medium": "Malzeme",
+    "dimensions": "Boyutlar",
+    "year": "Yıl",
+    "description": "Açıklama"
+  },
+  "Navigation": {
+    "home": "Ana Sayfa",
+    "gallery": "Galeri"
+  },
+  "greeting": {
+    "morning": "Günaydın!",
+    "afternoon": "İyi günler!",
+    "evening": "İyi akşamlar!",
+    "default": "Merhaba!"
+  },
+  "introduction": "Ben {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Galeriye Dön",
+    "backToGalleryAriaLabel": "Galeriye geri dön",
+    "artworkDetails": "Eser Detayları",
+    "category": "Kategori",
+    "viewMoreArtworks": "Daha Fazla Eser Görüntüle",
+    "shareArtwork": "Eseri Paylaş",
+    "categoryArtwork": "{category} Eseri"
+  },
+  "Sort": {
+    "title": "Başlık",
+    "year": "Yıl",
+    "sortByTitle": "Başlığa göre sırala",
+    "sortByYear": "Yıla göre sırala"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} galerisi"
+  },
+  "Theme": {
+    "changeThemeColors": "Tema renklerini değiştir",
+    "themeOptions": "Tema seçenekleri",
+    "appearance": "Görünüm",
+    "accentColor": "Vurgu rengi",
+    "dark": "koyu",
+    "light": "açık",
+    "colors": {
+      "pink": "Pembe",
+      "orange": "Turuncu",
+      "green": "Açık Yeşil"
+    },
+    "schemes": {
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    }
+  },
+  "Chat": {
+    "title": "Sanat Asistanı",
+    "placeholder": "Sanat hakkında sorun...",
+    "emptyState": "Sanat hakkında istediğinizi sorun!",
+    "openChat": "Sohbeti aç",
+    "closeChat": "Sohbeti kapat",
+    "sendMessage": "Mesaj gönder",
+    "errorMessage": "Yanıt alınamadı.",
+    "retry": "Tekrar Dene",
+    "dismissError": "Hatayı kapat",
+    "clearChat": "Sohbeti temizle",
+    "listening": "Dinleniyor…",
+    "startListening": "Mesaj dikte et",
+    "stopListening": "Dikteyi durdur",
+    "recording": "Kaydediliyor… {time}",
+    "startRecording": "Sesli mesaj kaydet",
+    "stopRecording": "Kaydı durdur",
+    "transcribing": "Yazıya dökülüyor…",
+    "transcriptionFailed": "Yazıya dökme başarısız. Lütfen tekrar deneyin.",
+    "settings": "Ayarlar",
+    "dictationMode": "Dikte",
+    "dictationBrowser": "Tarayıcı",
+    "dictationServer": "Sunucu (YZ)",
+    "dictationBrowserUnavailable": "Bu tarayıcıda desteklenmiyor"
+  },
+  "Common": {
+    "loading": "Yükleniyor…",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "back": "Geri",
+    "saving": "Kaydediliyor…",
+    "sending": "Gönderiliyor…",
+    "verifying": "Doğrulanıyor…",
+    "logout": "Çıkış Yap",
+    "closeBroadcastMessage": "Mesajı kapat",
+    "login": "Giriş Yap",
+    "dashboard": "Yönetim Paneli",
+    "preview": "Önizleme"
+  }
+}

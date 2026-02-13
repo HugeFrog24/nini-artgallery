@@ -1,0 +1,58 @@
+{
+  "Dashboard": {
+    "title": "Kontrol Paneli",
+    "subtitle": "Sanat galerinizin ayarlarını yönetin",
+    "checkingConfiguration": "Yapılandırma kontrol ediliyor…"
+  },
+  "Login": {
+    "title": "Giriş",
+    "emailStep": "Doğrulama kodu almak için e-posta adresinizi girin",
+    "otpStep": "E-postanıza gönderilen doğrulama kodunu girin",
+    "notAvailable": "Yönetici girişi mevcut değil",
+    "configurationRequired": "Yapılandırma Gerekli",
+    "configurationMessage": "Yönetici girişi SMTP ve kimlik doğrulama yapılandırması gerektirir. Lütfen eksik ortam değişkenleri için sunucu günlüklerini kontrol edin.",
+    "emailAddress": "E-posta adresi",
+    "verificationCode": "Doğrulama Kodu",
+    "sendVerificationCode": "Doğrulama Kodu Gönder",
+    "verifyAndLogin": "Doğrula ve Giriş Yap",
+    "sentTo": "Gönderildi:",
+    "useDifferentEmail": "Farklı e-posta kullan",
+    "loginSuccessful": "Giriş başarılı! Yönlendiriliyor…",
+    "networkError": "Ağ hatası. Lütfen tekrar deneyin."
+  },
+  "Settings": {
+    "broadcastMessageSettings": "Yayın Mesajı Ayarları",
+    "broadcastMessageDescription": "Galerinizde görüntülenen mesajı yapılandırın",
+    "displayBroadcastMessage": "Galeride yayın mesajını göster",
+    "title": "Başlık",
+    "messageContent": "Mesaj İçeriği",
+    "allowDismiss": "Ziyaretçilerin mesajı kapatmasına izin ver",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "settingsSaved": "Ayarlar başarıyla kaydedildi!",
+    "enterMessageTitle": "Mesaj başlığını girin",
+    "enterMessageContent": "Mesaj içeriğinizi girin",
+    "charactersCount": "{count}/{max} karakter"
+  },
+  "ArtistSettings": {
+    "title": "Sanatçı Profili Ayarları",
+    "description": "Sanatçı profil bilgilerinizi yönetin",
+    "artistName": "Sanatçı Adı",
+    "artistDescription": "Sanatçı Açıklaması",
+    "enterArtistName": "Sanatçı adını girin",
+    "enterArtistDescription": "Sanatçı açıklamasını girin"
+  },
+  "Errors": {
+    "failedToLoadSettings": "Ayarlar yüklenemedi",
+    "failedToSaveSettings": "Ayarlar kaydedilemedi",
+    "checkAdminConfiguration": "Yönetici yapılandırması kontrol edilemedi"
+  },
+  "Email": {
+    "subject": "Yönetici Girişi - Doğrulama Kodunuz",
+    "title": "Yönetici Girişi Doğrulaması",
+    "codeMessage": "Yönetici erişimi için doğrulama kodunuz:",
+    "expiryMessage": "Bu kod 10 dakika içinde sona erecek.",
+    "ignoreMessage": "Bu kodu talep etmediyseniz, lütfen bu e-postayı görmezden gelin.",
+    "automatedMessage": "Bu {siteName} tarafından gönderilen otomatik bir mesajdır",
+    "textVersion": "Yönetici doğrulama kodunuz: {otp}. Bu kod 10 dakika içinde sona erecek."
+  }
+}

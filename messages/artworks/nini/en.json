@@ -1,0 +1,103 @@
+{
+  "Categories": {
+    "origami": {
+      "title": "Origami Creations",
+      "description": "Intricate paper folding art pieces showcasing precision and creativity"
+    },
+    "crochet": {
+      "title": "Crochet Items",
+      "description": "Handcrafted crochet pieces combining traditional techniques with modern design"
+    },
+    "paintings": {
+      "title": "Paintings",
+      "description": "Original paintings exploring various styles and techniques"
+    },
+    "fingernails": {
+      "title": "Fingernail Art",
+      "description": "Creative and detailed nail art designs"
+    }
+  },
+  "Artworks": {
+    "o1": {
+      "title": "Paper Crane Series",
+      "description": "Traditional Japanese crane designs in vibrant colors"
+    },
+    "o2": {
+      "title": "Geometric Animals",
+      "description": "Modern interpretation of wildlife through geometric folds"
+    },
+    "o3": {
+      "title": "Jumping Frog",
+      "description": "Traditional origami frog that can actually hop! A playful piece combining form and function"
+    },
+    "o4": {
+      "title": "Modular Cube Box",
+      "description": "Complex modular origami forming a decorative cube that can open and close"
+    },
+    "o5": {
+      "title": "Love Heart",
+      "description": "Elegant heart-shaped origami design with delicate folds and curves"
+    },
+    "c1": {
+      "title": "Tiny Animal Family",
+      "description": "Collection of small, cute stuffed animals made with soft wool"
+    },
+    "c2": {
+      "title": "Modern Blanket",
+      "description": "Contemporary geometric pattern blanket in pastel tones"
+    },
+    "c3": {
+      "title": "Friendly Frog",
+      "description": "Adorable crochet frog with big eyes and a cheerful smile"
+    },
+    "c4": {
+      "title": "Fluffy Bunny",
+      "description": "Sweet crochet rabbit with floppy ears and a tiny cotton tail"
+    },
+    "c5": {
+      "title": "Sky Kid",
+      "description": "Adorable crochet Sky Kid from Sky: Children of the Light, complete with cape and glowing heart"
+    },
+    "c6": {
+      "title": "Cozy Beaver",
+      "description": "An absolutely bonkers beaver with wild googly eyes, oversized buck teeth, and a tail for slapping the water! This little maniac is ready to build the most chaotic dam you've ever seen."
+    },
+    "p1": {
+      "title": "Abstract Sunset",
+      "description": "Vibrant interpretation of a coastal sunset"
+    },
+    "p2": {
+      "title": "Urban Life",
+      "description": "City scenes captured in impressionistic style"
+    },
+    "p3": {
+      "title": "Alice in Wonderland",
+      "description": "Whimsical scene from Alice in Wonderland featuring the Mad Hatter's tea party"
+    },
+    "n1": {
+      "title": "Spring Collection",
+      "description": "Floral patterns with metallic accents"
+    },
+    "n2": {
+      "title": "Abstract Patterns",
+      "description": "Geometric and abstract designs in bold colors"
+    },
+    "n3": {
+      "title": "Hearts & Love",
+      "description": "Romantic heart patterns with glitter and delicate details"
+    }
+  },
+  "Mediums": {
+    "washiPaper": "Washi paper",
+    "origamiPaper": "Origami paper",
+    "specialtyOrigamiPaper": "Specialty origami paper",
+    "merinoWool": "Merino wool",
+    "cottonYarn": "Cotton yarn",
+    "softAcrylicYarn": "Soft acrylic yarn",
+    "acrylicOnCanvas": "Acrylic on canvas",
+    "oilOnCanvas": "Oil on canvas",
+    "mixedMediaOnCanvas": "Mixed media on canvas",
+    "gelPolish": "Gel polish",
+    "regularPolish": "Regular polish"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Paintings & Digital Art",
+      "description": "Dreamlike paintings blending fantasy and emotion"
+    },
+    "origami": {
+      "title": "Illustrations",
+      "description": "Hand-drawn and ink illustrations inspired by fairy tales"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "The Cheshire Forest",
+      "description": "A glowing forest where the trees grin back at you — inspired by Wonderland"
+    },
+    "p2": {
+      "title": "Moonlit Pond",
+      "description": "Watercolor study of moonlight reflecting on still water, with fireflies"
+    },
+    "p3": {
+      "title": "Red Queen's Garden",
+      "description": "A surreal garden where every rose has its own little temper"
+    },
+    "o1": {
+      "title": "The White Rabbit",
+      "description": "Watercolor portrait of a panicked rabbit clutching a pocket watch"
+    },
+    "o2": {
+      "title": "Mushroom Sketches",
+      "description": "Ink studies of fantastical mushrooms — some taller than houses"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Digital painting",
+    "watercolorOnPaper": "Watercolor on paper",
+    "inkOnPaper": "Ink on paper"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "Categories": {
+    "origami": {
+      "title": "Origami Kreasyonları",
+      "description": "Hassasiyet ve yaratıcılığı sergileyen karmaşık kağıt katlama sanat eserleri"
+    },
+    "crochet": {
+      "title": "Örgü Ürünleri",
+      "description": "Geleneksel teknikleri modern tasarımla birleştiren el yapımı örgü parçaları"
+    },
+    "paintings": {
+      "title": "Resimler",
+      "description": "Çeşitli stil ve teknikleri keşfeden orijinal resimler"
+    },
+    "fingernails": {
+      "title": "Tırnak Sanatı",
+      "description": "Yaratıcı ve detaylı tırnak sanatı tasarımları"
+    }
+  },
+  "Artworks": {
+    "o1": {
+      "title": "Kağıt Turna Serisi",
+      "description": "Canlı renklerde geleneksel Japon turna tasarımları"
+    },
+    "o2": {
+      "title": "Geometrik Hayvanlar",
+      "description": "Vahşi yaşamın geometrik katlamalarla modern yorumu"
+    },
+    "o3": {
+      "title": "Zıplayan Kurbağa",
+      "description": "Gerçekten zıplayabilen geleneksel origami kurbağa! Form ve işlevi birleştiren eğlenceli bir parça"
+    },
+    "o4": {
+      "title": "Modüler Küp Kutu",
+      "description": "Açılıp kapanabilen dekoratif bir küp oluşturan karmaşık modüler origami"
+    },
+    "o5": {
+      "title": "Aşk Kalbi",
+      "description": "Zarif katlamalar ve kıvrımlarla kalp şeklinde şık origami tasarımı"
+    },
+    "c1": {
+      "title": "Minik Hayvan Ailesi",
+      "description": "Yumuşak yünden yapılmış küçük, sevimli peluş hayvanlar koleksiyonu"
+    },
+    "c2": {
+      "title": "Modern Battaniye",
+      "description": "Pastel tonlarda çağdaş geometrik desenli battaniye"
+    },
+    "c3": {
+      "title": "Dost Kurbağa",
+      "description": "Büyük gözleri ve neşeli gülümsemesiyle sevimli örgü kurbağa"
+    },
+    "c4": {
+      "title": "Tüylü Tavşan",
+      "description": "Sarkık kulakları ve minik pamuk kuyruğuyla tatlı örgü tavşan"
+    },
+    "c5": {
+      "title": "Gökyüzü Çocuğu",
+      "description": "Sky: Children of the Light'tan sevimli örgü Gökyüzü Çocuğu, pelerini ve parlayan kalbiyle birlikte"
+    },
+    "c6": {
+      "title": "Rahat Kunduz",
+      "description": "Vahşi google gözleri, büyük ön dişleri ve suyu çarpmak için kuyruğuyla kesinlikle çılgın bir kunduz! Bu küçük manyak, şimdiye kadar gördüğünüz en kaotik barajı inşa etmeye hazır."
+    },
+    "p1": {
+      "title": "Soyut Gün Batımı",
+      "description": "Sahil gün batımının canlı yorumu"
+    },
+    "p2": {
+      "title": "Şehir Hayatı",
+      "description": "İzlenimci tarzda yakalanmış şehir manzaraları"
+    },
+    "p3": {
+      "title": "Harikalar Diyarında Alice",
+      "description": "Çılgın Şapkacı'nın çay partisini içeren Alice Harikalar Diyarında'ndan fantastik sahne"
+    },
+    "n1": {
+      "title": "İlkbahar Koleksiyonu",
+      "description": "Metalik vurgularla çiçek desenleri"
+    },
+    "n2": {
+      "title": "Soyut Desenler",
+      "description": "Cesur renklerde geometrik ve soyut tasarımlar"
+    },
+    "n3": {
+      "title": "Kalpler ve Aşk",
+      "description": "Sim ve zarif detaylarla romantik kalp desenleri"
+    }
+  },
+  "Mediums": {
+    "washiPaper": "Washi kağıdı",
+    "origamiPaper": "Origami kağıdı",
+    "specialtyOrigamiPaper": "Özel origami kağıdı",
+    "merinoWool": "Merino yünü",
+    "cottonYarn": "Pamuk ipliği",
+    "softAcrylicYarn": "Yumuşak akrilik iplik",
+    "acrylicOnCanvas": "Tuval üzerine akrilik",
+    "oilOnCanvas": "Tuval üzerine yağlıboya",
+    "mixedMediaOnCanvas": "Tuval üzerine karışık teknik",
+    "gelPolish": "Jel oje",
+    "regularPolish": "Normal oje"
+  }
+}

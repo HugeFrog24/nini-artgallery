@@ -1,0 +1,39 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Pinturas y Arte Digital",
+      "description": "Pinturas oníricas que mezclan fantasía y emoción"
+    },
+    "origami": {
+      "title": "Ilustraciones",
+      "description": "Ilustraciones a mano y tinta inspiradas en cuentos de hadas"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "El Bosque del Gato de Cheshire",
+      "description": "Un bosque resplandeciente donde los árboles te devuelven la sonrisa — inspirado en el País de las Maravillas"
+    },
+    "p2": {
+      "title": "Estanque a la Luz de la Luna",
+      "description": "Estudio en acuarela de la luz de la luna reflejada en agua quieta, con luciérnagas"
+    },
+    "p3": {
+      "title": "El Jardín de la Reina Roja",
+      "description": "Un jardín surrealista donde cada rosa tiene su propio carácter"
+    },
+    "o1": {
+      "title": "El Conejo Blanco",
+      "description": "Retrato en acuarela de un conejo asustado agarrando un reloj de bolsillo"
+    },
+    "o2": {
+      "title": "Bocetos de Hongos",
+      "description": "Estudios a tinta de hongos fantásticos — algunos más altos que casas"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Pintura digital",
+    "watercolorOnPaper": "Acuarela sobre papel",
+    "inkOnPaper": "Tinta sobre papel"
+  }
+}

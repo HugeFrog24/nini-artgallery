@@ -1,0 +1,54 @@
+{
+  "categorySections": [
+    {
+      "id": "paintings",
+      "artworks": [
+        {
+          "id": "p1",
+          "imageUrl": "#6A5ACD",
+          "category": "paintings",
+          "mediumKey": "digitalPainting",
+          "dimensions": "3000 x 4000 px",
+          "year": 2025
+        },
+        {
+          "id": "p2",
+          "imageUrl": "#20B2AA",
+          "category": "paintings",
+          "mediumKey": "watercolorOnPaper",
+          "dimensions": "18\" x 24\"",
+          "year": 2025
+        },
+        {
+          "id": "p3",
+          "imageUrl": "#FF6347",
+          "category": "paintings",
+          "mediumKey": "digitalPainting",
+          "dimensions": "4000 x 3000 px",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "origami",
+      "artworks": [
+        {
+          "id": "o1",
+          "imageUrl": "#DA70D6",
+          "category": "origami",
+          "mediumKey": "watercolorOnPaper",
+          "dimensions": "12\" x 16\"",
+          "year": 2025
+        },
+        {
+          "id": "o2",
+          "imageUrl": "#3CB371",
+          "category": "origami",
+          "mediumKey": "inkOnPaper",
+          "dimensions": "9\" x 12\"",
+          "year": 2024
+        }
+      ]
+    }
+  ]
+}

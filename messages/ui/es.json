@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "Galería de Arte de {artistName}",
+    "description": "Colección de Arte Multidisciplinaria",
+    "subheading": "Una colección multidisciplinaria de obras de arte",
+    "longDescription": "Explora la diversa colección de arte de {artistName} que incluye origami, artículos de ganchillo, pinturas y diseños de arte de uñas. Cada pieza muestra creatividad única y artesanía."
+  },
+  "Search": {
+    "placeholder": "Buscar obras de arte…",
+    "noResults": "No se encontraron obras de arte que coincidan con tu búsqueda.",
+    "searchLabel": "Buscar"
+  },
+  "Artwork": {
+    "medium": "Medio",
+    "dimensions": "Dimensiones",
+    "year": "Año",
+    "description": "Descripción"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "gallery": "Galería"
+  },
+  "greeting": {
+    "morning": "¡Buenos días!",
+    "afternoon": "¡Buenas tardes!",
+    "evening": "¡Buenas noches!",
+    "default": "¡Hola!"
+  },
+  "introduction": "Soy {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Volver a la Galería",
+    "backToGalleryAriaLabel": "Volver a la galería",
+    "artworkDetails": "Detalles de la Obra",
+    "category": "Categoría",
+    "viewMoreArtworks": "Ver Más Obras",
+    "shareArtwork": "Compartir Obra",
+    "categoryArtwork": "Obra de {category}"
+  },
+  "Sort": {
+    "title": "Título",
+    "year": "Año",
+    "sortByTitle": "Ordenar por título",
+    "sortByYear": "Ordenar por año"
+  },
+  "Gallery": {
+    "categoryGallery": "galería de {category}"
+  },
+  "Theme": {
+    "changeThemeColors": "Cambiar colores del tema",
+    "themeOptions": "Opciones de tema",
+    "appearance": "Apariencia",
+    "accentColor": "Color de acento",
+    "dark": "oscuro",
+    "light": "claro",
+    "colors": {
+      "pink": "Rosa",
+      "orange": "Naranja",
+      "green": "Verde Claro"
+    },
+    "schemes": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
+  },
+  "Chat": {
+    "title": "Asistente de Arte",
+    "placeholder": "Pregunta sobre arte...",
+    "emptyState": "¡Pregúntame lo que quieras sobre arte!",
+    "openChat": "Abrir chat",
+    "closeChat": "Cerrar chat",
+    "sendMessage": "Enviar mensaje",
+    "errorMessage": "No se pudo obtener una respuesta.",
+    "retry": "Reintentar",
+    "dismissError": "Descartar error",
+    "clearChat": "Borrar chat",
+    "listening": "Escuchando…",
+    "startListening": "Dictar mensaje",
+    "stopListening": "Detener dictado",
+    "recording": "Grabando… {time}",
+    "startRecording": "Grabar mensaje de voz",
+    "stopRecording": "Detener grabación",
+    "transcribing": "Transcribiendo…",
+    "transcriptionFailed": "Error en la transcripción. Inténtalo de nuevo.",
+    "settings": "Ajustes",
+    "dictationMode": "Dictado",
+    "dictationBrowser": "Navegador",
+    "dictationServer": "Servidor (IA)",
+    "dictationBrowserUnavailable": "No compatible con este navegador"
+  },
+  "Common": {
+    "loading": "Cargando…",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "back": "Atrás",
+    "saving": "Guardando…",
+    "sending": "Enviando…",
+    "verifying": "Verificando…",
+    "logout": "Cerrar sesión",
+    "closeBroadcastMessage": "Cerrar mensaje",
+    "login": "Iniciar sesión",
+    "dashboard": "Panel de control",
+    "preview": "Vista previa"
+  }
+}

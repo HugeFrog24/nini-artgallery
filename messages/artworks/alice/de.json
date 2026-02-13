@@ -1,0 +1,39 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Gemälde & Digitale Kunst",
+      "description": "Traumhafte Gemälde, die Fantasie und Emotion verbinden"
+    },
+    "origami": {
+      "title": "Illustrationen",
+      "description": "Handgezeichnete Tuscheillustrationen, inspiriert von Märchen"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "Der Grinsekatzen-Wald",
+      "description": "Ein leuchtender Wald, in dem die Bäume zurückgrinsen — inspiriert vom Wunderland"
+    },
+    "p2": {
+      "title": "Mondscheinteich",
+      "description": "Aquarellstudie von Mondlicht auf stillem Wasser mit Glühwürmchen"
+    },
+    "p3": {
+      "title": "Der Garten der Roten Königin",
+      "description": "Ein surrealer Garten, in dem jede Rose ihr eigenes Temperament hat"
+    },
+    "o1": {
+      "title": "Das Weiße Kaninchen",
+      "description": "Aquarellporträt eines panischen Kaninchens mit Taschenuhr"
+    },
+    "o2": {
+      "title": "Pilzskizzen",
+      "description": "Tuschestudien fantastischer Pilze — manche größer als Häuser"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Digitale Malerei",
+    "watercolorOnPaper": "Aquarell auf Papier",
+    "inkOnPaper": "Tusche auf Papier"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "{artistName}s Kunstgalerie",
+    "description": "Multidisziplinäre Kunstsammlung",
+    "subheading": "Eine multidisziplinäre Sammlung von Kunstwerken",
+    "longDescription": "Entdecken Sie {artistName}s vielfältige Kunstsammlung mit Origami, Häkelarbeiten, Gemälden und Nagelkunst-Designs. Jedes Stück zeigt einzigartige Kreativität und Handwerkskunst."
+  },
+  "Search": {
+    "placeholder": "Kunstwerke suchen…",
+    "noResults": "Keine Kunstwerke gefunden, die Ihrer Suche entsprechen.",
+    "searchLabel": "Suchen"
+  },
+  "Artwork": {
+    "medium": "Medium",
+    "dimensions": "Abmessungen",
+    "year": "Jahr",
+    "description": "Beschreibung"
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "gallery": "Galerie"
+  },
+  "greeting": {
+    "morning": "Guten Morgen!",
+    "afternoon": "Guten Tag!",
+    "evening": "Guten Abend!",
+    "default": "Hallo!"
+  },
+  "introduction": "Ich bin {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Zurück zur Galerie",
+    "backToGalleryAriaLabel": "Zurück zur Galerie gehen",
+    "artworkDetails": "Kunstwerk-Details",
+    "category": "Kategorie",
+    "viewMoreArtworks": "Weitere Kunstwerke ansehen",
+    "shareArtwork": "Kunstwerk teilen",
+    "categoryArtwork": "{category} Kunstwerk"
+  },
+  "Sort": {
+    "title": "Titel",
+    "year": "Jahr",
+    "sortByTitle": "Nach Titel sortieren",
+    "sortByYear": "Nach Jahr sortieren"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} Galerie"
+  },
+  "Theme": {
+    "changeThemeColors": "Theme-Farben ändern",
+    "themeOptions": "Theme-Optionen",
+    "appearance": "Erscheinungsbild",
+    "accentColor": "Akzentfarbe",
+    "dark": "dunkel",
+    "light": "hell",
+    "colors": {
+      "pink": "Rosa",
+      "orange": "Orange",
+      "green": "Hellgrün"
+    },
+    "schemes": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    }
+  },
+  "Chat": {
+    "title": "Kunst-Assistent",
+    "placeholder": "Fragen Sie über Kunst...",
+    "emptyState": "Fragen Sie mich alles über Kunst!",
+    "openChat": "Chat öffnen",
+    "closeChat": "Chat schließen",
+    "sendMessage": "Nachricht senden",
+    "errorMessage": "Antwort konnte nicht abgerufen werden.",
+    "retry": "Wiederholen",
+    "dismissError": "Fehler ausblenden",
+    "clearChat": "Chat leeren",
+    "listening": "Hört zu…",
+    "startListening": "Nachricht diktieren",
+    "stopListening": "Diktat stoppen",
+    "recording": "Aufnahme… {time}",
+    "startRecording": "Sprachnachricht aufnehmen",
+    "stopRecording": "Aufnahme stoppen",
+    "transcribing": "Wird transkribiert…",
+    "transcriptionFailed": "Transkription fehlgeschlagen. Bitte erneut versuchen.",
+    "settings": "Einstellungen",
+    "dictationMode": "Diktat",
+    "dictationBrowser": "Browser",
+    "dictationServer": "Server (KI)",
+    "dictationBrowserUnavailable": "In diesem Browser nicht unterstützt"
+  },
+  "Common": {
+    "loading": "Wird geladen…",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen",
+    "back": "Zurück",
+    "saving": "Wird gespeichert…",
+    "sending": "Wird gesendet…",
+    "verifying": "Wird bestätigt…",
+    "logout": "Abmelden",
+    "closeBroadcastMessage": "Nachricht schließen",
+    "login": "Anmelden",
+    "dashboard": "Dashboard",
+    "preview": "Vorschau"
+  }
+}

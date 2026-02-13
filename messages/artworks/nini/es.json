@@ -1,0 +1,103 @@
+{
+  "Categories": {
+    "origami": {
+      "title": "Creaciones de Origami",
+      "description": "Piezas de arte de plegado de papel intrincadas que muestran precisión y creatividad"
+    },
+    "crochet": {
+      "title": "Artículos de Ganchillo",
+      "description": "Piezas de ganchillo hechas a mano que combinan técnicas tradicionales con diseño moderno"
+    },
+    "paintings": {
+      "title": "Pinturas",
+      "description": "Pinturas originales que exploran varios estilos y técnicas"
+    },
+    "fingernails": {
+      "title": "Arte de Uñas",
+      "description": "Diseños creativos y detallados de arte de uñas"
+    }
+  },
+  "Artworks": {
+    "o1": {
+      "title": "Serie de Grullas de Papel",
+      "description": "Diseños tradicionales japoneses de grullas en colores vibrantes"
+    },
+    "o2": {
+      "title": "Animales Geométricos",
+      "description": "Interpretación moderna de la vida silvestre a través de pliegues geométricos"
+    },
+    "o3": {
+      "title": "Rana Saltarina",
+      "description": "¡Rana de origami tradicional que realmente puede saltar! Una pieza juguetona que combina forma y función"
+    },
+    "o4": {
+      "title": "Caja Cubo Modular",
+      "description": "Origami modular complejo que forma un cubo decorativo que puede abrirse y cerrarse"
+    },
+    "o5": {
+      "title": "Corazón de Amor",
+      "description": "Diseño elegante de origami en forma de corazón con pliegues y curvas delicadas"
+    },
+    "c1": {
+      "title": "Familia de Animales Pequeños",
+      "description": "Colección de pequeños y lindos animales de peluche hechos con lana suave"
+    },
+    "c2": {
+      "title": "Manta Moderna",
+      "description": "Manta de patrón geométrico contemporáneo en tonos pastel"
+    },
+    "c3": {
+      "title": "Rana Amigable",
+      "description": "Adorable rana de ganchillo con ojos grandes y una sonrisa alegre"
+    },
+    "c4": {
+      "title": "Conejito Esponjoso",
+      "description": "Dulce conejo de ganchillo con orejas caídas y una pequeña cola de algodón"
+    },
+    "c5": {
+      "title": "Niño del Cielo",
+      "description": "Adorable Niño del Cielo de ganchillo de Sky: Children of the Light, completo con capa y corazón brillante"
+    },
+    "c6": {
+      "title": "Castor Acogedor",
+      "description": "¡Un castor absolutamente loco con ojos saltones salvajes, dientes enormes y una cola para golpear el agua! ¡Este pequeño maníaco está listo para construir la presa más caótica que hayas visto jamás!"
+    },
+    "p1": {
+      "title": "Atardecer Abstracto",
+      "description": "Interpretación vibrante de un atardecer costero"
+    },
+    "p2": {
+      "title": "Vida Urbana",
+      "description": "Escenas de la ciudad capturadas en estilo impresionista"
+    },
+    "p3": {
+      "title": "Alicia en el País de las Maravillas",
+      "description": "Escena caprichosa de Alicia en el País de las Maravillas con la fiesta del té del Sombrerero Loco"
+    },
+    "n1": {
+      "title": "Colección de Primavera",
+      "description": "Patrones florales con acentos metálicos"
+    },
+    "n2": {
+      "title": "Patrones Abstractos",
+      "description": "Diseños geométricos y abstractos en colores audaces"
+    },
+    "n3": {
+      "title": "Corazones y Amor",
+      "description": "Patrones románticos de corazones con purpurina y detalles delicados"
+    }
+  },
+  "Mediums": {
+    "washiPaper": "Papel Washi",
+    "origamiPaper": "Papel de origami",
+    "specialtyOrigamiPaper": "Papel de origami especial",
+    "merinoWool": "Lana merino",
+    "cottonYarn": "Hilo de algodón",
+    "softAcrylicYarn": "Hilo acrílico suave",
+    "acrylicOnCanvas": "Acrílico sobre lienzo",
+    "oilOnCanvas": "Óleo sobre lienzo",
+    "mixedMediaOnCanvas": "Técnica mixta sobre lienzo",
+    "gelPolish": "Esmalte en gel",
+    "regularPolish": "Esmalte regular"
+  }
+}

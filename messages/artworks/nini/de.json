@@ -1,0 +1,103 @@
+{
+  "Categories": {
+    "origami": {
+      "title": "Origami-Kreationen",
+      "description": "Kunstvolle Papierfaltkunst, die Präzision und Kreativität zeigt"
+    },
+    "crochet": {
+      "title": "Häkelarbeiten",
+      "description": "Handgefertigte Häkelstücke, die traditionelle Techniken mit modernem Design verbinden"
+    },
+    "paintings": {
+      "title": "Gemälde",
+      "description": "Originale Gemälde, die verschiedene Stile und Techniken erkunden"
+    },
+    "fingernails": {
+      "title": "Nagelkunst",
+      "description": "Kreative und detaillierte Nagelkunst-Designs"
+    }
+  },
+  "Artworks": {
+    "o1": {
+      "title": "Papierkranich-Serie",
+      "description": "Traditionelle japanische Kranich-Designs in lebendigen Farben"
+    },
+    "o2": {
+      "title": "Geometrische Tiere",
+      "description": "Moderne Interpretation von Wildtieren durch geometrische Faltungen"
+    },
+    "o3": {
+      "title": "Springfrosch",
+      "description": "Traditioneller Origami-Frosch, der tatsächlich hüpfen kann! Ein spielerisches Stück, das Form und Funktion verbindet"
+    },
+    "o4": {
+      "title": "Modulare Würfelbox",
+      "description": "Komplexes modulares Origami, das einen dekorativen Würfel bildet, der sich öffnen und schließen lässt"
+    },
+    "o5": {
+      "title": "Liebesherz",
+      "description": "Elegantes herzförmiges Origami-Design mit zarten Falten und Kurven"
+    },
+    "c1": {
+      "title": "Kleine Tierfamilie",
+      "description": "Sammlung kleiner, süßer Stofftiere aus weicher Wolle"
+    },
+    "c2": {
+      "title": "Moderne Decke",
+      "description": "Zeitgenössische geometrische Musterdecke in Pastelltönen"
+    },
+    "c3": {
+      "title": "Freundlicher Frosch",
+      "description": "Bezaubernder Häkelfrosch mit großen Augen und einem fröhlichen Lächeln"
+    },
+    "c4": {
+      "title": "Flauschiger Hase",
+      "description": "Süßer Häkelhase mit Schlappohren und einem winzigen Baumwollschwanz"
+    },
+    "c5": {
+      "title": "Himmelskind",
+      "description": "Bezauberndes Häkel-Himmelskind aus Sky: Children of the Light, komplett mit Umhang und leuchtendem Herzen"
+    },
+    "c6": {
+      "title": "Gemütlicher Biber",
+      "description": "Ein absolut verrückter Biber mit wilden Kulleraugen, riesigen Nagezähnen und einem Schwanz um aufs Wasser zu knallen! Dieser kleine Wahnsinnige ist bereit, den chaotischsten Damm zu bauen, den Sie je gesehen haben!"
+    },
+    "p1": {
+      "title": "Abstrakter Sonnenuntergang",
+      "description": "Lebendige Interpretation eines Küstensonnenuntergangs"
+    },
+    "p2": {
+      "title": "Stadtleben",
+      "description": "Stadtszenen im impressionistischen Stil eingefangen"
+    },
+    "p3": {
+      "title": "Alice im Wunderland",
+      "description": "Fantasievolle Szene aus Alice im Wunderland mit der Teeparty des verrückten Hutmachers"
+    },
+    "n1": {
+      "title": "Frühlingskollektion",
+      "description": "Blumenmuster mit metallischen Akzenten"
+    },
+    "n2": {
+      "title": "Abstrakte Muster",
+      "description": "Geometrische und abstrakte Designs in kräftigen Farben"
+    },
+    "n3": {
+      "title": "Herzen & Liebe",
+      "description": "Romantische Herzmuster mit Glitzer und zarten Details"
+    }
+  },
+  "Mediums": {
+    "washiPaper": "Washi-Papier",
+    "origamiPaper": "Origami-Papier",
+    "specialtyOrigamiPaper": "Spezial-Origami-Papier",
+    "merinoWool": "Merinowolle",
+    "cottonYarn": "Baumwollgarn",
+    "softAcrylicYarn": "Weiches Acrylgarn",
+    "acrylicOnCanvas": "Acryl auf Leinwand",
+    "oilOnCanvas": "Öl auf Leinwand",
+    "mixedMediaOnCanvas": "Mischtechnik auf Leinwand",
+    "gelPolish": "Gel-Nagellack",
+    "regularPolish": "Normaler Nagellack"
+  }
+}

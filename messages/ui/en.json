@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "{artistName}'s Art Gallery",
+    "description": "Multi-disciplinary Art Collection",
+    "subheading": "A multi-disciplinary collection of artworks",
+    "longDescription": "Explore {artistName}'s diverse art collection featuring origami, crochet items, paintings, and nail art designs. Each piece showcases unique creativity and craftsmanship."
+  },
+  "Search": {
+    "placeholder": "Search artworks…",
+    "noResults": "No artworks found matching your search.",
+    "searchLabel": "Search"
+  },
+  "Artwork": {
+    "medium": "Medium",
+    "dimensions": "Dimensions",
+    "year": "Year",
+    "description": "Description"
+  },
+  "Navigation": {
+    "home": "Home",
+    "gallery": "Gallery"
+  },
+  "greeting": {
+    "morning": "Good morning!",
+    "afternoon": "Good afternoon!",
+    "evening": "Good evening!",
+    "default": "Hello!"
+  },
+  "introduction": "I'm {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "Back to Gallery",
+    "backToGalleryAriaLabel": "Go back to gallery",
+    "artworkDetails": "Artwork Details",
+    "category": "Category",
+    "viewMoreArtworks": "View More Artworks",
+    "shareArtwork": "Share Artwork",
+    "categoryArtwork": "{category} Artwork"
+  },
+  "Sort": {
+    "title": "Title",
+    "year": "Year",
+    "sortByTitle": "Sort by title",
+    "sortByYear": "Sort by year"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} gallery"
+  },
+  "Theme": {
+    "changeThemeColors": "Change theme colors",
+    "themeOptions": "Theme options",
+    "appearance": "Appearance",
+    "accentColor": "Accent color",
+    "dark": "dark",
+    "light": "light",
+    "colors": {
+      "pink": "Pink",
+      "orange": "Orange",
+      "green": "Light Green"
+    },
+    "schemes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "Chat": {
+    "title": "Art Assistant",
+    "placeholder": "Ask about art...",
+    "emptyState": "Ask me anything about art!",
+    "openChat": "Open chat",
+    "closeChat": "Close chat",
+    "sendMessage": "Send message",
+    "errorMessage": "Unable to get a response.",
+    "retry": "Retry",
+    "dismissError": "Dismiss error",
+    "clearChat": "Clear chat",
+    "listening": "Listening…",
+    "startListening": "Dictate message",
+    "stopListening": "Stop dictation",
+    "recording": "Recording… {time}",
+    "startRecording": "Record voice message",
+    "stopRecording": "Stop recording",
+    "transcribing": "Transcribing…",
+    "transcriptionFailed": "Transcription failed. Please try again.",
+    "settings": "Settings",
+    "dictationMode": "Dictation",
+    "dictationBrowser": "Browser",
+    "dictationServer": "Server (AI)",
+    "dictationBrowserUnavailable": "Not supported in this browser"
+  },
+  "Common": {
+    "loading": "Loading…",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "back": "Back",
+    "saving": "Saving…",
+    "sending": "Sending…",
+    "verifying": "Verifying…",
+    "logout": "Logout",
+    "closeBroadcastMessage": "Close broadcast message",
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "preview": "Preview"
+  }
+}

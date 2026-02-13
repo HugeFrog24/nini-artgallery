@@ -1,0 +1,105 @@
+{
+  "Site": {
+    "name": "{artistName}-ის ხელოვნების გალერეა",
+    "description": "მულტიდისციპლინური ხელოვნების კოლექცია",
+    "subheading": "მულტიდისციპლინური ხელოვნების ნამუშევრების კოლექცია",
+    "longDescription": "გაეცანით {artistName}-ის მრავალფეროვან ხელოვნების კოლექციას, რომელიც მოიცავს ორიგამის, ქსოვის, ნახატებისა და ფრჩხილების დიზაინის ნამუშევრებს. ყოველი ნაწარმოები გამოირჩევა უნიკალური შემოქმედებითობითა და ოსტატობით."
+  },
+  "Search": {
+    "placeholder": "ძიება ნამუშევრებში…",
+    "noResults": "თქვენს ძიებას შესაბამისი ნამუშევრები ვერ მოიძებნა.",
+    "searchLabel": "ძიება"
+  },
+  "Artwork": {
+    "medium": "მასალა",
+    "dimensions": "ზომები",
+    "year": "წელი",
+    "description": "აღწერა"
+  },
+  "Navigation": {
+    "home": "მთავარი",
+    "gallery": "გალერეა"
+  },
+  "greeting": {
+    "morning": "დილა მშვიდობისა!",
+    "afternoon": "დღე მშვიდობისა!",
+    "evening": "საღამო მშვიდობისა!",
+    "default": "გამარჯობა!"
+  },
+  "introduction": "მე ვარ {name}.",
+  "ArtworkDetail": {
+    "backToGallery": "უკან გალერეაში",
+    "backToGalleryAriaLabel": "დაბრუნება გალერეაში",
+    "artworkDetails": "ნამუშევრის დეტალები",
+    "category": "კატეგორია",
+    "viewMoreArtworks": "მეტი ნამუშევრის ნახვა",
+    "shareArtwork": "ნამუშევრის გაზიარება",
+    "categoryArtwork": "{category} ნამუშევარი"
+  },
+  "Sort": {
+    "title": "სათაური",
+    "year": "წელი",
+    "sortByTitle": "დალაგება სათაურით",
+    "sortByYear": "დალაგება წლით"
+  },
+  "Gallery": {
+    "categoryGallery": "{category} გალერეა"
+  },
+  "Theme": {
+    "changeThemeColors": "თემის ფერების შეცვლა",
+    "themeOptions": "თემის პარამეტრები",
+    "appearance": "გარეგნობა",
+    "accentColor": "აქცენტის ფერი",
+    "dark": "მუქი",
+    "light": "ღია",
+    "colors": {
+      "pink": "ვარდისფერი",
+      "orange": "ნარინჯისფერი",
+      "green": "ღია მწვანე"
+    },
+    "schemes": {
+      "light": "ღია",
+      "dark": "მუქი",
+      "system": "სისტემური"
+    }
+  },
+  "Chat": {
+    "title": "ხელოვნების ასისტენტი",
+    "placeholder": "იკითხეთ ხელოვნების შესახებ...",
+    "emptyState": "მკითხეთ ნებისმიერი რამ ხელოვნების შესახებ!",
+    "openChat": "ჩატის გახსნა",
+    "closeChat": "ჩატის დახურვა",
+    "sendMessage": "შეტყობინების გაგზავნა",
+    "errorMessage": "პასუხის მიღება ვერ მოხერხდა.",
+    "retry": "ხელახლა ცდა",
+    "dismissError": "შეცდომის დამალვა",
+    "clearChat": "ჩატის გასუფთავება",
+    "listening": "მოსმენა…",
+    "startListening": "შეტყობინების კარნახი",
+    "stopListening": "კარნახის შეჩერება",
+    "recording": "ჩაწერა… {time}",
+    "startRecording": "ხმოვანი შეტყობინების ჩაწერა",
+    "stopRecording": "ჩაწერის შეჩერება",
+    "transcribing": "ტრანსკრიბაცია…",
+    "transcriptionFailed": "ტრანსკრიბაცია ვერ მოხერხდა. სცადეთ ხელახლა.",
+    "settings": "პარამეტრები",
+    "dictationMode": "კარნახი",
+    "dictationBrowser": "ბრაუზერი",
+    "dictationServer": "სერვერი (AI)",
+    "dictationBrowserUnavailable": "ამ ბრაუზერში არ არის მხარდაჭერილი"
+  },
+  "Common": {
+    "loading": "იტვირთება…",
+    "error": "მოხდა შეცდომა",
+    "retry": "ხელახლა ცდა",
+    "back": "უკან",
+    "saving": "ინახება…",
+    "sending": "იგზავნება…",
+    "verifying": "მოწმდება…",
+    "logout": "გასვლა",
+    "closeBroadcastMessage": "შეტყობინების დახურვა",
+    "login": "შესვლა",
+    "dashboard": "მართვის პანელი",
+    "preview": "წინასწარი ხედვა"
+  }
+}
