@@ -2,11 +2,15 @@
   "Categories": {
     "paintings": {
       "title": "Pinturas y Arte Digital",
-      "description": "Pinturas oníricas que mezclan fantasía y emoción"
+      "description": "Pinturas oníricas que mezclan fantasía y emoción",
+      "gallery": "Galería de pinturas y arte digital",
+      "artwork": "Obra de pintura y arte digital"
     },
     "origami": {
       "title": "Ilustraciones",
-      "description": "Ilustraciones a mano y tinta inspiradas en cuentos de hadas"
+      "description": "Ilustraciones a mano y tinta inspiradas en cuentos de hadas",
+      "gallery": "Galería de ilustraciones",
+      "artwork": "Ilustración"
     }
   },
   "Artworks": {

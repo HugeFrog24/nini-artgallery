@@ -34,16 +34,14 @@
     "category": "Kategori",
     "viewMoreArtworks": "Daha Fazla Eser Görüntüle",
     "shareArtwork": "Eseri Paylaş",
-    "categoryArtwork": "{category} Eseri"
+    "notFoundTitle": "Eser Bulunamadı",
+    "notFoundDescription": "İstenen eser bulunamadı."
   },
   "Sort": {
     "title": "Başlık",
     "year": "Yıl",
     "sortByTitle": "Başlığa göre sırala",
     "sortByYear": "Yıla göre sırala"
-  },
-  "Gallery": {
-    "categoryGallery": "{category} galerisi"
   },
   "Theme": {
     "changeThemeColors": "Tema renklerini değiştir",

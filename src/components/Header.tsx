@@ -7,9 +7,9 @@ import {
   UserIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { useTranslations, useLocale } from "next-intl";
+import { useSearchParams } from "next/navigation";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useHeaderHeightCSS } from "@/hooks/useHeaderHeight";
 
@@ -41,7 +41,6 @@ export default function Header({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const locale = useLocale();
   const t = useTranslations();
 
   // Determine if we're in controlled mode (SearchHeader behavior) or autonomous mode (GlobalHeader behavior)
@@ -122,17 +121,15 @@ export default function Header({
       // Autonomous mode: handle navigation ourselves
       setInternalLoading(true);
       try {
-        // Check if we're on the localized home page
-        const isOnHomePage = pathname === `/${locale}`;
+        // Check if we're on the home page
+        const isOnHomePage = pathname === "/";
 
         if (!isOnHomePage) {
-          // Navigate to localized home with search
+          // Navigate to home with search
           if (trimmedSearch) {
-            router.push(
-              `/${locale}?search=${encodeURIComponent(trimmedSearch)}`,
-            );
+            router.push(`/?search=${encodeURIComponent(trimmedSearch)}`);
           } else {
-            router.push(`/${locale}`);
+            router.push("/");
           }
         } else {
           // If we're on the home page, update search params
@@ -142,7 +139,7 @@ export default function Header({
           } else {
             params.delete("search");
           }
-          router.push(`/${locale}?${params.toString()}`);
+          router.push(`/?${params.toString()}`);
         }
       } finally {
         setInternalLoading(false);
@@ -159,7 +156,7 @@ export default function Header({
       setAdminEmail(null);
       setIsUserMenuOpen(false);
       setIsLoggingOut(false);
-      router.push(`/${locale}/admin/login`);
+      router.push("/admin/login");
     }
   };
 
@@ -196,7 +193,7 @@ export default function Header({
                 {isUserMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 rounded-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg py-1 z-50">
                     <Link
-                      href={`/${locale}/admin`}
+                      href="/admin"
                       onClick={() => setIsUserMenuOpen(false)}
                       className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                     >
@@ -215,7 +212,7 @@ export default function Header({
               </div>
             ) : (
               <Link
-                href={`/${locale}/admin/login`}
+                href="/admin/login"
                 className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
               >
                 <UserIcon className="h-4 w-4" />
@@ -228,7 +225,7 @@ export default function Header({
 
         {/* Second row: Title and Description */}
         <div className="text-center">
-          <Link href={`/${locale}`} className="inline-block">
+          <Link href="/" className="inline-block">
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1 hover:text-accent-600 transition-colors">
               {t("Site.name", { artistName: t("Artist.name") })}
             </h1>

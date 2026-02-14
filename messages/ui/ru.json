@@ -34,16 +34,14 @@
     "category": "Категория",
     "viewMoreArtworks": "Посмотреть больше произведений",
     "shareArtwork": "Поделиться произведением",
-    "categoryArtwork": "Произведение {category}"
+    "notFoundTitle": "Произведение не найдено",
+    "notFoundDescription": "Запрашиваемое произведение не найдено."
   },
   "Sort": {
     "title": "Название",
     "year": "Год",
     "sortByTitle": "Сортировать по названию",
     "sortByYear": "Сортировать по году"
-  },
-  "Gallery": {
-    "categoryGallery": "Галерея {category}"
   },
   "Theme": {
     "changeThemeColors": "Изменить цвета темы",

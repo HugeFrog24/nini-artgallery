@@ -7,16 +7,14 @@ import { getTenantId, tenantMessagePath } from "@/lib/tenant";
 export default getRequestConfig(async ({ requestLocale }) => {
   // The locale is resolved by the next-intl middleware from the URL prefix,
   // locale cookie, or accept-language negotiation. It should always be present.
-  const requested = await requestLocale;
+  const locale = await requestLocale;
 
-  if (!requested || !routing.locales.includes(requested as (typeof routing.locales)[number])) {
+  if (!locale || !routing.locales.includes(locale as (typeof routing.locales)[number])) {
     throw new Error(
-      `[i18n/request] Invalid or missing locale "${requested}". ` +
+      `[i18n/request] Invalid or missing locale "${locale}". ` +
         "The next-intl middleware should have resolved this before reaching here.",
     );
   }
-
-  const locale = requested;
 
   // Resolve the tenant from the proxy-injected header.
   // Falls back to the default tenant during static prerendering.

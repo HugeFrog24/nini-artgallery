@@ -45,8 +45,8 @@ export async function generateMetadata({
 
   if (!artwork) {
     return {
-      title: "Artwork Not Found",
-      description: "The requested artwork could not be found.",
+      title: t("ArtworkDetail.notFoundTitle"),
+      description: t("ArtworkDetail.notFoundDescription"),
     };
   }
 

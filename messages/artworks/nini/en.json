@@ -2,19 +2,27 @@
   "Categories": {
     "origami": {
       "title": "Origami Creations",
-      "description": "Intricate paper folding art pieces showcasing precision and creativity"
+      "description": "Intricate paper folding art pieces showcasing precision and creativity",
+      "gallery": "Origami Creations gallery",
+      "artwork": "Origami Creations artwork"
     },
     "crochet": {
       "title": "Crochet Items",
-      "description": "Handcrafted crochet pieces combining traditional techniques with modern design"
+      "description": "Handcrafted crochet pieces combining traditional techniques with modern design",
+      "gallery": "Crochet Items gallery",
+      "artwork": "Crochet Items artwork"
     },
     "paintings": {
       "title": "Paintings",
-      "description": "Original paintings exploring various styles and techniques"
+      "description": "Original paintings exploring various styles and techniques",
+      "gallery": "Paintings gallery",
+      "artwork": "Paintings artwork"
     },
     "fingernails": {
       "title": "Fingernail Art",
-      "description": "Creative and detailed nail art designs"
+      "description": "Creative and detailed nail art designs",
+      "gallery": "Fingernail Art gallery",
+      "artwork": "Fingernail Art artwork"
     }
   },
   "Artworks": {

@@ -54,7 +54,6 @@ const SMTP_CONFIG = {
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL!;
 const JWT_SECRET = process.env.JWT_SECRET!;
-const SMTP_FROM_NAME = process.env.SMTP_FROM_NAME;
 
 // Create nodemailer transporter
 const transporter = nodemailer.createTransport(SMTP_CONFIG);
@@ -92,10 +91,9 @@ export async function sendOTPEmail(
   try {
     const emailTranslations = await getEmailTranslations(locale);
     const localizedSiteName = await getLocalizedSiteName(locale);
-    const senderName = SMTP_FROM_NAME || localizedSiteName;
 
     const mailOptions = {
-      from: `${senderName} <${SMTP_CONFIG.auth.user}>`,
+      from: `${localizedSiteName} <${SMTP_CONFIG.auth.user}>`,
       to: email,
       subject: emailTranslations.subject,
       html: `

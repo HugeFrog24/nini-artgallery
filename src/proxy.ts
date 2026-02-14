@@ -62,9 +62,8 @@ export function proxy(request: NextRequest) {
         new URL(`/${locale}/admin/login`, request.url),
       );
     }
-    return NextResponse.next({
-      request: { headers: requestHeaders },
-    });
+    // Authenticated — fall through to handleI18nRouting so next-intl
+    // resolves the locale. Without this, requestLocale is undefined.
   }
 
   // Skip locale handling for API routes and static assets (anything with a

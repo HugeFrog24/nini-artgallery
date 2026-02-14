@@ -2,11 +2,15 @@
   "Categories": {
     "paintings": {
       "title": "Gemälde & Digitale Kunst",
-      "description": "Traumhafte Gemälde, die Fantasie und Emotion verbinden"
+      "description": "Traumhafte Gemälde, die Fantasie und Emotion verbinden",
+      "gallery": "Galerie der Gemälde und digitalen Kunst",
+      "artwork": "Gemälde"
     },
     "origami": {
       "title": "Illustrationen",
-      "description": "Handgezeichnete Tuscheillustrationen, inspiriert von Märchen"
+      "description": "Handgezeichnete Tuscheillustrationen, inspiriert von Märchen",
+      "gallery": "Illustrationen-Galerie",
+      "artwork": "Illustration"
     }
   },
   "Artworks": {

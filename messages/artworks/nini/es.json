@@ -2,19 +2,27 @@
   "Categories": {
     "origami": {
       "title": "Creaciones de Origami",
-      "description": "Piezas de arte de plegado de papel intrincadas que muestran precisión y creatividad"
+      "description": "Piezas de arte de plegado de papel intrincadas que muestran precisión y creatividad",
+      "gallery": "Galería de creaciones de origami",
+      "artwork": "Obra de origami"
     },
     "crochet": {
       "title": "Artículos de Ganchillo",
-      "description": "Piezas de ganchillo hechas a mano que combinan técnicas tradicionales con diseño moderno"
+      "description": "Piezas de ganchillo hechas a mano que combinan técnicas tradicionales con diseño moderno",
+      "gallery": "Galería de artículos de ganchillo",
+      "artwork": "Obra de ganchillo"
     },
     "paintings": {
       "title": "Pinturas",
-      "description": "Pinturas originales que exploran varios estilos y técnicas"
+      "description": "Pinturas originales que exploran varios estilos y técnicas",
+      "gallery": "Galería de pinturas",
+      "artwork": "Obra de pintura"
     },
     "fingernails": {
       "title": "Arte de Uñas",
-      "description": "Diseños creativos y detallados de arte de uñas"
+      "description": "Diseños creativos y detallados de arte de uñas",
+      "gallery": "Galería de arte de uñas",
+      "artwork": "Obra de arte de uñas"
     }
   },
   "Artworks": {

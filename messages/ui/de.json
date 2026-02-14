@@ -34,16 +34,14 @@
     "category": "Kategorie",
     "viewMoreArtworks": "Weitere Kunstwerke ansehen",
     "shareArtwork": "Kunstwerk teilen",
-    "categoryArtwork": "{category} Kunstwerk"
+    "notFoundTitle": "Kunstwerk nicht gefunden",
+    "notFoundDescription": "Das angeforderte Kunstwerk konnte nicht gefunden werden."
   },
   "Sort": {
     "title": "Titel",
     "year": "Jahr",
     "sortByTitle": "Nach Titel sortieren",
     "sortByYear": "Nach Jahr sortieren"
-  },
-  "Gallery": {
-    "categoryGallery": "{category} Galerie"
   },
   "Theme": {
     "changeThemeColors": "Theme-Farben ändern",

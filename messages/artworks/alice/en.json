@@ -2,11 +2,15 @@
   "Categories": {
     "paintings": {
       "title": "Paintings & Digital Art",
-      "description": "Dreamlike paintings blending fantasy and emotion"
+      "description": "Dreamlike paintings blending fantasy and emotion",
+      "gallery": "Paintings & Digital Art gallery",
+      "artwork": "Paintings & Digital Art artwork"
     },
     "origami": {
       "title": "Illustrations",
-      "description": "Hand-drawn and ink illustrations inspired by fairy tales"
+      "description": "Hand-drawn and ink illustrations inspired by fairy tales",
+      "gallery": "Illustrations gallery",
+      "artwork": "Illustration"
     }
   },
   "Artworks": {

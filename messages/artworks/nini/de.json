@@ -2,19 +2,27 @@
   "Categories": {
     "origami": {
       "title": "Origami-Kreationen",
-      "description": "Kunstvolle Papierfaltkunst, die Präzision und Kreativität zeigt"
+      "description": "Kunstvolle Papierfaltkunst, die Präzision und Kreativität zeigt",
+      "gallery": "Origami-Kreationen-Galerie",
+      "artwork": "Origami-Kreation"
     },
     "crochet": {
       "title": "Häkelarbeiten",
-      "description": "Handgefertigte Häkelstücke, die traditionelle Techniken mit modernem Design verbinden"
+      "description": "Handgefertigte Häkelstücke, die traditionelle Techniken mit modernem Design verbinden",
+      "gallery": "Häkelarbeiten-Galerie",
+      "artwork": "Häkelarbeit"
     },
     "paintings": {
       "title": "Gemälde",
-      "description": "Originale Gemälde, die verschiedene Stile und Techniken erkunden"
+      "description": "Originale Gemälde, die verschiedene Stile und Techniken erkunden",
+      "gallery": "Gemälde-Galerie",
+      "artwork": "Gemälde"
     },
     "fingernails": {
       "title": "Nagelkunst",
-      "description": "Kreative und detaillierte Nagelkunst-Designs"
+      "description": "Kreative und detaillierte Nagelkunst-Designs",
+      "gallery": "Nagelkunst-Galerie",
+      "artwork": "Nagelkunst-Werk"
     }
   },
   "Artworks": {

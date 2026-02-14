@@ -48,7 +48,7 @@ export default function SectionContainer({ section }: SectionContainerProps) {
         description={section.description}
         onSort={handleSort}
       />
-      <ArtworkGrid artworks={sortedArtworks} category={section.title} />
+      <ArtworkGrid artworks={sortedArtworks} categoryId={section.id} />
     </section>
   );
 }

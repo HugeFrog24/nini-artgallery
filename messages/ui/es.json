@@ -34,16 +34,14 @@
     "category": "Categoría",
     "viewMoreArtworks": "Ver Más Obras",
     "shareArtwork": "Compartir Obra",
-    "categoryArtwork": "Obra de {category}"
+    "notFoundTitle": "Obra no encontrada",
+    "notFoundDescription": "No se pudo encontrar la obra solicitada."
   },
   "Sort": {
     "title": "Título",
     "year": "Año",
     "sortByTitle": "Ordenar por título",
     "sortByYear": "Ordenar por año"
-  },
-  "Gallery": {
-    "categoryGallery": "galería de {category}"
   },
   "Theme": {
     "changeThemeColors": "Cambiar colores del tema",

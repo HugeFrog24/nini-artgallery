@@ -2,19 +2,27 @@
   "Categories": {
     "origami": {
       "title": "Origami Kreasyonları",
-      "description": "Hassasiyet ve yaratıcılığı sergileyen karmaşık kağıt katlama sanat eserleri"
+      "description": "Hassasiyet ve yaratıcılığı sergileyen karmaşık kağıt katlama sanat eserleri",
+      "gallery": "Origami kreasyonları galerisi",
+      "artwork": "Origami eseri"
     },
     "crochet": {
       "title": "Örgü Ürünleri",
-      "description": "Geleneksel teknikleri modern tasarımla birleştiren el yapımı örgü parçaları"
+      "description": "Geleneksel teknikleri modern tasarımla birleştiren el yapımı örgü parçaları",
+      "gallery": "Örgü ürünleri galerisi",
+      "artwork": "Örgü eseri"
     },
     "paintings": {
       "title": "Resimler",
-      "description": "Çeşitli stil ve teknikleri keşfeden orijinal resimler"
+      "description": "Çeşitli stil ve teknikleri keşfeden orijinal resimler",
+      "gallery": "Resim galerisi",
+      "artwork": "Resim eseri"
     },
     "fingernails": {
       "title": "Tırnak Sanatı",
-      "description": "Yaratıcı ve detaylı tırnak sanatı tasarımları"
+      "description": "Yaratıcı ve detaylı tırnak sanatı tasarımları",
+      "gallery": "Tırnak sanatı galerisi",
+      "artwork": "Tırnak sanatı eseri"
     }
   },
   "Artworks": {

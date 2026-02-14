@@ -2,7 +2,7 @@
 
 import { Artwork } from "@/types/artwork";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 interface ArtworkDetailViewProps {
@@ -47,9 +47,7 @@ export default function ArtworkDetailView({ artwork }: ArtworkDetailViewProps) {
             {/* Image caption */}
             <div className="text-center">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {t("ArtworkDetail.categoryArtwork", {
-                  category: t(`Categories.${artwork.category}.title`),
-                })}
+                {t(`Categories.${artwork.category}.artwork`)}
               </p>
             </div>
           </div>

@@ -1,19 +1,18 @@
 "use client";
 
 import { Artwork } from "@/types/artwork";
-import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 interface ArtworkCardProps {
   artwork: Artwork;
 }
 
 export default function ArtworkCard({ artwork }: ArtworkCardProps) {
-  const locale = useLocale();
   const t = useTranslations("Artwork");
 
   return (
-    <Link href={`/${locale}/artwork/${artwork.id}`} className="block w-full">
+    <Link href={`/artwork/${artwork.id}`} className="block w-full">
       <article
         className="group relative bg-white dark:bg-gray-800 rounded-md overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 w-full cursor-pointer"
         aria-labelledby={`title-${artwork.id}`}

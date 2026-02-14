@@ -34,16 +34,14 @@
     "category": "კატეგორია",
     "viewMoreArtworks": "მეტი ნამუშევრის ნახვა",
     "shareArtwork": "ნამუშევრის გაზიარება",
-    "categoryArtwork": "{category} ნამუშევარი"
+    "notFoundTitle": "ნამუშევარი ვერ მოიძებნა",
+    "notFoundDescription": "მოთხოვნილი ნამუშევარი ვერ მოიძებნა."
   },
   "Sort": {
     "title": "სათაური",
     "year": "წელი",
     "sortByTitle": "დალაგება სათაურით",
     "sortByYear": "დალაგება წლით"
-  },
-  "Gallery": {
-    "categoryGallery": "{category} გალერეა"
   },
   "Theme": {
     "changeThemeColors": "თემის ფერების შეცვლა",

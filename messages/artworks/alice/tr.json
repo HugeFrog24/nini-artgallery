@@ -2,11 +2,15 @@
   "Categories": {
     "paintings": {
       "title": "Tablolar ve Dijital Sanat",
-      "description": "Fantezi ve duyguyu harmanlayan rüya gibi tablolar"
+      "description": "Fantezi ve duyguyu harmanlayan rüya gibi tablolar",
+      "gallery": "Tablo ve dijital sanat galerisi",
+      "artwork": "Tablo eseri"
     },
     "origami": {
       "title": "İllüstrasyonlar",
-      "description": "Peri masallarından ilham alan el çizimi ve mürekkep illüstrasyonları"
+      "description": "Peri masallarından ilham alan el çizimi ve mürekkep illüstrasyonları",
+      "gallery": "İllüstrasyon galerisi",
+      "artwork": "İllüstrasyon"
     }
   },
   "Artworks": {

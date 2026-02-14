@@ -34,16 +34,14 @@
     "category": "Category",
     "viewMoreArtworks": "View More Artworks",
     "shareArtwork": "Share Artwork",
-    "categoryArtwork": "{category} Artwork"
+    "notFoundTitle": "Artwork Not Found",
+    "notFoundDescription": "The requested artwork could not be found."
   },
   "Sort": {
     "title": "Title",
     "year": "Year",
     "sortByTitle": "Sort by title",
     "sortByYear": "Sort by year"
-  },
-  "Gallery": {
-    "categoryGallery": "{category} gallery"
   },
   "Theme": {
     "changeThemeColors": "Change theme colors",

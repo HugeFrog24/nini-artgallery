@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 interface LoginState {
   step: "email" | "otp";
@@ -17,7 +17,6 @@ interface LoginState {
 
 export default function AdminLogin() {
   const router = useRouter();
-  const locale = useLocale();
   const t = useTranslations("admin");
   const tCommon = useTranslations("Common");
   const [state, setState] = useState<LoginState>({
@@ -113,7 +112,7 @@ export default function AdminLogin() {
 
         // Redirect to localized admin dashboard
         setTimeout(() => {
-          router.push(`/${locale}/admin`);
+          router.push("/admin");
         }, 1000);
       } else {
         updateState({
@@ -140,7 +139,7 @@ export default function AdminLogin() {
 
   if (state.configLoading) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-[calc(100vh-var(--header-height,160px))] flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-accent-600 mx-auto"></div>
@@ -154,7 +153,7 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[calc(100vh-var(--header-height,160px))] flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
