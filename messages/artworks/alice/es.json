@@ -11,6 +11,12 @@
       "description": "Ilustraciones a mano y tinta inspiradas en cuentos de hadas",
       "gallery": "Galería de ilustraciones",
       "artwork": "Ilustración"
+    },
+    "crochet": {
+      "title": "Figuras de ganchillo",
+      "description": "Figuras y juguetes tejidos a mano",
+      "gallery": "Galería de figuras de ganchillo",
+      "artwork": "Figura de ganchillo"
     }
   },
   "Artworks": {
@@ -33,11 +39,24 @@
     "o2": {
       "title": "Bocetos de Hongos",
       "description": "Estudios a tinta de hongos fantásticos — algunos más altos que casas"
+    },
+    "p4": {
+      "title": "Té con el castor",
+      "description": "Una acogedora escena de té con un castor — una amistad de cuento en una mesa servida"
+    },
+    "p5": {
+      "title": "La pena de Fedora",
+      "description": "La rana Samokvak del cuento de Chukovski — observa con calma la huida de la vajilla"
+    },
+    "c1": {
+      "title": "Castor",
+      "description": "Una figura de ganchillo de un castor con cola — suave y acogedor"
     }
   },
   "Mediums": {
     "digitalPainting": "Pintura digital",
     "watercolorOnPaper": "Acuarela sobre papel",
-    "inkOnPaper": "Tinta sobre papel"
+    "inkOnPaper": "Tinta sobre papel",
+    "cottonYarn": "Hilo de algodón"
   }
 }

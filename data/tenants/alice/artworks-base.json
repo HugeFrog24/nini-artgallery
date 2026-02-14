@@ -26,6 +26,35 @@
           "mediumKey": "digitalPainting",
           "dimensions": "4000 x 3000 px",
           "year": 2024
+        },
+        {
+          "id": "p4",
+          "imageUrl": "#8B4513",
+          "category": "paintings",
+          "mediumKey": "watercolorOnPaper",
+          "dimensions": "24\" x 18\"",
+          "year": 2025
+        },
+        {
+          "id": "p5",
+          "imageUrl": "#2E8B57",
+          "category": "paintings",
+          "mediumKey": "digitalPainting",
+          "dimensions": "3500 x 2800 px",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": "crochet",
+      "artworks": [
+        {
+          "id": "c1",
+          "imageUrl": "#D2691E",
+          "category": "crochet",
+          "mediumKey": "cottonYarn",
+          "dimensions": "6\" height",
+          "year": 2025
         }
       ]
     },

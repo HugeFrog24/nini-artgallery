@@ -11,6 +11,12 @@
       "description": "Hand-drawn and ink illustrations inspired by fairy tales",
       "gallery": "Illustrations gallery",
       "artwork": "Illustration"
+    },
+    "crochet": {
+      "title": "Crochet Figurines",
+      "description": "Handcrafted knitted figurines and toys",
+      "gallery": "Crochet Figurines gallery",
+      "artwork": "Crochet figurine"
     }
   },
   "Artworks": {
@@ -33,11 +39,24 @@
     "o2": {
       "title": "Mushroom Sketches",
       "description": "Ink studies of fantastical mushrooms — some taller than houses"
+    },
+    "p4": {
+      "title": "Tea with the Beaver",
+      "description": "A cozy tea-time scene with a beaver — a fairy-tale friendship at a set table"
+    },
+    "p5": {
+      "title": "Fedora's Grief",
+      "description": "The Samokvak frog from Chukovsky's tale — calmly watching the dishes flee"
+    },
+    "c1": {
+      "title": "Beaver",
+      "description": "A crocheted beaver figurine with a tail — soft and cozy"
     }
   },
   "Mediums": {
     "digitalPainting": "Digital painting",
     "watercolorOnPaper": "Watercolor on paper",
-    "inkOnPaper": "Ink on paper"
+    "inkOnPaper": "Ink on paper",
+    "cottonYarn": "Cotton yarn"
   }
 }

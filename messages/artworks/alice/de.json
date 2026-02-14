@@ -11,6 +11,12 @@
       "description": "Handgezeichnete Tuscheillustrationen, inspiriert von Märchen",
       "gallery": "Illustrationen-Galerie",
       "artwork": "Illustration"
+    },
+    "crochet": {
+      "title": "Häkelfiguren",
+      "description": "Handgefertigte gehäkelte Figuren und Spielzeuge",
+      "gallery": "Häkelfiguren-Galerie",
+      "artwork": "Häkelfigur"
     }
   },
   "Artworks": {
@@ -33,11 +39,24 @@
     "o2": {
       "title": "Pilzskizzen",
       "description": "Tuschestudien fantastischer Pilze — manche größer als Häuser"
+    },
+    "p4": {
+      "title": "Tee mit dem Biber",
+      "description": "Eine gemütliche Teeszene mit einem Biber — eine märchenhafte Freundschaft am gedeckten Tisch"
+    },
+    "p5": {
+      "title": "Fedoras Kummer",
+      "description": "Der Frosch Samokvak aus Tschukowskis Erzählung — beobachtet gelassen die Flucht des Geschirrs"
+    },
+    "c1": {
+      "title": "Biber",
+      "description": "Eine gehäkelte Biberfigur mit Schwanz — weich und gemütlich"
     }
   },
   "Mediums": {
     "digitalPainting": "Digitale Malerei",
     "watercolorOnPaper": "Aquarell auf Papier",
-    "inkOnPaper": "Tusche auf Papier"
+    "inkOnPaper": "Tusche auf Papier",
+    "cottonYarn": "Baumwollgarn"
   }
 }
