@@ -593,6 +593,14 @@ export default function ChatWidget({
         <h2 className="text-sm font-semibold text-white">{t("Chat.title")}</h2>
         <div className="flex items-center gap-2">
           <button
+            onClick={onReset}
+            className="text-white/80 hover:text-white transition-colors focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label={t("Chat.clearChat")}
+            disabled={isLoading}
+          >
+            <TrashIcon className="h-5 w-5" />
+          </button>
+          <button
             onClick={() => setSettingsOpen((v) => !v)}
             className={`transition-colors focus:outline-none ${
               settingsOpen
@@ -602,14 +610,6 @@ export default function ChatWidget({
             aria-label={t("Chat.settings")}
           >
             <Cog6ToothIcon className="h-5 w-5" />
-          </button>
-          <button
-            onClick={onReset}
-            className="text-white/80 hover:text-white transition-colors focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label={t("Chat.clearChat")}
-            disabled={isLoading}
-          >
-            <TrashIcon className="h-5 w-5" />
           </button>
           <button
             onClick={onClose}
