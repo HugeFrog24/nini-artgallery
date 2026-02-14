@@ -86,6 +86,11 @@
     "dictationServer": "Сервер (ИИ)",
     "dictationBrowserUnavailable": "Не поддерживается в этом браузере"
   },
+  "Preferences": {
+    "title": "Настройки",
+    "language": "Язык",
+    "theme": "Тема"
+  },
   "Common": {
     "loading": "Загрузка…",
     "error": "Произошла ошибка",

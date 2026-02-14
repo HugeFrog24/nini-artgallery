@@ -8,6 +8,6 @@ export const routing = defineRouting({
   defaultLocale: "en",
   localeCookie: {
     name: "locale",
-    maxAge: 60 * 60 * 24 * 365, // 1 year, matching current LanguageSwitcher
+    maxAge: 60 * 60 * 24 * 365, // 1 year, matching current PreferencesMenu
   },
 });

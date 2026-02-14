@@ -86,6 +86,11 @@
     "dictationServer": "Server (AI)",
     "dictationBrowserUnavailable": "Not supported in this browser"
   },
+  "Preferences": {
+    "title": "Preferences",
+    "language": "Language",
+    "theme": "Theme"
+  },
   "Common": {
     "loading": "Loading…",
     "error": "An error occurred",

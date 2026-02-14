@@ -86,6 +86,11 @@
     "dictationServer": "Sunucu (YZ)",
     "dictationBrowserUnavailable": "Bu tarayıcıda desteklenmiyor"
   },
+  "Preferences": {
+    "title": "Tercihler",
+    "language": "Dil",
+    "theme": "Tema"
+  },
   "Common": {
     "loading": "Yükleniyor…",
     "error": "Bir hata oluştu",

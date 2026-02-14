@@ -4,7 +4,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { SUPPORTED_LOCALES } from "@/lib/locales";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
-import ThemeSelector from "@/components/theme/ThemeSelector";
 import ChatToggle from "@/components/ChatToggle";
 import Header from "@/components/Header";
 import LocaleHtmlLang from "@/components/LocaleHtmlLang";
@@ -96,7 +95,6 @@ export default async function LocaleLayout({
         >
           {children}
           <ChatToggle />
-          <ThemeSelector />
         </div>
       </ThemeProvider>
     </NextIntlClientProvider>

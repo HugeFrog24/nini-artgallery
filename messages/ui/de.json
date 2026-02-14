@@ -86,6 +86,11 @@
     "dictationServer": "Server (KI)",
     "dictationBrowserUnavailable": "In diesem Browser nicht unterstützt"
   },
+  "Preferences": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Design"
+  },
   "Common": {
     "loading": "Wird geladen…",
     "error": "Ein Fehler ist aufgetreten",

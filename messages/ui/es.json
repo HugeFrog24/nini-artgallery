@@ -86,6 +86,11 @@
     "dictationServer": "Servidor (IA)",
     "dictationBrowserUnavailable": "No compatible con este navegador"
   },
+  "Preferences": {
+    "title": "Preferencias",
+    "language": "Idioma",
+    "theme": "Tema"
+  },
   "Common": {
     "loading": "Cargando…",
     "error": "Ocurrió un error",

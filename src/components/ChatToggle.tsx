@@ -12,7 +12,7 @@ import { supportedLocaleCodes, getLocaleConfig } from "@/lib/locales";
 
 /**
  * Layout-level chat bubble button + panel.
- * Sits next to the ThemeSelector in the fixed bottom-right corner.
+ * Sits in the fixed bottom-right corner as the sole floating action button.
  * Owns the open/close state; delegates everything else to ChatWidget.
  *
  * Also bridges client-side chat tools (e.g. `setTheme`) to app state
@@ -122,7 +122,7 @@ export default function ChatToggle() {
   );
 
   return (
-    <div className="fixed bottom-6 right-20 z-50">
+    <div className="fixed bottom-6 right-6 z-50">
       {/* Bubble button — visible when panel is closed */}
       {!isOpen && (
         <button

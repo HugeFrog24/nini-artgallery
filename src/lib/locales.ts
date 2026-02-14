@@ -1,6 +1,6 @@
 /**
  * Centralized locale configuration for the application
- * This ensures consistency between LanguageSwitcher and admin translation management
+ * This ensures consistency between PreferencesMenu and admin translation management
  */
 
 interface LocaleConfig {

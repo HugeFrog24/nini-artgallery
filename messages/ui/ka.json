@@ -86,6 +86,11 @@
     "dictationServer": "სერვერი (AI)",
     "dictationBrowserUnavailable": "ამ ბრაუზერში არ არის მხარდაჭერილი"
   },
+  "Preferences": {
+    "title": "პარამეტრები",
+    "language": "ენა",
+    "theme": "თემა"
+  },
   "Common": {
     "loading": "იტვირთება…",
     "error": "მოხდა შეცდომა",

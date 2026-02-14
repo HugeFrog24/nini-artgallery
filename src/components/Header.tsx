@@ -10,7 +10,7 @@ import {
 import { useSearchParams } from "next/navigation";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "./LanguageSwitcher";
+import PreferencesMenu from "./PreferencesMenu";
 import { useHeaderHeightCSS } from "@/hooks/useHeaderHeight";
 
 interface HeaderProps {
@@ -219,7 +219,7 @@ export default function Header({
                 {t("Common.login")}
               </Link>
             )}
-            <LanguageSwitcher />
+            <PreferencesMenu />
           </div>
         </div>
 
