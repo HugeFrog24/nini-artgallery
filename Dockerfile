@@ -1,43 +1,62 @@
 # syntax=docker/dockerfile:1
+
+# ============================================
 # Stage 1: Dependencies
-FROM --platform=$BUILDPLATFORM node:20-alpine AS deps
+# ============================================
+FROM --platform=$BUILDPLATFORM node:22-alpine3.22 AS deps
+
 WORKDIR /app
 
-# Install pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV COREPACK_DEFAULT_TO_LATEST=0
 
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
 
+RUN corepack enable \
+corepack prepare pnpm@11.0.9 --activate \
+ && pnpm install --frozen-lockfile
+
+# ============================================
 # Stage 2: Builder
-FROM --platform=$BUILDPLATFORM node:20-alpine AS builder
+# ============================================
+FROM --platform=$BUILDPLATFORM node:22-alpine3.22 AS builder
+
 WORKDIR /app
 
-# Install pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV COREPACK_DEFAULT_TO_LATEST=0
+
+RUN corepack enable \
+ && corepack prepare pnpm@10.33.2 --activate
 
 COPY --from=deps /app/node_modules ./node_modules
+
 COPY . .
-ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN pnpm run build
+RUN pnpm build
 
+# ============================================
 # Stage 3: Runner
-FROM node:20-alpine AS runner
+# ============================================
+FROM node:22-alpine3.22 AS runner
+
 WORKDIR /app
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+# Create non-root user
+RUN addgroup -S nodejs -g 1001 \
+ && adduser -S nextjs -u 1001
 
-# Copy only necessary files
-COPY --from=builder /app/public ./public
+# Copy standalone output
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Copy tenant data and message files (not included in standalone bundle)
+# Additional runtime assets
 COPY --from=builder --chown=nextjs:nodejs /app/data ./data
 COPY --from=builder --chown=nextjs:nodejs /app/messages ./messages
 
@@ -45,7 +64,4 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
-
-CMD ["node", "server.js"] 
+CMD ["node", "server.js"]

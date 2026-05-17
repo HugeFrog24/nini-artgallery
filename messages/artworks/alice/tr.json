@@ -11,6 +11,12 @@
       "description": "Peri masallarından ilham alan el çizimi ve mürekkep illüstrasyonları",
       "gallery": "İllüstrasyon galerisi",
       "artwork": "İllüstrasyon"
+    },
+    "crochet": {
+      "title": "Tığ İşi Figürler",
+      "description": "El yapımı örgü figürler ve oyuncaklar",
+      "gallery": "Tığ işi figürler galerisi",
+      "artwork": "Tığ işi figür"
     }
   },
   "Artworks": {
@@ -33,11 +39,24 @@
     "o2": {
       "title": "Mantar Eskizleri",
       "description": "Fantastik mantarların mürekkep çalışmaları — bazıları evlerden daha uzun"
+    },
+    "p4": {
+      "title": "Kunduzla Çay Saati",
+      "description": "Bir kunduzla keyifli bir çay sahnesi — masabaşında masalsı bir dostluk"
+    },
+    "p5": {
+      "title": "Fedora'nın Kederi",
+      "description": "Çukovski'nin masalından Samokvak kurbağası — bulaşıkların kaçışını sakince izliyor"
+    },
+    "c1": {
+      "title": "Kunduz",
+      "description": "Kuyruklu tığ işi kunduz figürü — yumuşak ve sevimli"
     }
   },
   "Mediums": {
     "digitalPainting": "Dijital resim",
     "watercolorOnPaper": "Kağıt üzerine suluboya",
-    "inkOnPaper": "Kağıt üzerine mürekkep"
+    "inkOnPaper": "Kağıt üzerine mürekkep",
+    "cottonYarn": "Pamuk iplik"
   }
 }
