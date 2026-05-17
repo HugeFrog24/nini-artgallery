@@ -13,7 +13,7 @@ ENV COREPACK_DEFAULT_TO_LATEST=0
 COPY package.json pnpm-lock.yaml ./
 
 RUN corepack enable \
-corepack prepare pnpm@11.0.9 --activate \
+ && corepack prepare pnpm@11.1.2 --activate \
  && pnpm install --frozen-lockfile
 
 # ============================================
@@ -27,7 +27,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV COREPACK_DEFAULT_TO_LATEST=0
 
 RUN corepack enable \
- && corepack prepare pnpm@10.33.2 --activate
+ && corepack prepare pnpm@11.1.2 --activate
 
 COPY --from=deps /app/node_modules ./node_modules
 
@@ -47,16 +47,13 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0
 
-# Create non-root user
 RUN addgroup -S nodejs -g 1001 \
  && adduser -S nextjs -u 1001
 
-# Copy standalone output
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Additional runtime assets
 COPY --from=builder --chown=nextjs:nodejs /app/data ./data
 COPY --from=builder --chown=nextjs:nodejs /app/messages ./messages
 
