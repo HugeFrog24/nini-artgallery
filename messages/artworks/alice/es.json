@@ -1,0 +1,62 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Pinturas y Arte Digital",
+      "description": "Pinturas oníricas que mezclan fantasía y emoción",
+      "gallery": "Galería de pinturas y arte digital",
+      "artwork": "Obra de pintura y arte digital"
+    },
+    "origami": {
+      "title": "Ilustraciones",
+      "description": "Ilustraciones a mano y tinta inspiradas en cuentos de hadas",
+      "gallery": "Galería de ilustraciones",
+      "artwork": "Ilustración"
+    },
+    "crochet": {
+      "title": "Figuras de ganchillo",
+      "description": "Figuras y juguetes tejidos a mano",
+      "gallery": "Galería de figuras de ganchillo",
+      "artwork": "Figura de ganchillo"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "El Bosque del Gato de Cheshire",
+      "description": "Un bosque resplandeciente donde los árboles te devuelven la sonrisa — inspirado en el País de las Maravillas"
+    },
+    "p2": {
+      "title": "Estanque a la Luz de la Luna",
+      "description": "Estudio en acuarela de la luz de la luna reflejada en agua quieta, con luciérnagas"
+    },
+    "p3": {
+      "title": "El Jardín de la Reina Roja",
+      "description": "Un jardín surrealista donde cada rosa tiene su propio carácter"
+    },
+    "o1": {
+      "title": "El Conejo Blanco",
+      "description": "Retrato en acuarela de un conejo asustado agarrando un reloj de bolsillo"
+    },
+    "o2": {
+      "title": "Bocetos de Hongos",
+      "description": "Estudios a tinta de hongos fantásticos — algunos más altos que casas"
+    },
+    "p4": {
+      "title": "Té con el castor",
+      "description": "Una acogedora escena de té con un castor — una amistad de cuento en una mesa servida"
+    },
+    "p5": {
+      "title": "La pena de Fedora",
+      "description": "La rana Samokvak del cuento de Chukovski — observa con calma la huida de la vajilla"
+    },
+    "c1": {
+      "title": "Castor",
+      "description": "Una figura de ganchillo de un castor con cola — suave y acogedor"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Pintura digital",
+    "watercolorOnPaper": "Acuarela sobre papel",
+    "inkOnPaper": "Tinta sobre papel",
+    "cottonYarn": "Hilo de algodón"
+  }
+}

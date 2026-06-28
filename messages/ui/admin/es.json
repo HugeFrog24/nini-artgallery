@@ -1,0 +1,58 @@
+{
+  "Dashboard": {
+    "title": "Panel de Control",
+    "subtitle": "Gestiona la configuración de tu galería de arte",
+    "checkingConfiguration": "Verificando configuración…"
+  },
+  "Login": {
+    "title": "Inicio de Sesión",
+    "emailStep": "Ingresa tu email para recibir un código de verificación",
+    "otpStep": "Ingresa el código de verificación enviado a tu email",
+    "notAvailable": "El inicio de sesión de administrador no está disponible",
+    "configurationRequired": "Configuración Requerida",
+    "configurationMessage": "El inicio de sesión de administrador requiere configuración SMTP y de autenticación. Por favor revisa los logs del servidor para variables de entorno faltantes.",
+    "emailAddress": "Dirección de email",
+    "verificationCode": "Código de Verificación",
+    "sendVerificationCode": "Enviar Código de Verificación",
+    "verifyAndLogin": "Verificar e Iniciar Sesión",
+    "sentTo": "Enviado a:",
+    "useDifferentEmail": "Usar email diferente",
+    "loginSuccessful": "¡Inicio de sesión exitoso! Redirigiendo…",
+    "networkError": "Error de red. Por favor intenta de nuevo."
+  },
+  "Settings": {
+    "broadcastMessageSettings": "Configuración de Mensaje de Difusión",
+    "broadcastMessageDescription": "Configura el mensaje mostrado en tu galería",
+    "displayBroadcastMessage": "Mostrar mensaje de difusión en la galería",
+    "title": "Título",
+    "messageContent": "Contenido del Mensaje",
+    "allowDismiss": "Permitir a los visitantes cerrar el mensaje",
+    "saveChanges": "Guardar Cambios",
+    "settingsSaved": "¡Configuración guardada exitosamente!",
+    "enterMessageTitle": "Ingresa el título del mensaje",
+    "enterMessageContent": "Ingresa el contenido de tu mensaje",
+    "charactersCount": "{count}/{max} caracteres"
+  },
+  "ArtistSettings": {
+    "title": "Configuración del Perfil del Artista",
+    "description": "Gestiona la información de tu perfil de artista",
+    "artistName": "Nombre del Artista",
+    "artistDescription": "Descripción del Artista",
+    "enterArtistName": "Ingresa el nombre del artista",
+    "enterArtistDescription": "Ingresa la descripción del artista"
+  },
+  "Errors": {
+    "failedToLoadSettings": "Error al cargar la configuración",
+    "failedToSaveSettings": "Error al guardar la configuración",
+    "checkAdminConfiguration": "No se pudo verificar la configuración de administrador"
+  },
+  "Email": {
+    "subject": "Inicio de Sesión de Administrador - Su Código de Verificación",
+    "title": "Verificación de Inicio de Sesión de Administrador",
+    "codeMessage": "Su código de verificación para acceso de administrador es:",
+    "expiryMessage": "Este código expirará en 10 minutos.",
+    "ignoreMessage": "Si no solicitó este código, por favor ignore este email.",
+    "automatedMessage": "Este es un mensaje automatizado de {siteName}",
+    "textVersion": "Su código de verificación de administrador es: {otp}. Este código expirará en 10 minutos."
+  }
+}

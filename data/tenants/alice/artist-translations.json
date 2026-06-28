@@ -1,0 +1,22 @@
+{
+  "de": {
+    "name": "Alice",
+    "description": "Eine digitale Künstlerin und Illustratorin, die fantastische Welten zum Leben erweckt. Ich lasse mich von Märchen, Natur und dem Surrealen inspirieren. Meine Arbeit verbindet lebhafte Farben mit traumhaften Kompositionen — jedes Stück ist ein Tor in eine andere Realität."
+  },
+  "es": {
+    "name": "Alice",
+    "description": "Una artista digital e ilustradora que da vida a mundos fantásticos. Me inspiro en los cuentos de hadas, la naturaleza y lo surreal. Mi trabajo combina colores vivos con composiciones oníricas — cada pieza es una puerta a otra realidad."
+  },
+  "ka": {
+    "name": "ალისი",
+    "description": "ციფრული მხატვარი და ილუსტრატორი, რომელიც ფანტასტიკურ სამყაროებს აცოცხლებს. ზღაპრები, ბუნება და სიურეალიზმი შთამაგონებს. ჩემი ნამუშევრები ცოცხალ ფერებსა და ოცნებისებურ კომპოზიციებს აერთიანებს — ყოველი ნამუშევარი სხვა რეალობაში შესასვლელია."
+  },
+  "ru": {
+    "name": "Алиса",
+    "description": "Цифровой художник и иллюстратор, оживляющая фантастические миры. Я черпаю вдохновение из сказок, природы и сюрреализма. Моя работа сочетает яркие цвета с мечтательными композициями — каждое произведение — это дверь в другую реальность."
+  },
+  "tr": {
+    "name": "Alice",
+    "description": "Fantastik dünyaları hayata geçiren dijital bir sanatçı ve illüstratör. Peri masallarından, doğadan ve gerçeküstünden ilham alıyorum. Çalışmalarım canlı renkleri rüya gibi kompozisyonlarla birleştiriyor — her parça başka bir gerçekliğe açılan bir kapı."
+  }
+}

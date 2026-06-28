@@ -1,0 +1,62 @@
+{
+  "Categories": {
+    "paintings": {
+      "title": "Gemälde & Digitale Kunst",
+      "description": "Traumhafte Gemälde, die Fantasie und Emotion verbinden",
+      "gallery": "Galerie der Gemälde und digitalen Kunst",
+      "artwork": "Gemälde"
+    },
+    "origami": {
+      "title": "Illustrationen",
+      "description": "Handgezeichnete Tuscheillustrationen, inspiriert von Märchen",
+      "gallery": "Illustrationen-Galerie",
+      "artwork": "Illustration"
+    },
+    "crochet": {
+      "title": "Häkelfiguren",
+      "description": "Handgefertigte gehäkelte Figuren und Spielzeuge",
+      "gallery": "Häkelfiguren-Galerie",
+      "artwork": "Häkelfigur"
+    }
+  },
+  "Artworks": {
+    "p1": {
+      "title": "Der Grinsekatzen-Wald",
+      "description": "Ein leuchtender Wald, in dem die Bäume zurückgrinsen — inspiriert vom Wunderland"
+    },
+    "p2": {
+      "title": "Mondscheinteich",
+      "description": "Aquarellstudie von Mondlicht auf stillem Wasser mit Glühwürmchen"
+    },
+    "p3": {
+      "title": "Der Garten der Roten Königin",
+      "description": "Ein surrealer Garten, in dem jede Rose ihr eigenes Temperament hat"
+    },
+    "o1": {
+      "title": "Das Weiße Kaninchen",
+      "description": "Aquarellporträt eines panischen Kaninchens mit Taschenuhr"
+    },
+    "o2": {
+      "title": "Pilzskizzen",
+      "description": "Tuschestudien fantastischer Pilze — manche größer als Häuser"
+    },
+    "p4": {
+      "title": "Tee mit dem Biber",
+      "description": "Eine gemütliche Teeszene mit einem Biber — eine märchenhafte Freundschaft am gedeckten Tisch"
+    },
+    "p5": {
+      "title": "Fedoras Kummer",
+      "description": "Der Frosch Samokvak aus Tschukowskis Erzählung — beobachtet gelassen die Flucht des Geschirrs"
+    },
+    "c1": {
+      "title": "Biber",
+      "description": "Eine gehäkelte Biberfigur mit Schwanz — weich und gemütlich"
+    }
+  },
+  "Mediums": {
+    "digitalPainting": "Digitale Malerei",
+    "watercolorOnPaper": "Aquarell auf Papier",
+    "inkOnPaper": "Tusche auf Papier",
+    "cottonYarn": "Baumwollgarn"
+  }
+}

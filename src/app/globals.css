@@ -1,10 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Accent color system - dynamically updated by ThemeProvider */
+  --color-accent-50: var(--accent-50, oklch(0.971 0.014 343.198));
+  --color-accent-100: var(--accent-100, oklch(0.948 0.028 342.258));
+  --color-accent-200: var(--accent-200, oklch(0.899 0.061 343.231));
+  --color-accent-500: var(--accent-500, oklch(0.656 0.241 354.308));
+  --color-accent-600: var(--accent-600, oklch(0.592 0.249 0.584));
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Default accent colors (pink) - will be overridden by ThemeProvider */
+  --accent-50: oklch(0.971 0.014 343.198);
+  --accent-100: oklch(0.948 0.028 342.258);
+  --accent-200: oklch(0.899 0.061 343.231);
+  --accent-500: oklch(0.656 0.241 354.308);
+  --accent-600: oklch(0.592 0.249 0.584);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +34,43 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Animation for theme selector */
+@keyframes slide-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.slide-in-from-bottom-2 {
+  animation-name: slide-in-from-bottom;
+}
+
+.duration-200 {
+  animation-duration: 200ms;
+}
+
+/* Smooth radial wave animation for theme button */
+@keyframes radialWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }

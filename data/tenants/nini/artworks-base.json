@@ -1,0 +1,160 @@
+{
+  "categorySections": [
+    {
+      "id": "origami",
+      "artworks": [
+        {
+          "id": "o1",
+          "imageUrl": "#FF9F9F",
+          "category": "origami",
+          "mediumKey": "washiPaper",
+          "dimensions": "6\" x 6\"",
+          "year": 2024
+        },
+        {
+          "id": "o2",
+          "imageUrl": "#FFB5B5",
+          "category": "origami",
+          "mediumKey": "origamiPaper",
+          "dimensions": "8\" x 8\"",
+          "year": 2024
+        },
+        {
+          "id": "o3",
+          "imageUrl": "#98FB98",
+          "category": "origami",
+          "mediumKey": "origamiPaper",
+          "dimensions": "4\" x 4\"",
+          "year": 2024
+        },
+        {
+          "id": "o4",
+          "imageUrl": "#87CEEB",
+          "category": "origami",
+          "mediumKey": "specialtyOrigamiPaper",
+          "dimensions": "5\" x 5\" x 5\"",
+          "year": 2024
+        },
+        {
+          "id": "o5",
+          "imageUrl": "#FFB6C1",
+          "category": "origami",
+          "mediumKey": "origamiPaper",
+          "dimensions": "6\" x 6\"",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "crochet",
+      "artworks": [
+        {
+          "id": "c1",
+          "imageUrl": "#95E1D3",
+          "category": "crochet",
+          "mediumKey": "merinoWool",
+          "dimensions": "4\" height",
+          "year": 2024
+        },
+        {
+          "id": "c2",
+          "imageUrl": "#A8E6CF",
+          "category": "crochet",
+          "mediumKey": "cottonYarn",
+          "dimensions": "50\" x 60\"",
+          "year": 2023
+        },
+        {
+          "id": "c3",
+          "imageUrl": "#90EE90",
+          "category": "crochet",
+          "mediumKey": "cottonYarn",
+          "dimensions": "6\" height",
+          "year": 2024
+        },
+        {
+          "id": "c4",
+          "imageUrl": "#FFF0F5",
+          "category": "crochet",
+          "mediumKey": "softAcrylicYarn",
+          "dimensions": "8\" height",
+          "year": 2024
+        },
+        {
+          "id": "c5",
+          "imageUrl": "#E6E6FA",
+          "category": "crochet",
+          "mediumKey": "softAcrylicYarn",
+          "dimensions": "7\" height",
+          "year": 2024
+        },
+        {
+          "id": "c6",
+          "imageUrl": "#8B4513",
+          "category": "crochet",
+          "mediumKey": "cottonYarn",
+          "dimensions": "12\" height",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "paintings",
+      "artworks": [
+        {
+          "id": "p1",
+          "imageUrl": "#FFD93D",
+          "category": "paintings",
+          "mediumKey": "acrylicOnCanvas",
+          "dimensions": "24\" x 36\"",
+          "year": 2024
+        },
+        {
+          "id": "p2",
+          "imageUrl": "#F6CD61",
+          "category": "paintings",
+          "mediumKey": "oilOnCanvas",
+          "dimensions": "30\" x 40\"",
+          "year": 2023
+        },
+        {
+          "id": "p3",
+          "imageUrl": "#DDA0DD",
+          "category": "paintings",
+          "mediumKey": "mixedMediaOnCanvas",
+          "dimensions": "36\" x 48\"",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "fingernails",
+      "artworks": [
+        {
+          "id": "n1",
+          "imageUrl": "#FF8B94",
+          "category": "fingernails",
+          "mediumKey": "gelPolish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        },
+        {
+          "id": "n2",
+          "imageUrl": "#FFA69E",
+          "category": "fingernails",
+          "mediumKey": "regularPolish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        },
+        {
+          "id": "n3",
+          "imageUrl": "#FF69B4",
+          "category": "fingernails",
+          "mediumKey": "gelPolish",
+          "dimensions": "Standard nail size",
+          "year": 2024
+        }
+      ]
+    }
+  ]
+}
