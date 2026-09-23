@@ -3,31 +3,28 @@
 # ============================================
 # Stage 1: Dependencies
 # ============================================
-FROM --platform=$BUILDPLATFORM node:22-alpine3.22 AS deps
+FROM --platform=$BUILDPLATFORM node:26-alpine3.24 AS deps
 
 WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV COREPACK_DEFAULT_TO_LATEST=0
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
-RUN corepack enable \
- && corepack prepare pnpm@11.1.2 --activate \
+# Node 25+ images ship without corepack; keep pnpm in sync with "packageManager"
+RUN npm install -g pnpm@12.5.1 \
  && pnpm install --frozen-lockfile
 
 # ============================================
 # Stage 2: Builder
 # ============================================
-FROM --platform=$BUILDPLATFORM node:22-alpine3.22 AS builder
+FROM --platform=$BUILDPLATFORM node:26-alpine3.24 AS builder
 
 WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV COREPACK_DEFAULT_TO_LATEST=0
 
-RUN corepack enable \
- && corepack prepare pnpm@11.1.2 --activate
+RUN npm install -g pnpm@12.5.1
 
 COPY --from=deps /app/node_modules ./node_modules
 
@@ -38,7 +35,7 @@ RUN pnpm build
 # ============================================
 # Stage 3: Runner
 # ============================================
-FROM node:22-alpine3.22 AS runner
+FROM node:26-alpine3.24 AS runner
 
 WORKDIR /app
 

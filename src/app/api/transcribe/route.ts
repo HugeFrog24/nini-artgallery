@@ -64,15 +64,13 @@ export async function POST(req: Request) {
     // ── Transcribe via OpenRouter audio model ─────────────────────
     const result = await generateText({
       model: openrouter(TRANSCRIPTION_MODEL),
+      // AI SDK v7 rejects system messages inside `messages`; use `instructions`.
+      instructions:
+        `Transcribe the following audio exactly in ${languageName}. ` +
+        "Return ONLY the transcription text — no preamble, no explanation, no formatting. " +
+        "If the audio contains only silence, background noise, or no discernible speech, " +
+        "return exactly the string [SILENCE] and nothing else.",
       messages: [
-        {
-          role: "system",
-          content:
-            `Transcribe the following audio exactly in ${languageName}. ` +
-            "Return ONLY the transcription text — no preamble, no explanation, no formatting. " +
-            "If the audio contains only silence, background noise, or no discernible speech, " +
-            "return exactly the string [SILENCE] and nothing else.",
-        },
         {
           role: "user",
           content: [

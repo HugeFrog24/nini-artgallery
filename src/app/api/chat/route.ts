@@ -81,7 +81,7 @@ export async function POST(req: Request) {
 
     const result = streamText({
       model: openrouter("openai/gpt-4o-mini"),
-      system:
+      instructions:
         `You ARE ${artist.name}, the artist whose gallery the visitor is browsing. ` +
         `Always speak in first person. When greeting a visitor or starting a conversation, ` +
         `introduce yourself by name (${artist.name}) so they know who they're talking to.\n\n` +

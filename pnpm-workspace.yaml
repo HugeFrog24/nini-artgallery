@@ -3,11 +3,19 @@ allowBuilds:
   '@swc/core': true
   sharp: true
   unrs-resolver: true
+# next@16.3.6 fixes GHSA-vcvr-r3jv-pc5j (critical RCE in next/og); these exact-version
+# exclusions only bypass the 24h release-age gate and can be removed after 2026-09-24.
 minimumReleaseAgeExclude:
-  - postcss@8.5.16
-onlyBuiltDependencies:
-  - "@parcel/watcher"
-  - "@swc/core"
-  - sharp
-  - unrs-resolver
-  - "@tailwindcss/oxide"
+  - '@next/env@16.3.6'
+  - '@next/swc-darwin-arm64@16.3.6'
+  - '@next/swc-darwin-x64@16.3.6'
+  - '@next/swc-linux-arm64-gnu@16.3.6'
+  - '@next/swc-linux-arm64-musl@16.3.6'
+  - '@next/swc-linux-x64-gnu@16.3.6'
+  - '@next/swc-linux-x64-musl@16.3.6'
+  - '@next/swc-win32-arm64-msvc@16.3.6'
+  - '@next/swc-win32-x64-msvc@16.3.6'
+  - next@16.3.6
+overrides:
+  '@types/react': 19.3.0
+  '@types/react-dom': 19.3.0
